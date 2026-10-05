@@ -1,0 +1,116 @@
+{
+ "detector": "secondary minute-calibrated detector (tau_S^min); supplementary only",
+ "alpha": 0.05,
+ "Site1": {
+  "split_train_cal_test_days": [
+   19,
+   19,
+   13
+  ],
+  "temporal_minute_FAR": 0.061,
+  "randomized_mean_minute_FAR": 0.052,
+  "randomized_minute_FAR_all30": [
+   0.024,
+   0.024,
+   0.078,
+   0.098,
+   0.03,
+   0.041,
+   0.028,
+   0.017,
+   0.033,
+   0.041,
+   0.094,
+   0.036,
+   0.038,
+   0.077,
+   0.077,
+   0.037,
+   0.042,
+   0.022,
+   0.021,
+   0.05,
+   0.04,
+   0.038,
+   0.109,
+   0.16,
+   0.043,
+   0.103,
+   0.015,
+   0.053,
+   0.053,
+   0.051
+  ],
+  "temporal_minute_fault_sensitivity": 0.09,
+  "temporal_minute_fault_sensitivity_95CI_dayblock": [
+   0.054,
+   0.13
+  ],
+  "n_fault_days": 62
+ },
+ "Site2": {
+  "split_train_cal_test_days": [
+   88,
+   44,
+   44
+  ],
+  "temporal_minute_FAR": 0.056,
+  "randomized_mean_minute_FAR": 0.047,
+  "randomized_minute_FAR_all30": [
+   0.057,
+   0.034,
+   0.034,
+   0.075,
+   0.046,
+   0.024,
+   0.045,
+   0.028,
+   0.048,
+   0.072,
+   0.049,
+   0.026,
+   0.046,
+   0.043,
+   0.048,
+   0.032,
+   0.047,
+   0.035,
+   0.045,
+   0.065,
+   0.057,
+   0.055,
+   0.052,
+   0.05,
+   0.037,
+   0.04,
+   0.059,
+   0.039,
+   0.052,
+   0.062
+  ],
+  "temporal_minute_fault_sensitivity": 0.338,
+  "temporal_minute_fault_sensitivity_95CI_dayblock": [
+   0.216,
+   0.465
+  ],
+  "n_fault_days": 27,
+  "operating_points_temporal": {
+   "alpha_0.05": {
+    "held_out_minute_FAR": 0.056,
+    "minute_fault_sensitivity": 0.338,
+    "sensitivity_95CI_dayblock": [
+     0.216,
+     0.465
+    ]
+   },
+   "alpha_0.115": {
+    "held_out_minute_FAR": 0.113,
+    "minute_fault_sensitivity": 0.43,
+    "sensitivity_95CI_dayblock": [
+     0.312,
+     0.548
+    ]
+   }
+  }
+ }
+}

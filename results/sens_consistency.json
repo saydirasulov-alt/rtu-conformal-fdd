@@ -1,0 +1,26 @@
+[
+ {
+  "name": "Site1 staging",
+  "n_fault_days": 62,
+  "tau_day": 0.9999,
+  "day_sensitivity": "0/62=0.0%",
+  "minute_sensitivity": "0.0%",
+  "minute_sensitivity_pct": 0.0,
+  "minute_sensitivity_95CI_dayblock_bootstrap": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "name": "Site2 undercharge",
+  "n_fault_days": 27,
+  "tau_day": 0.9999,
+  "day_sensitivity": "13/27=48.1%",
+  "minute_sensitivity": "21.0%",
+  "minute_sensitivity_pct": 21.0,
+  "minute_sensitivity_95CI_dayblock_bootstrap": [
+   8.6,
+   34.1
+  ]
+ }
+]

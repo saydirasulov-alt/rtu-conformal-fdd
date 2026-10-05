@@ -1,0 +1,14 @@
+[
+ {
+  "name": "Site1 staging",
+  "tau_min": 0.9955,
+  "day_sensitivity": "54/62=87.1%",
+  "minute_sensitivity": "9.0%"
+ },
+ {
+  "name": "Site2 undercharge",
+  "tau_min": 0.9709,
+  "day_sensitivity": "27/27=100.0%",
+  "minute_sensitivity": "33.8%"
+ }
+]

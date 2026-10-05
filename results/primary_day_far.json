@@ -1,0 +1,61 @@
+{
+ "Site1": {
+  "split": "19/19/13",
+  "temporal_dayLevelFAR_tauday": 0.0,
+  "random_dayLevelFAR_mean_tauday": 0.023,
+  "random_dayFAR_IQR": [
+   0.0,
+   0.0
+  ],
+  "random_dayFAR_95int": [
+   0.0,
+   0.217
+  ],
+  "random_dayFAR_all30": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.154,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.154,
+   0.0,
+   0.0,
+   0.0,
+   0.385,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "day_sensitivity_tauday": 0.0,
+  "n_fault_days": 62
+ },
+ "Site2": {
+  "split": "88/44/44",
+  "temporal_dayLevelFAR_tauday": 0.023,
+  "random_dayLevelFAR_mean_tauday": 0.03,
+  "random_dayFAR_95int": [
+   0.0,
+   0.143
+  ],
+  "day_sensitivity_tauday": 0.481,
+  "n_fault_days": 27
+ },
+ "_note": "Site1 split 19/19/13 selected by outcome-independent training-adequacy audit (13-day power-branch fit unstable). n_cal=19 resolves the 5% day-level quantile."
+}

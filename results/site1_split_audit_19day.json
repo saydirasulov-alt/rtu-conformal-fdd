@@ -1,0 +1,51 @@
+{
+ "check": "19 training days (final split 19/19/13, temporal earliest-first)",
+ "training_days_used": 19,
+ "criteria": {
+  "A4_per_day_presence": {
+   "days": 19,
+   "min_minutes_day": 487,
+   "pass": true
+  }
+ },
+ "branch": {
+  "refrigerant": {
+   "n_minutes": 13838,
+   "feat_dim": 4,
+   "cov_cond_max": 1992.6,
+   "unique_scores": 13838,
+   "boot_cv_q95": 0.1093,
+   "withinday_cv": 0.3567,
+   "A1_volume": true,
+   "A2_conditioning": true,
+   "A3_nondegenerate": true,
+   "A5_boot_stability": true,
+   "A6_withinday_diversity": true,
+   "branch_pass": true
+  },
+  "power": {
+   "n_minutes": 13838,
+   "feat_dim": 3,
+   "cov_cond_max": 169.9,
+   "unique_scores": 13730,
+   "boot_cv_q95": 0.1246,
+   "withinday_cv": 0.5273,
+   "A1_volume": true,
+   "A2_conditioning": true,
+   "A3_nondegenerate": true,
+   "A5_boot_stability": true,
+   "A6_withinday_diversity": true,
+   "branch_pass": true
+  }
+ },
+ "VERDICT": "PASS -> 19 training days adequate; final split 19/19/13",
+ "thresholds": {
+  "min_days_present": 19,
+  "min_minutes_per_day": 30,
+  "min_total_minutes": 20,
+  "max_cov_cond": 1000000.0,
+  "min_unique_scores": 100,
+  "max_boot_cv": 0.15,
+  "min_withinday_cv": 0.03
+ }
+}

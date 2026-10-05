@@ -1,0 +1,94 @@
+{
+  "protocol": "controlled sensor-unavailability on the ORNL experimental RTU; frozen train/cal/test day split; pattern-specific empirical minute-calibrated threshold (tau_S^min; only 14 eligible normal days, so day-level calibration is infeasible); detection reported as fault-day sensitivity; a branch is scored only if all its required sensors R_b are present (SA requires MA, OA, SAT, SAF because its feature set includes MA-OA)",
+  "split_train_cal_test": [
+    7,
+    3,
+    4
+  ],
+  "alpha": 0.05,
+  "sensor-unavailability": [
+    {
+      "pattern": "full (all sensors)",
+      "eligible_branches": [
+        "eco",
+        "SA",
+        "power"
+      ],
+      "|S|": 3,
+      "minute_FAR": 0.012,
+      "unsupported_assert_rate": 0.0,
+      "fault_day_TPR": {
+        "economizer": 0.938,
+        "damper": 0.812,
+        "SA-bias": 0.938
+      }
+    },
+    {
+      "pattern": "no DMPR",
+      "eligible_branches": [
+        "SA",
+        "power"
+      ],
+      "|S|": 2,
+      "minute_FAR": 0.018,
+      "unsupported_assert_rate": 0.0,
+      "fault_day_TPR": {
+        "economizer": "ABSTAIN(unsupported)",
+        "damper": "ABSTAIN(unsupported)",
+        "SA-bias": 1.0
+      }
+    },
+    {
+      "pattern": "no SA_TEMP",
+      "eligible_branches": [
+        "eco",
+        "power"
+      ],
+      "|S|": 2,
+      "minute_FAR": 0.012,
+      "unsupported_assert_rate": 0.0,
+      "fault_day_TPR": {
+        "economizer": 0.875,
+        "damper": 0.812,
+        "SA-bias": "ABSTAIN(unsupported)"
+      }
+    },
+    {
+      "pattern": "no air-side family",
+      "eligible_branches": [
+        "power"
+      ],
+      "|S|": 1,
+      "minute_FAR": 0.009,
+      "unsupported_assert_rate": 0.0,
+      "fault_day_TPR": {
+        "economizer": "ABSTAIN(unsupported)",
+        "damper": "ABSTAIN(unsupported)",
+        "SA-bias": "ABSTAIN(unsupported)"
+      }
+    },
+    {
+      "pattern": "no power",
+      "eligible_branches": [
+        "eco",
+        "SA"
+      ],
+      "|S|": 2,
+      "minute_FAR": 0.01,
+      "unsupported_assert_rate": 0.0,
+      "fault_day_TPR": {
+        "economizer": 0.562,
+        "damper": 0.625,
+        "SA-bias": 0.375
+      }
+    },
+    {
+      "pattern": "none (all air+power gone)",
+      "eligible_branches": [],
+      "|S|": 0,
+      "minute_FAR": null,
+      "abstain": "ALL (S=empty)",
+      "unsupported_assert_rate": 0.0
+    }
+  ]
+}

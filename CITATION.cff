@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated article and this software."
+title: "rtu-conformal-fdd: analysis code for Conformal Fault Detection for Rooftop Units with Incomplete Sensing"
+type: software
+license: MIT
+repository-code: "https://github.com/saydirasulov-alt/rtu-conformal-fdd"
+version: "1.0.0"
+authors:
+  - family-names: Saydirasulov
+    given-names: Norkobil S.
+    orcid: "https://orcid.org/0009-0009-3883-9403"
+  - family-names: Cho
+    given-names: Young Im
+  - family-names: Davronbekov
+    given-names: Dilmurod A.
+  - family-names: Nazarov
+    given-names: Baxodir A.

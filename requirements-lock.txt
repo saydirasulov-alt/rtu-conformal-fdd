@@ -1,0 +1,4 @@
+# Exact environment used to generate results/*.json (Python 3.12.3)
+numpy==2.4.4
+pandas==3.0.2
+python-dateutil==2.9.0.post0

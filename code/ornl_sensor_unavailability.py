@@ -6,7 +6,7 @@ calibration is infeasible. A branch emits NO score unless all its required senso
 Branches: eco{MA,OA,DMPR}, SA{MA,OA,SAT,SAF}, power{COMP,TOT,FAN}. seed=20260618."""
 from pathlib import Path
 RESULTS=Path(__file__).resolve().parent.parent/"results"; RESULTS.mkdir(exist_ok=True)
-import os,glob,json,numpy as np,pandas as pd,warnings; warnings.filterwarnings("ignore")
+import os,glob,json,numpy as np,pandas as pd
 from _common import SEED,GATE,ORN
 rng=np.random.default_rng(SEED); ALPHA=0.05
 SENS={"MA":"RTU_MA_TEMP","OA":"RTU_OA_TEMP","DMPR":"RTU_OA_DMPR_DM","SAT":"RTU_SA_TEMP","SAF":"RTU_SA_FLOW","COMP":"COMP","TOT":"RTU_TOT_WATT","FAN":"RTU_SA_FAN_WATT"}
@@ -60,8 +60,8 @@ PATTERNS={
  "no DMPR":set(SENS)-{"DMPR"},
  "no SA_TEMP":set(SENS)-{"SAT"},
  "no air-side family":set(SENS)-{"MA","OA","DMPR","SAT","SAF"},
- "no power":set(SENS)-{"COMP","TOT","FAN"},
- "none (all air+power gone)":set()}
+ "no power inputs":set(SENS)-{"COMP","TOT","FAN"},
+ "none (no diagnostic sensors)":set()}
 # fault files -> which branch should detect
 FAULTS={"economizer":("Inc_Eco_SP_*.csv","eco"),"damper":("OA_damper_stuck_*.csv","eco"),"SA-bias":("SA_temp_bias_*.csv","SA")}
 FA={k:pd.concat([load(f) for f in glob.glob(os.path.join(ORN,pat))],ignore_index=True) for k,(pat,br) in FAULTS.items()}
@@ -90,5 +90,5 @@ for name,avail in PATTERNS.items():
     row["fault_day_TPR"]=det; rows.append(row)
 out={"protocol":"controlled sensor-unavailability on the ORNL experimental RTU; frozen train/cal/test day split; pattern-specific empirical minute-calibrated threshold (tau_S^min; only 14 eligible normal days, so day-level calibration is infeasible); detection reported as fault-day sensitivity; a branch is scored only if all its required sensors R_b are present (SA requires MA, OA, SAT, SAF because its feature set includes MA-OA)",
      "split_train_cal_test":[len(tr),len(ca),len(te)],"alpha":ALPHA,"sensor-unavailability":rows}
-json.dump(out,open(RESULTS/"ornl_sensor_unavailability.json","w"),indent=2)
+with open(RESULTS/"ornl_sensor_unavailability.json","w") as fh: json.dump(out,fh,indent=2)
 for r in rows: print(r["pattern"],"| S=",r["eligible_branches"],"| minuteFAR=",r.get("minute_FAR"),"| TPR=",r.get("fault_day_TPR","-"))

@@ -4,7 +4,12 @@ title: "rtu-conformal-fdd: analysis code for Conformal Fault Detection for Rooft
 type: software
 license: MIT
 repository-code: "https://github.com/saydirasulov-alt/rtu-conformal-fdd"
-version: "1.0.0"
+version: "1.0.1"
+date-released: "2026-10-06"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23155499"
+    description: "Zenodo archive of release v1.0.0"
 authors:
   - family-names: Saydirasulov
     given-names: Norkobil S.

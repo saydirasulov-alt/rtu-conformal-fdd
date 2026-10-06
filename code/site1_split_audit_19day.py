@@ -71,7 +71,7 @@ for bname,fxs in branches.items():
 
 report["VERDICT"]="PASS -> 19 training days adequate; final split 19/19/13" if all(allpass) else "FAIL"
 report["thresholds"]=TH
-open(RESULTS/"site1_split_audit_19day.json","w").write(json.dumps(report,indent=1))
+with open(RESULTS/"site1_split_audit_19day.json","w") as fh: fh.write(json.dumps(report,indent=1))
 print(json.dumps({"VERDICT":report["VERDICT"],"A4":report["criteria"]["A4_per_day_presence"],
                   "refrigerant":report["branch"]["refrigerant"]["branch_pass"],
                   "power":report["branch"]["power"]["branch_pass"]},indent=1))

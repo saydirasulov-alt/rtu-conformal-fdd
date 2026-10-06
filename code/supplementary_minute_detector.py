@@ -63,5 +63,5 @@ for name,nf,uf,sz in [("Site1","Site1_Unfaulted.csv","Site1_Staging_Fault.csv",(
                                "minute_fault_sensitivity":s_a,"sensitivity_95CI_dayblock":ci_a}
         rec["operating_points_temporal"]=ops
     out[name]=rec
-json.dump(out,open(RESULTS/"supplementary_minute_detector.json","w"),indent=1)
+with open(RESULTS/"supplementary_minute_detector.json","w") as fh: json.dump(out,fh,indent=1)
 print(json.dumps({k:{kk:vv for kk,vv in v.items() if kk!="randomized_minute_FAR_all30"} if isinstance(v,dict) else v for k,v in out.items()},indent=1))

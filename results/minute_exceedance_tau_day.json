@@ -1,18 +1,4 @@
 {
- "Site2_temporal": {
-  "min_num": 1,
-  "min_den": 22898,
-  "min_rate_pct": 0.0044,
-  "day_num": 1,
-  "day_den": 44,
-  "day_rate_pct": 2.27
- },
- "Site2_random": {
-  "min_num_tot": 33,
-  "min_den_tot": 770947,
-  "min_rate_pooled_pct": 0.0043,
-  "min_rate_meanof30_pct": 0.0042
- },
  "Site1_temporal": {
   "min_num": 0,
   "min_den": 12362,
@@ -22,9 +8,25 @@
   "day_rate_pct": 0.0
  },
  "Site1_random": {
-  "min_num_tot": 3,
-  "min_den_tot": 329176,
-  "min_rate_pooled_pct": 0.0009,
-  "min_rate_meanof30_pct": 0.0009
+  "min_num_tot": 19,
+  "min_den_tot": 339484,
+  "min_rate_pooled_pct": 0.0056,
+  "min_rate_meanof30_pct": 0.0059,
+  "day_rate_meanof30_pct": 2.31
+ },
+ "Site2_temporal": {
+  "min_num": 1,
+  "min_den": 22898,
+  "min_rate_pct": 0.0044,
+  "day_num": 1,
+  "day_den": 44,
+  "day_rate_pct": 2.27
+ },
+ "Site2_random": {
+  "min_num_tot": 199,
+  "min_den_tot": 761313,
+  "min_rate_pooled_pct": 0.0261,
+  "min_rate_meanof30_pct": 0.0253,
+  "day_rate_meanof30_pct": 2.95
  }
 }

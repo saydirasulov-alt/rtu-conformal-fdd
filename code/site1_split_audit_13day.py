@@ -70,7 +70,7 @@ for bname,fxs in branches.items():
 
 report["VERDICT"]="PASS -> keep 13/19/19" if all(allpass) else "FAIL -> switch to 19/19/13"
 report["thresholds"]=TH
-open(RESULTS/"site1_split_audit_13day.json","w").write(json.dumps(report,indent=1))
+with open(RESULTS/"site1_split_audit_13day.json","w") as fh: fh.write(json.dumps(report,indent=1))
 print(json.dumps({"VERDICT":report["VERDICT"],"A4":report["criteria"]["A4_per_day_presence"],
                   "refrigerant":report["branch"]["refrigerant"]["branch_pass"],
                   "power":report["branch"]["power"]["branch_pass"]},indent=1))

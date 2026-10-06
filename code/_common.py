@@ -1,5 +1,5 @@
 """Common pinned helpers for all Claim-3 scripts. seed=20260618, gate=200W, day-level splits."""
-import os,numpy as np,pandas as pd,warnings; warnings.filterwarnings("ignore")
+import os,numpy as np,pandas as pd
 SEED=20260618; GATE=200.0
 DATA=os.environ.get("RTU_DATA_DIR")
 if not DATA:

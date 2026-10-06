@@ -57,6 +57,6 @@ for r,ci in [(r1,ci1),(r2,ci2)]:
                  "minute_sensitivity_pct":ci[0],"minute_sensitivity_95CI_dayblock_bootstrap":ci[1]})
 supp=[{"name":r["name"],"tau_min":r["tau_min"],"day_sensitivity":r["SAME_tau_min"]["day"],
        "minute_sensitivity":r["SAME_tau_min"]["minute"]} for r in (r1,r2)]
-json.dump(prim,open(RESULTS/"sens_consistency.json","w"),indent=1)
-json.dump(supp,open(RESULTS/"supplementary_sens_tau_min.json","w"),indent=1)
+with open(RESULTS/"sens_consistency.json","w") as fh: json.dump(prim,fh,indent=1)
+with open(RESULTS/"supplementary_sens_tau_min.json","w") as fh: json.dump(supp,fh,indent=1)
 print(json.dumps(prim,indent=1))

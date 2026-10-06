@@ -65,6 +65,6 @@ out["Site2"]["day_sensitivity_tauday"]=round(float((daymax(U2,su2)>tau_day2).mea
 out["Site2"]["n_fault_days"]=int(len(np.unique(days(U2))))
 
 out["_note"]="Site1 split 19/19/13 selected by outcome-independent training-adequacy audit (13-day power-branch fit unstable). n_cal=19 resolves the 5% day-level quantile."
-open(RESULTS/"primary_day_far.json","w").write(json.dumps(out,indent=1))
+with open(RESULTS/"primary_day_far.json","w") as fh: fh.write(json.dumps(out,indent=1))
 print(json.dumps(out,indent=1))
 

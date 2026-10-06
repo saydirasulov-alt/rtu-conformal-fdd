@@ -68,7 +68,7 @@
       }
     },
     {
-      "pattern": "no power",
+      "pattern": "no power inputs",
       "eligible_branches": [
         "eco",
         "SA"
@@ -83,7 +83,7 @@
       }
     },
     {
-      "pattern": "none (all air+power gone)",
+      "pattern": "none (no diagnostic sensors)",
       "eligible_branches": [],
       "|S|": 0,
       "minute_FAR": null,

@@ -24,17 +24,18 @@ def run(N,sizes,assign):
     dmx=daymax(TE,s); dnum=int((dmx>tau).sum()); dden=int(len(dmx))
     return num,den,dnum,dden
 out={}
-for Nf,nm,sz in [("Site2_Unfaulted.csv","Site2",(88,44,44)),("Site1_Unfaulted.csv","Site1",(19,19,13))]:
+for Nf,nm,sz in [("Site1_Unfaulted.csv","Site1",(19,19,13)),("Site2_Unfaulted.csv","Site2",(88,44,44))]:  # Site1 -> Site2, same order as the other scripts (one shared RNG)
     N=load_field(Nf)
     tn,td,tdn,tdd=run(N,sz,"temporal")
     out[nm+"_temporal"]={"min_num":tn,"min_den":td,"min_rate_pct":round(100*tn/td,4),
                          "day_num":tdn,"day_den":tdd,"day_rate_pct":round(100*tdn/tdd,2)}
     # randomized: aggregate exact minute counts across 30 splits
-    rn=[]; rd=[]
+    rn=[]; rd=[]; rdf=[]
     for _ in range(30):
-        n_,d_,_,_=run(N,sz,"random"); rn.append(n_); rd.append(d_)
+        n_,d_,dn_,dd_=run(N,sz,"random"); rn.append(n_); rd.append(d_); rdf.append(dn_/dd_)
     tot_n=sum(rn); tot_d=sum(rd)
     out[nm+"_random"]={"min_num_tot":tot_n,"min_den_tot":tot_d,"min_rate_pooled_pct":round(100*tot_n/tot_d,4),
-                       "min_rate_meanof30_pct":round(float(np.mean([100*a/b for a,b in zip(rn,rd)])),4)}
+                       "min_rate_meanof30_pct":round(float(np.mean([100*a/b for a,b in zip(rn,rd)])),4),
+                       "day_rate_meanof30_pct":round(100*float(np.mean(rdf)),2)}  # cross-check vs primary_day_far.json
 print(json.dumps(out,indent=1))
-json.dump(out,open(RESULTS/"minute_exceedance_tau_day.json","w"),indent=1)
+with open(RESULTS/"minute_exceedance_tau_day.json","w") as fh: json.dump(out,fh,indent=1)

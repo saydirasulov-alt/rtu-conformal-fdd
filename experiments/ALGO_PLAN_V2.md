@@ -45,3 +45,14 @@ Ties (within 1 percentage point) broken by simplicity: S0<S1<S2<S3, Dmax<Dmean<D
 2. Field Site 2 and Site 1 (two circuits; refrigerant branch = max over circuits as in v1.0.1),
    same temporal splits as v1.0.1, plus E5-style rolling-origin and n_cal sensitivity (Site 2).
 3. Comparison against v1.0.1 and the E1 baselines on the same data.
+
+## Amendment 1 (2026-10-13, after the DEV grid was scored - disclosed, not hidden)
+The original selection rule maximized DEV sensitivity without a false-alarm validity constraint.
+The DEV grid showed that condition-aware residual candidates with a day-mean statistic (S2/S3 with
+Dmean/Ddual) reach ~91% DEV sensitivity but alarm on 12-13 of 25 normal baseline test days, i.e.
+their calibration is invalid under the seasonal drift between calibration and test windows; their
+"sensitivity" is therefore not attributable to the faults. Amended rule: a candidate is admissible
+only if its baseline normal test day-FAR count is not significantly above alpha (exact one-sided
+binomial test at 5%, n = 25: count <= 3). Among admissible candidates, the original rule applies.
+Caveat: the admissibility check uses simulated baseline normal test days (no fault labels); the
+holdout FAR reported later is therefore not fully independent of selection. Field evaluation is.

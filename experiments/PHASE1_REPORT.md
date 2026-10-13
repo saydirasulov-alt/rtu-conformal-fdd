@@ -44,3 +44,35 @@ raises alarms on fault days of classes whose own branch is ineligible (e.g. no D
 - Site 1: a baseline detects (13/62 at 0/13) where the proposed cannot; cause = degenerate threshold
   plus loss of cross-branch signal. Any method change designed from this must be validated on data
   not used to design it; Site 1 has no such data. Report honestly; do not tune on Site 1.
+
+---
+# E4-E6 (run 2026-10-13, pre-registered addendum)
+
+## E4 - Missing-sensor robustness (ORNL)
+- Intermittent loss of DMPR, SAT or the power family at 5-40% of minutes changes fault-day detection
+  by at most ~3 of 16 days; the affected branch's eligible-minute fraction falls as expected.
+- Contiguous outages: 1 h and 6 h cost 0-2 fault days; a 24 h outage of DMPR or SAT makes the
+  responsible branch ineligible all day -> those fault days are abstained (yield 0/16), others unaffected.
+- Unsupported assertions: 0 in every condition. NOTE: this holds by construction (only eligible
+  branches are scored); the check confirms the implementation, it is not an empirical finding.
+- New fact to report: under the minute-calibrated ORNL threshold, 3 of 4 normal test days contain at
+  least one false-alarm minute (minute-FAR ~1.2%). Day-level false alarms at ORNL are therefore high.
+
+## E5 - Temporal stability (field) - MAJOR
+- Exact 95% CIs: Site 2 day-FAR 1/44 [0.1, 12.0]%, sensitivity 13/27 [28.7, 68.1]%;
+  Site 1 0/13 [0, 24.7]%, 0/62 [0, 5.8]% (degenerate threshold).
+- The PIT-ceiling degeneracy is NOT specific to Site 1. Site 2 rolling-origin (60/30/14, 6 windows):
+  5/6 windows have an unreachable threshold. Calibration-size sensitivity: n_cal = 19, 25, 30 are all
+  degenerate (0/27 fault days); only the reported n_cal = 44 is not. The headline Site 2 result
+  therefore depends on the calibration window.
+- EXPLORATORY tie-aware PIT (fixed formula, defined in E3 before E5, no labels used): 0/6 degenerate
+  windows; pooled rolling day-FAR 1/84 [0, 6.5]%; Site 2 sensitivity 11/27 for n_cal = 19-30 and
+  13/27 for n_cal = 44 at 1/44 FAR; Site 1 1/62 at 0/13.
+
+## E6 - Independent validation: NOT RUN (no independent dataset provided).
+
+## Overall implication
+The v1.0.1 primary detector has a structural flaw (PIT ties at the training maximum make the
+day-level conformal threshold unreachable in most calibration windows). A tie-aware PIT removes the
+flaw without changing Site 2's headline numbers. Adopting it is a method correction that should be
+disclosed as such, released as a new code version, and ideally confirmed on independent data (E6).

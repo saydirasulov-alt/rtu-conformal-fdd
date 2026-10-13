@@ -1,0 +1,394 @@
+{
+ "proposed_v1.0.1": {
+  "primary_with_exact_CI": {
+   "Site1": {
+    "n_train": 19,
+    "n_cal": 19,
+    "n_test": 13,
+    "tau": 0.999928,
+    "degenerate_tau": true,
+    "test_dayFAR": "0/13",
+    "test_dayFAR_CI95": [
+     0.0,
+     24.7
+    ],
+    "fault_day_sens": "0/62",
+    "fault_day_sens_CI95": [
+     0.0,
+     5.8
+    ]
+   },
+   "Site2": {
+    "n_train": 88,
+    "n_cal": 44,
+    "n_test": 44,
+    "tau": 0.99992,
+    "degenerate_tau": false,
+    "test_dayFAR": "1/44",
+    "test_dayFAR_CI95": [
+     0.1,
+     12.0
+    ],
+    "fault_day_sens": "13/27",
+    "fault_day_sens_CI95": [
+     28.7,
+     68.1
+    ]
+   }
+  },
+  "rolling_origin_Site2_60_30_14": {
+   "windows": [
+    {
+     "n_train": 60,
+     "n_cal": 30,
+     "n_test": 14,
+     "tau": 0.999971,
+     "degenerate_tau": true,
+     "test_dayFAR": "0/14",
+     "test_dayFAR_CI95": [
+      0.0,
+      23.2
+     ],
+     "origin_day": 0
+    },
+    {
+     "n_train": 60,
+     "n_cal": 30,
+     "n_test": 14,
+     "tau": 0.999966,
+     "degenerate_tau": true,
+     "test_dayFAR": "0/14",
+     "test_dayFAR_CI95": [
+      0.0,
+      23.2
+     ],
+     "origin_day": 14
+    },
+    {
+     "n_train": 60,
+     "n_cal": 30,
+     "n_test": 14,
+     "tau": 0.999898,
+     "degenerate_tau": false,
+     "test_dayFAR": "0/14",
+     "test_dayFAR_CI95": [
+      0.0,
+      23.2
+     ],
+     "origin_day": 28
+    },
+    {
+     "n_train": 60,
+     "n_cal": 30,
+     "n_test": 14,
+     "tau": 0.999967,
+     "degenerate_tau": true,
+     "test_dayFAR": "0/14",
+     "test_dayFAR_CI95": [
+      0.0,
+      23.2
+     ],
+     "origin_day": 42
+    },
+    {
+     "n_train": 60,
+     "n_cal": 30,
+     "n_test": 14,
+     "tau": 0.999972,
+     "degenerate_tau": true,
+     "test_dayFAR": "0/14",
+     "test_dayFAR_CI95": [
+      0.0,
+      23.2
+     ],
+     "origin_day": 56
+    },
+    {
+     "n_train": 60,
+     "n_cal": 30,
+     "n_test": 14,
+     "tau": 0.999974,
+     "degenerate_tau": true,
+     "test_dayFAR": "0/14",
+     "test_dayFAR_CI95": [
+      0.0,
+      23.2
+     ],
+     "origin_day": 70
+    }
+   ],
+   "pooled_dayFAR": "0/84",
+   "pooled_CI95": [
+    0.0,
+    4.3
+   ],
+   "n_degenerate_windows": 5
+  },
+  "ncal_sensitivity_Site2": [
+   {
+    "n_train": 88,
+    "n_cal": 19,
+    "n_test": 44,
+    "tau": 0.99998,
+    "degenerate_tau": true,
+    "test_dayFAR": "0/44",
+    "test_dayFAR_CI95": [
+     0.0,
+     8.0
+    ],
+    "fault_day_sens": "0/27",
+    "fault_day_sens_CI95": [
+     0.0,
+     12.8
+    ]
+   },
+   {
+    "n_train": 88,
+    "n_cal": 25,
+    "n_test": 44,
+    "tau": 0.99998,
+    "degenerate_tau": true,
+    "test_dayFAR": "0/44",
+    "test_dayFAR_CI95": [
+     0.0,
+     8.0
+    ],
+    "fault_day_sens": "0/27",
+    "fault_day_sens_CI95": [
+     0.0,
+     12.8
+    ]
+   },
+   {
+    "n_train": 88,
+    "n_cal": 30,
+    "n_test": 44,
+    "tau": 0.99998,
+    "degenerate_tau": true,
+    "test_dayFAR": "0/44",
+    "test_dayFAR_CI95": [
+     0.0,
+     8.0
+    ],
+    "fault_day_sens": "0/27",
+    "fault_day_sens_CI95": [
+     0.0,
+     12.8
+    ]
+   },
+   {
+    "n_train": 88,
+    "n_cal": 44,
+    "n_test": 44,
+    "tau": 0.99992,
+    "degenerate_tau": false,
+    "test_dayFAR": "1/44",
+    "test_dayFAR_CI95": [
+     0.1,
+     12.0
+    ],
+    "fault_day_sens": "13/27",
+    "fault_day_sens_CI95": [
+     28.7,
+     68.1
+    ]
+   }
+  ]
+ },
+ "EXPLORATORY_tieaware_PIT": {
+  "primary_with_exact_CI": {
+   "Site1": {
+    "n_train": 19,
+    "n_cal": 19,
+    "n_test": 13,
+    "tau": 0.999936,
+    "degenerate_tau": false,
+    "test_dayFAR": "0/13",
+    "test_dayFAR_CI95": [
+     0.0,
+     24.7
+    ],
+    "fault_day_sens": "1/62",
+    "fault_day_sens_CI95": [
+     0.0,
+     8.7
+    ]
+   },
+   "Site2": {
+    "n_train": 88,
+    "n_cal": 44,
+    "n_test": 44,
+    "tau": 0.99992,
+    "degenerate_tau": false,
+    "test_dayFAR": "1/44",
+    "test_dayFAR_CI95": [
+     0.1,
+     12.0
+    ],
+    "fault_day_sens": "13/27",
+    "fault_day_sens_CI95": [
+     28.7,
+     68.1
+    ]
+   }
+  },
+  "rolling_origin_Site2_60_30_14": {
+   "windows": [
+    {
+     "n_train": 60,
+     "n_cal": 30,
+     "n_test": 14,
+     "tau": 0.999973,
+     "degenerate_tau": false,
+     "test_dayFAR": "1/14",
+     "test_dayFAR_CI95": [
+      0.2,
+      33.9
+     ],
+     "origin_day": 0
+    },
+    {
+     "n_train": 60,
+     "n_cal": 30,
+     "n_test": 14,
+     "tau": 0.999971,
+     "degenerate_tau": false,
+     "test_dayFAR": "0/14",
+     "test_dayFAR_CI95": [
+      0.0,
+      23.2
+     ],
+     "origin_day": 14
+    },
+    {
+     "n_train": 60,
+     "n_cal": 30,
+     "n_test": 14,
+     "tau": 0.999898,
+     "degenerate_tau": false,
+     "test_dayFAR": "0/14",
+     "test_dayFAR_CI95": [
+      0.0,
+      23.2
+     ],
+     "origin_day": 28
+    },
+    {
+     "n_train": 60,
+     "n_cal": 30,
+     "n_test": 14,
+     "tau": 0.999978,
+     "degenerate_tau": false,
+     "test_dayFAR": "0/14",
+     "test_dayFAR_CI95": [
+      0.0,
+      23.2
+     ],
+     "origin_day": 42
+    },
+    {
+     "n_train": 60,
+     "n_cal": 30,
+     "n_test": 14,
+     "tau": 0.999974,
+     "degenerate_tau": false,
+     "test_dayFAR": "0/14",
+     "test_dayFAR_CI95": [
+      0.0,
+      23.2
+     ],
+     "origin_day": 56
+    },
+    {
+     "n_train": 60,
+     "n_cal": 30,
+     "n_test": 14,
+     "tau": 0.999975,
+     "degenerate_tau": false,
+     "test_dayFAR": "0/14",
+     "test_dayFAR_CI95": [
+      0.0,
+      23.2
+     ],
+     "origin_day": 70
+    }
+   ],
+   "pooled_dayFAR": "1/84",
+   "pooled_CI95": [
+    0.0,
+    6.5
+   ],
+   "n_degenerate_windows": 0
+  },
+  "ncal_sensitivity_Site2": [
+   {
+    "n_train": 88,
+    "n_cal": 19,
+    "n_test": 44,
+    "tau": 0.99998,
+    "degenerate_tau": false,
+    "test_dayFAR": "1/44",
+    "test_dayFAR_CI95": [
+     0.1,
+     12.0
+    ],
+    "fault_day_sens": "11/27",
+    "fault_day_sens_CI95": [
+     22.4,
+     61.2
+    ]
+   },
+   {
+    "n_train": 88,
+    "n_cal": 25,
+    "n_test": 44,
+    "tau": 0.99998,
+    "degenerate_tau": false,
+    "test_dayFAR": "1/44",
+    "test_dayFAR_CI95": [
+     0.1,
+     12.0
+    ],
+    "fault_day_sens": "11/27",
+    "fault_day_sens_CI95": [
+     22.4,
+     61.2
+    ]
+   },
+   {
+    "n_train": 88,
+    "n_cal": 30,
+    "n_test": 44,
+    "tau": 0.99998,
+    "degenerate_tau": false,
+    "test_dayFAR": "1/44",
+    "test_dayFAR_CI95": [
+     0.1,
+     12.0
+    ],
+    "fault_day_sens": "11/27",
+    "fault_day_sens_CI95": [
+     22.4,
+     61.2
+    ]
+   },
+   {
+    "n_train": 88,
+    "n_cal": 44,
+    "n_test": 44,
+    "tau": 0.99992,
+    "degenerate_tau": false,
+    "test_dayFAR": "1/44",
+    "test_dayFAR_CI95": [
+     0.1,
+     12.0
+    ],
+    "fault_day_sens": "13/27",
+    "fault_day_sens_CI95": [
+     28.7,
+     68.1
+    ]
+   }
+  ]
+ }
+}

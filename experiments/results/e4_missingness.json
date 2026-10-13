@@ -1,0 +1,716 @@
+[
+ {
+  "masked": "DMPR",
+  "mode": "intermittent",
+  "level": 0.05,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.2,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 0.95,
+    "abstain_minute_frac": 0.05,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 0.949,
+    "abstain_minute_frac": 0.051,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "13/16",
+    "detection_yield_all_days": "13/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "DMPR",
+  "mode": "intermittent",
+  "level": 0.1,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.16,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 0.897,
+    "abstain_minute_frac": 0.103,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "14/16",
+    "detection_yield_all_days": "14/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 0.905,
+    "abstain_minute_frac": 0.095,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "13/16",
+    "detection_yield_all_days": "13/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "DMPR",
+  "mode": "intermittent",
+  "level": 0.2,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.32,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 0.796,
+    "abstain_minute_frac": 0.204,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 0.804,
+    "abstain_minute_frac": 0.196,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "12/16",
+    "detection_yield_all_days": "12/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "16/16",
+    "detection_yield_all_days": "16/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "DMPR",
+  "mode": "intermittent",
+  "level": 0.4,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.36,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 0.601,
+    "abstain_minute_frac": 0.399,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "12/16",
+    "detection_yield_all_days": "12/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 0.599,
+    "abstain_minute_frac": 0.401,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "12/16",
+    "detection_yield_all_days": "12/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "16/16",
+    "detection_yield_all_days": "16/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "DMPR",
+  "mode": "outage_hours",
+  "level": 1,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.16,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 0.95,
+    "abstain_minute_frac": 0.05,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 0.955,
+    "abstain_minute_frac": 0.045,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "12/16",
+    "detection_yield_all_days": "12/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "DMPR",
+  "mode": "outage_hours",
+  "level": 6,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.16,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 0.616,
+    "abstain_minute_frac": 0.384,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 0.635,
+    "abstain_minute_frac": 0.365,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "12/16",
+    "detection_yield_all_days": "12/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "16/16",
+    "detection_yield_all_days": "16/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "DMPR",
+  "mode": "outage_hours",
+  "level": 24,
+  "normal_false_alarm_days": "4/4",
+  "normal_minute_FAR_pct": 1.8,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 0.0,
+    "abstain_minute_frac": 1.0,
+    "eligible_fault_days": "0/16",
+    "eligible_day_sens": "n/a",
+    "detection_yield_all_days": "0/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 0.0,
+    "abstain_minute_frac": 1.0,
+    "eligible_fault_days": "0/16",
+    "eligible_day_sens": "n/a",
+    "detection_yield_all_days": "0/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "16/16",
+    "detection_yield_all_days": "16/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "SAT",
+  "mode": "intermittent",
+  "level": 0.05,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.16,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "13/16",
+    "detection_yield_all_days": "13/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 0.948,
+    "abstain_minute_frac": 0.052,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "SAT",
+  "mode": "intermittent",
+  "level": 0.1,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.16,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "13/16",
+    "detection_yield_all_days": "13/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 0.899,
+    "abstain_minute_frac": 0.101,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "13/16",
+    "detection_yield_all_days": "13/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "SAT",
+  "mode": "intermittent",
+  "level": 0.2,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.16,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "13/16",
+    "detection_yield_all_days": "13/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 0.8,
+    "abstain_minute_frac": 0.2,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "SAT",
+  "mode": "intermittent",
+  "level": 0.4,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.16,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "14/16",
+    "detection_yield_all_days": "14/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "13/16",
+    "detection_yield_all_days": "13/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 0.605,
+    "abstain_minute_frac": 0.395,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "13/16",
+    "detection_yield_all_days": "13/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "SAT",
+  "mode": "outage_hours",
+  "level": 1,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.16,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "13/16",
+    "detection_yield_all_days": "13/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 0.943,
+    "abstain_minute_frac": 0.057,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "14/16",
+    "detection_yield_all_days": "14/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "SAT",
+  "mode": "outage_hours",
+  "level": 6,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.16,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "14/16",
+    "detection_yield_all_days": "14/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "13/16",
+    "detection_yield_all_days": "13/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 0.715,
+    "abstain_minute_frac": 0.285,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "14/16",
+    "detection_yield_all_days": "14/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "SAT",
+  "mode": "outage_hours",
+  "level": 24,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.16,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "14/16",
+    "detection_yield_all_days": "14/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "13/16",
+    "detection_yield_all_days": "13/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 0.0,
+    "abstain_minute_frac": 1.0,
+    "eligible_fault_days": "0/16",
+    "eligible_day_sens": "n/a",
+    "detection_yield_all_days": "0/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "power family",
+  "mode": "intermittent",
+  "level": 0.05,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.12,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "14/16",
+    "detection_yield_all_days": "14/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "13/16",
+    "detection_yield_all_days": "13/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "power family",
+  "mode": "intermittent",
+  "level": 0.1,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.16,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "13/16",
+    "detection_yield_all_days": "13/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "14/16",
+    "detection_yield_all_days": "14/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "power family",
+  "mode": "intermittent",
+  "level": 0.2,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.16,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "12/16",
+    "detection_yield_all_days": "12/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "12/16",
+    "detection_yield_all_days": "12/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "power family",
+  "mode": "intermittent",
+  "level": 0.4,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.12,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "12/16",
+    "detection_yield_all_days": "12/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "14/16",
+    "detection_yield_all_days": "14/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "power family",
+  "mode": "outage_hours",
+  "level": 1,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.16,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "13/16",
+    "detection_yield_all_days": "13/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "15/16",
+    "detection_yield_all_days": "15/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "power family",
+  "mode": "outage_hours",
+  "level": 6,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.16,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "14/16",
+    "detection_yield_all_days": "14/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "13/16",
+    "detection_yield_all_days": "13/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "12/16",
+    "detection_yield_all_days": "12/16"
+   }
+  },
+  "unsupported_assertions": 0
+ },
+ {
+  "masked": "power family",
+  "mode": "outage_hours",
+  "level": 24,
+  "normal_false_alarm_days": "3/4",
+  "normal_minute_FAR_pct": 1.0,
+  "faults": {
+   "economizer": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "9/16",
+    "detection_yield_all_days": "9/16"
+   },
+   "damper": {
+    "branch": "eco",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "10/16",
+    "detection_yield_all_days": "10/16"
+   },
+   "SA-bias": {
+    "branch": "SA",
+    "eligible_minute_frac": 1.0,
+    "abstain_minute_frac": 0.0,
+    "eligible_fault_days": "16/16",
+    "eligible_day_sens": "6/16",
+    "detection_yield_all_days": "6/16"
+   }
+  },
+  "unsupported_assertions": 0
+ }
+]

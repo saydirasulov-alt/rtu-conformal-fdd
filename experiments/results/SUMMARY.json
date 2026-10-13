@@ -1,0 +1,40 @@
+{
+ "steps": [
+  {
+   "step": "E1 baselines",
+   "seconds": 4.5,
+   "output": "e1_baselines.json",
+   "sha256": "493f2e29bb320b8c2586f7f78e74178113477eef1656bb23cfc84b5ccc439f2e"
+  },
+  {
+   "step": "E2 detectability",
+   "seconds": 1.4,
+   "output": "e2_detectability.json",
+   "sha256": "19b3844802e25726d218abc468fb1a3d94999baccb7b0ba19f1830cf483fc225"
+  },
+  {
+   "step": "E3 ablation",
+   "seconds": 3.3,
+   "output": "e3_ablation.json",
+   "sha256": "02b05b92a6b5fc31dc2636fa461436c9dd91c363303569a1a3e58d5ce59de4ee"
+  },
+  {
+   "step": "E4 missingness",
+   "seconds": 2.7,
+   "output": "e4_missingness.json",
+   "sha256": "054f777ca366d3bc0c8d937424decb35323699916da3eaa3ecf0a97c0cd689a3"
+  },
+  {
+   "step": "E5 temporal stability",
+   "seconds": 4.7,
+   "output": "e5_temporal_stability.json",
+   "sha256": "75243cebbb1183053fb485c5c2b417fba2c08057cb8d3e72451fc978c5328cf2"
+  },
+  {
+   "step": "E6 independent",
+   "seconds": 0.0,
+   "output": "e6_independent.json",
+   "sha256": "4f96e311a1f2baf122237784eaef538cd09b0eb66473936feafa774237382bcc"
+  }
+ ]
+}

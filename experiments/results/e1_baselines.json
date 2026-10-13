@@ -1,0 +1,224 @@
+{
+ "Site1": {
+  "Proposed_branchPIT": {
+   "C_conformal_day": {
+    "thr": 0.9999277404436737,
+    "test_dayFAR": "0/13",
+    "test_dayFAR_pct": 0.0,
+    "test_minute_exceed_pct": 0.0,
+    "fault_day_sens": "0/62",
+    "fault_day_sens_pct": 0.0,
+    "fault_minute_sens_pct": 0.0
+   },
+   "U_train_p99": {
+    "thr": 0.9934699038947901,
+    "test_dayFAR": "13/13",
+    "test_dayFAR_pct": 100.0,
+    "test_minute_exceed_pct": 31.136,
+    "fault_day_sens": "60/62",
+    "fault_day_sens_pct": 96.8,
+    "fault_minute_sens_pct": 41.8
+   }
+  },
+  "B1_global_Mahalanobis": {
+   "C_conformal_day": {
+    "thr": 916.394605834419,
+    "test_dayFAR": "0/13",
+    "test_dayFAR_pct": 0.0,
+    "test_minute_exceed_pct": 0.0,
+    "fault_day_sens": "13/62",
+    "fault_day_sens_pct": 21.0,
+    "fault_minute_sens_pct": 0.1
+   },
+   "U_train_p99": {
+    "thr": 108.19759368311591,
+    "test_dayFAR": "13/13",
+    "test_dayFAR_pct": 100.0,
+    "test_minute_exceed_pct": 31.039,
+    "fault_day_sens": "60/62",
+    "fault_day_sens_pct": 96.8,
+    "fault_minute_sens_pct": 88.9
+   },
+   "U_chi2_0.99": {
+    "thr": 24.724970311318277,
+    "test_dayFAR": "13/13",
+    "test_dayFAR_pct": 100.0,
+    "test_minute_exceed_pct": 93.585,
+    "fault_day_sens": "61/62",
+    "fault_day_sens_pct": 98.4,
+    "fault_minute_sens_pct": 98.4
+   }
+  },
+  "B2a_PCA_T2_q3": {
+   "C_conformal_day": {
+    "thr": 334.3718548907404,
+    "test_dayFAR": "6/13",
+    "test_dayFAR_pct": 46.2,
+    "test_minute_exceed_pct": 0.073,
+    "fault_day_sens": "5/62",
+    "fault_day_sens_pct": 8.1,
+    "fault_minute_sens_pct": 0.0
+   },
+   "U_train_p99": {
+    "thr": 29.642772506906727,
+    "test_dayFAR": "12/13",
+    "test_dayFAR_pct": 92.3,
+    "test_minute_exceed_pct": 1.982,
+    "fault_day_sens": "48/62",
+    "fault_day_sens_pct": 77.4,
+    "fault_minute_sens_pct": 1.0
+   }
+  },
+  "B2b_PCA_SPE_q3": {
+   "C_conformal_day": {
+    "thr": 478.9956411622053,
+    "test_dayFAR": "0/13",
+    "test_dayFAR_pct": 0.0,
+    "test_minute_exceed_pct": 0.0,
+    "fault_day_sens": "0/62",
+    "fault_day_sens_pct": 0.0,
+    "fault_minute_sens_pct": 0.0
+   },
+   "U_train_p99": {
+    "thr": 7.875524236982595,
+    "test_dayFAR": "13/13",
+    "test_dayFAR_pct": 100.0,
+    "test_minute_exceed_pct": 30.95,
+    "fault_day_sens": "57/62",
+    "fault_day_sens_pct": 91.9,
+    "fault_minute_sens_pct": 15.0
+   }
+  },
+  "B3_IsolationForest": {
+   "C_conformal_day": {
+    "thr": 0.7847550100867031,
+    "test_dayFAR": "0/13",
+    "test_dayFAR_pct": 0.0,
+    "test_minute_exceed_pct": 0.0,
+    "fault_day_sens": "0/62",
+    "fault_day_sens_pct": 0.0,
+    "fault_minute_sens_pct": 0.0
+   },
+   "U_train_p99": {
+    "thr": 0.6004674459754067,
+    "test_dayFAR": "13/13",
+    "test_dayFAR_pct": 100.0,
+    "test_minute_exceed_pct": 51.844,
+    "fault_day_sens": "59/62",
+    "fault_day_sens_pct": 95.2,
+    "fault_minute_sens_pct": 32.7
+   }
+  }
+ },
+ "Site2": {
+  "Proposed_branchPIT": {
+   "C_conformal_day": {
+    "thr": 0.9999199279351416,
+    "test_dayFAR": "1/44",
+    "test_dayFAR_pct": 2.3,
+    "test_minute_exceed_pct": 0.004,
+    "fault_day_sens": "13/27",
+    "fault_day_sens_pct": 48.1,
+    "fault_minute_sens_pct": 21.0
+   },
+   "U_train_p99": {
+    "thr": 0.9949648683815434,
+    "test_dayFAR": "37/44",
+    "test_dayFAR_pct": 84.1,
+    "test_minute_exceed_pct": 0.79,
+    "fault_day_sens": "27/27",
+    "fault_day_sens_pct": 100.0,
+    "fault_minute_sens_pct": 25.2
+   }
+  },
+  "B1_global_Mahalanobis": {
+   "C_conformal_day": {
+    "thr": 565.9144739710478,
+    "test_dayFAR": "2/44",
+    "test_dayFAR_pct": 4.5,
+    "test_minute_exceed_pct": 0.009,
+    "fault_day_sens": "1/27",
+    "fault_day_sens_pct": 3.7,
+    "fault_minute_sens_pct": 0.0
+   },
+   "U_train_p99": {
+    "thr": 56.76007277833392,
+    "test_dayFAR": "34/44",
+    "test_dayFAR_pct": 77.3,
+    "test_minute_exceed_pct": 1.66,
+    "fault_day_sens": "26/27",
+    "fault_day_sens_pct": 96.3,
+    "fault_minute_sens_pct": 25.7
+   },
+   "U_chi2_0.99": {
+    "thr": 24.724970311318277,
+    "test_dayFAR": "44/44",
+    "test_dayFAR_pct": 100.0,
+    "test_minute_exceed_pct": 5.738,
+    "fault_day_sens": "27/27",
+    "fault_day_sens_pct": 100.0,
+    "fault_minute_sens_pct": 36.4
+   }
+  },
+  "B2a_PCA_T2_q5": {
+   "C_conformal_day": {
+    "thr": 545.3690511015974,
+    "test_dayFAR": "2/44",
+    "test_dayFAR_pct": 4.5,
+    "test_minute_exceed_pct": 0.009,
+    "fault_day_sens": "1/27",
+    "fault_day_sens_pct": 3.7,
+    "fault_minute_sens_pct": 0.0
+   },
+   "U_train_p99": {
+    "thr": 39.90272093413026,
+    "test_dayFAR": "37/44",
+    "test_dayFAR_pct": 84.1,
+    "test_minute_exceed_pct": 1.546,
+    "fault_day_sens": "26/27",
+    "fault_day_sens_pct": 96.3,
+    "fault_minute_sens_pct": 3.5
+   }
+  },
+  "B2b_PCA_SPE_q5": {
+   "C_conformal_day": {
+    "thr": 7.042109490438977,
+    "test_dayFAR": "0/44",
+    "test_dayFAR_pct": 0.0,
+    "test_minute_exceed_pct": 0.0,
+    "fault_day_sens": "5/27",
+    "fault_day_sens_pct": 18.5,
+    "fault_minute_sens_pct": 0.9
+   },
+   "U_train_p99": {
+    "thr": 2.643723924204611,
+    "test_dayFAR": "31/44",
+    "test_dayFAR_pct": 70.5,
+    "test_minute_exceed_pct": 0.616,
+    "fault_day_sens": "27/27",
+    "fault_day_sens_pct": 100.0,
+    "fault_minute_sens_pct": 25.6
+   }
+  },
+  "B3_IsolationForest": {
+   "C_conformal_day": {
+    "thr": 0.6630640591157806,
+    "test_dayFAR": "1/44",
+    "test_dayFAR_pct": 2.3,
+    "test_minute_exceed_pct": 0.004,
+    "fault_day_sens": "10/27",
+    "fault_day_sens_pct": 37.0,
+    "fault_minute_sens_pct": 0.5
+   },
+   "U_train_p99": {
+    "thr": 0.612497736621471,
+    "test_dayFAR": "35/44",
+    "test_dayFAR_pct": 79.5,
+    "test_minute_exceed_pct": 0.786,
+    "fault_day_sens": "27/27",
+    "fault_day_sens_pct": 100.0,
+    "fault_minute_sens_pct": 2.9
+   }
+  }
+ }
+}

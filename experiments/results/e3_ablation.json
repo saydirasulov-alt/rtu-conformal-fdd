@@ -1,0 +1,229 @@
+{
+ "field": {
+  "Site1": {
+   "A0_proposed": {
+    "test_dayFAR": "0/13",
+    "fault_day_sens": "0/62",
+    "fault_day_sens_pct": 0.0,
+    "fault_minute_sens_pct": 0.0,
+    "threshold_reachable": false,
+    "tau_day": 0.9999277404436737,
+    "pit_ceiling": 0.9999277404436737
+   },
+   "A1_noPIT_rawmax": {
+    "test_dayFAR": "0/13",
+    "fault_day_sens": "0/62",
+    "fault_day_sens_pct": 0.0,
+    "fault_minute_sens_pct": 0.0
+   },
+   "A2_noBranches_globalMahal": {
+    "test_dayFAR": "0/13",
+    "fault_day_sens": "13/62",
+    "fault_day_sens_pct": 21.0,
+    "fault_minute_sens_pct": 0.1
+   },
+   "A3_minuteCalibration": {
+    "test_dayFAR": "11/13",
+    "test_minuteFAR_pct": 6.1,
+    "fault_day_sens": "54/62",
+    "fault_minute_sens_pct": 9.0
+   },
+   "A0x_EXPLORATORY_tieawarePIT": {
+    "test_dayFAR": "0/13",
+    "fault_day_sens": "1/62",
+    "fault_day_sens_pct": 1.6,
+    "fault_minute_sens_pct": 0.0
+   }
+  },
+  "Site2": {
+   "A0_proposed": {
+    "test_dayFAR": "1/44",
+    "fault_day_sens": "13/27",
+    "fault_day_sens_pct": 48.1,
+    "fault_minute_sens_pct": 21.0,
+    "threshold_reachable": true,
+    "tau_day": 0.9999199279351416,
+    "pit_ceiling": 0.9999799819837855
+   },
+   "A1_noPIT_rawmax": {
+    "test_dayFAR": "2/44",
+    "fault_day_sens": "0/27",
+    "fault_day_sens_pct": 0.0,
+    "fault_minute_sens_pct": 0.0
+   },
+   "A2_noBranches_globalMahal": {
+    "test_dayFAR": "2/44",
+    "fault_day_sens": "1/27",
+    "fault_day_sens_pct": 3.7,
+    "fault_minute_sens_pct": 0.0
+   },
+   "A3_minuteCalibration": {
+    "test_dayFAR": "44/44",
+    "test_minuteFAR_pct": 5.58,
+    "fault_day_sens": "27/27",
+    "fault_minute_sens_pct": 33.8
+   },
+   "A0x_EXPLORATORY_tieawarePIT": {
+    "test_dayFAR": "1/44",
+    "fault_day_sens": "13/27",
+    "fault_day_sens_pct": 48.1,
+    "fault_minute_sens_pct": 21.0
+   }
+  }
+ },
+ "ornl_no_eligibility": [
+  {
+   "pattern": "full (all sensors)",
+   "eligible": [
+    "eco",
+    "SA",
+    "power"
+   ],
+   "noElig_minuteFAR": 0.012,
+   "noElig_fault": {
+    "economizer": {
+     "alarm_days": "15/16",
+     "unsupported_alarm_days": 0,
+     "fault_branch_eligible": true
+    },
+    "damper": {
+     "alarm_days": "13/16",
+     "unsupported_alarm_days": 0,
+     "fault_branch_eligible": true
+    },
+    "SA-bias": {
+     "alarm_days": "15/16",
+     "unsupported_alarm_days": 0,
+     "fault_branch_eligible": true
+    }
+   },
+   "noElig_unsupported_share_of_alarm_days": 0.0
+  },
+  {
+   "pattern": "no DMPR",
+   "eligible": [
+    "SA",
+    "power"
+   ],
+   "noElig_minuteFAR": 0.005,
+   "noElig_fault": {
+    "economizer": {
+     "alarm_days": "12/16",
+     "unsupported_alarm_days": 0,
+     "fault_branch_eligible": false
+    },
+    "damper": {
+     "alarm_days": "8/16",
+     "unsupported_alarm_days": 0,
+     "fault_branch_eligible": false
+    },
+    "SA-bias": {
+     "alarm_days": "15/16",
+     "unsupported_alarm_days": 0,
+     "fault_branch_eligible": true
+    }
+   },
+   "noElig_unsupported_share_of_alarm_days": 0.0
+  },
+  {
+   "pattern": "no SA_TEMP",
+   "eligible": [
+    "eco",
+    "power"
+   ],
+   "noElig_minuteFAR": 0.012,
+   "noElig_fault": {
+    "economizer": {
+     "alarm_days": "14/16",
+     "unsupported_alarm_days": 0,
+     "fault_branch_eligible": true
+    },
+    "damper": {
+     "alarm_days": "13/16",
+     "unsupported_alarm_days": 2,
+     "fault_branch_eligible": true
+    },
+    "SA-bias": {
+     "alarm_days": "15/16",
+     "unsupported_alarm_days": 2,
+     "fault_branch_eligible": false
+    }
+   },
+   "noElig_unsupported_share_of_alarm_days": 0.095
+  },
+  {
+   "pattern": "no air-side family",
+   "eligible": [
+    "power"
+   ],
+   "noElig_minuteFAR": 0.003,
+   "noElig_fault": {
+    "economizer": {
+     "alarm_days": "11/16",
+     "unsupported_alarm_days": 0,
+     "fault_branch_eligible": false
+    },
+    "damper": {
+     "alarm_days": "8/16",
+     "unsupported_alarm_days": 0,
+     "fault_branch_eligible": false
+    },
+    "SA-bias": {
+     "alarm_days": "14/16",
+     "unsupported_alarm_days": 0,
+     "fault_branch_eligible": false
+    }
+   },
+   "noElig_unsupported_share_of_alarm_days": 0.0
+  },
+  {
+   "pattern": "no power inputs",
+   "eligible": [
+    "eco",
+    "SA"
+   ],
+   "noElig_minuteFAR": 0.01,
+   "noElig_fault": {
+    "economizer": {
+     "alarm_days": "9/16",
+     "unsupported_alarm_days": 0,
+     "fault_branch_eligible": true
+    },
+    "damper": {
+     "alarm_days": "10/16",
+     "unsupported_alarm_days": 0,
+     "fault_branch_eligible": true
+    },
+    "SA-bias": {
+     "alarm_days": "6/16",
+     "unsupported_alarm_days": 0,
+     "fault_branch_eligible": true
+    }
+   },
+   "noElig_unsupported_share_of_alarm_days": 0.0
+  },
+  {
+   "pattern": "none (no diagnostic sensors)",
+   "eligible": [],
+   "noElig_minuteFAR": 0.0,
+   "noElig_fault": {
+    "economizer": {
+     "alarm_days": "0/16",
+     "unsupported_alarm_days": 0,
+     "fault_branch_eligible": false
+    },
+    "damper": {
+     "alarm_days": "0/16",
+     "unsupported_alarm_days": 0,
+     "fault_branch_eligible": false
+    },
+    "SA-bias": {
+     "alarm_days": "0/16",
+     "unsupported_alarm_days": 0,
+     "fault_branch_eligible": false
+    }
+   },
+   "noElig_unsupported_share_of_alarm_days": 0.0
+  }
+ ]
+}

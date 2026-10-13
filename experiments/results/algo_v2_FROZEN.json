@@ -1,0 +1,23 @@
+{
+ "S": "S0",
+ "D": "Ddual",
+ "J": true,
+ "rule": "amendment 1 (FAR-admissible, max DEV sensitivity, simplicity tie-break)",
+ "dev_mean_sens": 30.3,
+ "baseline_test_dayFAR": "2/25",
+ "dev_sens": {
+  "condfouling10": 8.0,
+  "condfouling20": 0.0,
+  "condfouling30": 8.0,
+  "condfouling40": 28.0,
+  "condfouling50": 80.0,
+  "liquidpipe01bar": 0.0,
+  "liquidpipe04bar": 0.0,
+  "liquidpipe08bar": 96.0,
+  "liquidpipe10bar": 100.0,
+  "overcharge10": 28.0,
+  "overcharge15": 4.0,
+  "overcharge20": 12.0
+ },
+ "reference_v1_like_S0_Dmax": 10.0
+}

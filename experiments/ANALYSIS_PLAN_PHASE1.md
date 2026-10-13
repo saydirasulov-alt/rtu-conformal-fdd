@@ -46,3 +46,34 @@ rate, and unsupported assertions = fault-day alarms whose triggering branch lack
 - If baselines detect Site 1 but the proposed detector does not, investigate (H-sat) before any
   change; any change found this way must be validated on data not used to design it.
 - Results are reported whichever way they come out.
+
+---
+# Addendum (2026-10-13, written before E4/E5/E6 are computed)
+
+## E4 - Missing-sensor robustness (ORNL; frozen 7/3/4 split, alpha = 0.05)
+Masks are applied to TEST normal and FAULT data only (calibration uses complete data).
+Per minute, eligibility S(x_t) is recomputed from the sensors present at that minute; the minute is
+compared with the threshold tau_S^min calibrated on CAL minutes for that exact set S; if S is empty
+the minute abstains. Sensors masked (one at a time): DMPR, SAT, and the power family {COMP,TOT,FAN}.
+- Intermittent missingness: each minute masked independently with probability 5, 10, 20, 40%.
+- Temporary outage: one contiguous outage per day of 1 h, 6 h or 24 h, start uniformly random
+  within the day (24 h = whole day).
+Random masks use numpy default_rng(SEED). Metrics: eligible-minute fraction of the fault's branch,
+abstention rate on fault minutes, eligible fault-day sensitivity (fault days with >= 1 eligible minute
+for the responsible branch), detection yield over all fault days, false-alarm days per monitored
+normal test day, and unsupported assertions (alarm minutes attributed to an ineligible branch; 0 by
+construction - verified, not assumed).
+
+## E5 - Temporal calibration stability (field, primary detector)
+1. Exact Clopper-Pearson 95% CIs for every day-level FAR and fault-day sensitivity reported.
+2. Rolling-origin evaluation, Site 2: train 60 / cal 30 / test 14 consecutive days, origin shifted
+   by 14 days until data run out; report per-window day-FAR, tau, and threshold-degeneracy flag
+   (tau equal to the PIT ceiling).
+3. Calibration-size sensitivity, Site 2: train = first 88 days, test = last 44 days, calibration =
+   the n_cal days immediately before the test block, n_cal in {19, 25, 30, 44}.
+4. Site 1 (51 days) admits only the single 19/19/13 design; its degeneracy is reported, no rolling.
+
+## E6 - Independent validation hook
+Runs only if an additional dataset is placed under $RTU_DATA_DIR/Independent/ with a manifest
+(manifest.json: normal file, fault file, column mapping) that is written BEFORE the data are scored.
+Otherwise the runner records "not run: no independent dataset provided". No result is fabricated.

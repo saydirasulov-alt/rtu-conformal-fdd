@@ -1,0 +1,185 @@
+{
+ "frozen_config": {
+  "S": "S0",
+  "D": "Ddual",
+  "J": true,
+  "rule": "amendment 1 (FAR-admissible, max DEV sensitivity, simplicity tie-break)",
+  "dev_mean_sens": 30.3,
+  "baseline_test_dayFAR": "2/25",
+  "dev_sens": {
+   "condfouling10": 8.0,
+   "condfouling20": 0.0,
+   "condfouling30": 8.0,
+   "condfouling40": 28.0,
+   "condfouling50": 80.0,
+   "liquidpipe01bar": 0.0,
+   "liquidpipe04bar": 0.0,
+   "liquidpipe08bar": 96.0,
+   "liquidpipe10bar": 100.0,
+   "overcharge10": 28.0,
+   "overcharge15": 4.0,
+   "overcharge20": 12.0
+  },
+  "reference_v1_like_S0_Dmax": 10.0
+ },
+ "sim_holdout": {
+  "FROZEN": {
+   "baseline_test_dayFAR": "2/25",
+   "holdout_mean_sens_pct": 70.0,
+   "holdout_sens": {
+    "evapfouling10": "25/25",
+    "evapfouling20": "25/25",
+    "evapfouling30": "25/25",
+    "evapfouling40": "25/25",
+    "evapfouling50": "25/25",
+    "suctionpipe01bar": "1/25",
+    "suctionpipe03bar": "25/25",
+    "suctionpipe06bar": "25/25",
+    "suctionpipe09bar": "25/25",
+    "undercharge10": "4/25",
+    "undercharge15": "2/25",
+    "undercharge20": "3/25"
+   }
+  },
+  "REF_v1like": {
+   "baseline_test_dayFAR": "2/25",
+   "holdout_mean_sens_pct": 36.7,
+   "holdout_sens": {
+    "evapfouling10": "0/25",
+    "evapfouling20": "7/25",
+    "evapfouling30": "19/25",
+    "evapfouling40": "25/25",
+    "evapfouling50": "25/25",
+    "suctionpipe01bar": "1/25",
+    "suctionpipe03bar": "0/25",
+    "suctionpipe06bar": "0/25",
+    "suctionpipe09bar": "25/25",
+    "undercharge10": "4/25",
+    "undercharge15": "1/25",
+    "undercharge20": "3/25"
+   }
+  }
+ },
+ "field_temporal": {
+  "Site1": {
+   "FROZEN": {
+    "test_dayFAR": "1/13",
+    "FAR_CI95": [
+     0.2,
+     36.0
+    ],
+    "fault_day_sens": "52/62",
+    "sens_CI95": [
+     72.3,
+     92.0
+    ]
+   },
+   "REF_v1like": {
+    "test_dayFAR": "0/13",
+    "FAR_CI95": [
+     0.0,
+     24.7
+    ],
+    "fault_day_sens": "1/62",
+    "sens_CI95": [
+     0.0,
+     8.7
+    ]
+   }
+  },
+  "Site2": {
+   "FROZEN": {
+    "test_dayFAR": "4/44",
+    "FAR_CI95": [
+     2.5,
+     21.7
+    ],
+    "fault_day_sens": "19/27",
+    "sens_CI95": [
+     49.8,
+     86.2
+    ]
+   },
+   "REF_v1like": {
+    "test_dayFAR": "1/44",
+    "FAR_CI95": [
+     0.1,
+     12.0
+    ],
+    "fault_day_sens": "13/27",
+    "sens_CI95": [
+     28.7,
+     68.1
+    ]
+   }
+  }
+ },
+ "site2_stability": {
+  "FROZEN": {
+   "rolling_pooled_FAR": "3/84",
+   "rolling_CI95": [
+    0.7,
+    10.1
+   ],
+   "per_window": [
+    "1/14",
+    "1/14",
+    "0/14",
+    "0/14",
+    "1/14",
+    "0/14"
+   ],
+   "ncal": {
+    "19": {
+     "FAR": "7/44",
+     " sens": "20/27"
+    },
+    "25": {
+     "FAR": "7/44",
+     " sens": "20/27"
+    },
+    "30": {
+     "FAR": "4/44",
+     " sens": "19/27"
+    },
+    "44": {
+     "FAR": "4/44",
+     " sens": "19/27"
+    }
+   }
+  },
+  "REF_v1like": {
+   "rolling_pooled_FAR": "1/84",
+   "rolling_CI95": [
+    0.0,
+    6.5
+   ],
+   "per_window": [
+    "1/14",
+    "0/14",
+    "0/14",
+    "0/14",
+    "0/14",
+    "0/14"
+   ],
+   "ncal": {
+    "19": {
+     "FAR": "1/44",
+     " sens": "11/27"
+    },
+    "25": {
+     "FAR": "1/44",
+     " sens": "11/27"
+    },
+    "30": {
+     "FAR": "1/44",
+     " sens": "11/27"
+    },
+    "44": {
+     "FAR": "1/44",
+     " sens": "13/27"
+    }
+   }
+  }
+ }
+}

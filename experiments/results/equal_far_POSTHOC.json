@@ -1,0 +1,91 @@
+{
+ "Site1": {
+  "v1_tieaware": {
+   "n_normal_test_days": 13,
+   "n_fault_days": 62,
+   "day_AUC": 0.318,
+   "fault_days_detected_at_testFAR<=0/13": 7,
+   "fault_days_detected_at_testFAR<=1/13": 7,
+   "fault_days_detected_at_testFAR<=2/13": 9
+  },
+  "v2_FROZEN": {
+   "n_normal_test_days": 13,
+   "n_fault_days": 62,
+   "day_AUC": 0.892,
+   "fault_days_detected_at_testFAR<=0/13": 43,
+   "fault_days_detected_at_testFAR<=1/13": 56,
+   "fault_days_detected_at_testFAR<=2/13": 56
+  },
+  "v1.0.1_original": {
+   "n_normal_test_days": 13,
+   "n_fault_days": 62,
+   "day_AUC": 0.31,
+   "fault_days_detected_at_testFAR<=0/13": 0,
+   "fault_days_detected_at_testFAR<=1/13": 0,
+   "fault_days_detected_at_testFAR<=2/13": 9
+  },
+  "global_Mahalanobis": {
+   "n_normal_test_days": 13,
+   "n_fault_days": 62,
+   "day_AUC": 0.553,
+   "fault_days_detected_at_testFAR<=0/13": 17,
+   "fault_days_detected_at_testFAR<=1/13": 18,
+   "fault_days_detected_at_testFAR<=2/13": 19
+  },
+  "IsolationForest": {
+   "n_normal_test_days": 13,
+   "n_fault_days": 62,
+   "day_AUC": 0.216,
+   "fault_days_detected_at_testFAR<=0/13": 1,
+   "fault_days_detected_at_testFAR<=1/13": 1,
+   "fault_days_detected_at_testFAR<=2/13": 3
+  }
+ },
+ "Site2": {
+  "v1_tieaware": {
+   "n_normal_test_days": 44,
+   "n_fault_days": 27,
+   "day_AUC": 0.75,
+   "fault_days_detected_at_testFAR<=0/44": 11,
+   "fault_days_detected_at_testFAR<=1/44": 13,
+   "fault_days_detected_at_testFAR<=2/44": 13,
+   "fault_days_detected_at_testFAR<=4/44": 13
+  },
+  "v2_FROZEN": {
+   "n_normal_test_days": 44,
+   "n_fault_days": 27,
+   "day_AUC": 0.838,
+   "fault_days_detected_at_testFAR<=0/44": 7,
+   "fault_days_detected_at_testFAR<=1/44": 10,
+   "fault_days_detected_at_testFAR<=2/44": 18,
+   "fault_days_detected_at_testFAR<=4/44": 20
+  },
+  "v1.0.1_original": {
+   "n_normal_test_days": 44,
+   "n_fault_days": 27,
+   "day_AUC": 0.746,
+   "fault_days_detected_at_testFAR<=0/44": 0,
+   "fault_days_detected_at_testFAR<=1/44": 13,
+   "fault_days_detected_at_testFAR<=2/44": 13,
+   "fault_days_detected_at_testFAR<=4/44": 13
+  },
+  "global_Mahalanobis": {
+   "n_normal_test_days": 44,
+   "n_fault_days": 27,
+   "day_AUC": 0.692,
+   "fault_days_detected_at_testFAR<=0/44": 0,
+   "fault_days_detected_at_testFAR<=1/44": 0,
+   "fault_days_detected_at_testFAR<=2/44": 4,
+   "fault_days_detected_at_testFAR<=4/44": 9
+  },
+  "IsolationForest": {
+   "n_normal_test_days": 44,
+   "n_fault_days": 27,
+   "day_AUC": 0.785,
+   "fault_days_detected_at_testFAR<=0/44": 9,
+   "fault_days_detected_at_testFAR<=1/44": 10,
+   "fault_days_detected_at_testFAR<=2/44": 10,
+   "fault_days_detected_at_testFAR<=4/44": 11
+  }
+ }
+}

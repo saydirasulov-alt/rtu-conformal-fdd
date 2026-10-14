@@ -33,8 +33,9 @@ Fault days detected when the threshold is set to allow at most k normal test-day
 | global Mahalanobis | 0.692 | 0 | 0 | 4 | 9 | 0.553 | 17 | 18 |
 | Isolation Forest | 0.785 | 9 | 10 | 10 | 11 | 0.216 | 1 | 1 |
 Reading: at Site 2 v2 dominates from 2/44 upward and has the best AUC, but at the strictest budgets
-(0-1 false days) v1 tie-aware is better; v2's gain is partly a shift along the ROC curve. At Site 1 v2
-dominates at every budget (AUC 0.89 vs <= 0.55 for all others).
+(0-1 false days) v1 tie-aware is better; v2's gain is partly a shift along the ROC curve. At Site 1 v2 is above every comparator at every k in 0..13 except k = 11 vs global Mahalanobis
+(results/roc_dominance_POSTHOC.json); so 'dominates at every budget' is NOT strictly true - say 'at all
+budgets up to 10/13 false days'.
 
 ## Known limitations to carry into the manuscript
 - v2 day-mean statistic is drift-sensitive: Site 2 FAR 4/44, 7/44 with n_cal 19-25 (E5-style, ALGO_V2_REPORT).
@@ -42,3 +43,12 @@ dominates at every budget (AUC 0.89 vs <= 0.55 for all others).
 - ORNL eligibility benefit vs imputation is small (0-9.5% unsupported attributions, E3); abstention concerns
   attribution, not alarm suppression.
 - No second independent field RTU.
+
+## ROC dominance check (post-hoc, full curves k = 0..n_test) - results/roc_dominance_POSTHOC.json
+- Site 1: v2 >= v1 tie-aware and >= Isolation Forest at every k; v2 < global Mahalanobis only at k = 11.
+- Site 2: v2 is NOT dominant. v2 < v1 tie-aware at k = 0, 1 (and k = 31-35); v2 < Isolation Forest at
+  k = 0 and k = 21-35. v2 >= global Mahalanobis everywhere. v2's advantage at Site 2 is confined to
+  k = 2..20 false days out of 44 - i.e. it is operating-point dependent and must be stated as such.
+## Two numbers that must stay separate in the manuscript
+- 52/62 (83.9%) at 1/13: real calibrated protocol (deployable result).
+- 56/62 (90.3%) at k = 1: post-hoc threshold from test labels (diagnostic only; never a headline).

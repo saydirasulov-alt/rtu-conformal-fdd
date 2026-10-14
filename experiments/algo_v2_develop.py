@@ -16,10 +16,17 @@ for S,D,J in GRID:
                  "dev_sens":{k:round(100*v,1) for k,v in sens.items()}})
     print(f"{S} {D:5s} J={int(J)}  FAR {rows[-1]['baseline_test_dayFAR']:>5s}  DEV mean sens {rows[-1]['dev_mean_sens']:5.1f}%")
 order={"S0":0,"S1":1,"S2":2,"S3":3,"Dmax":0,"Dmean":1,"Ddual":2}
-best=max(r["dev_mean_sens"] for r in rows)
-cands=[r for r in rows if r["dev_mean_sens"]>=best-1.0]
+# Amendment 1 (ALGO_PLAN_V2.md): admissible only if baseline normal-test alarm days <= 3 of 25
+# (largest count not significantly above alpha=0.05, one-sided exact binomial).
+MAX_FA=3
+adm=[r for r in rows if int(r["baseline_test_dayFAR"].split("/")[0])<=MAX_FA]
+best=max(r["dev_mean_sens"] for r in adm)
+cands=[r for r in adm if r["dev_mean_sens"]>=best-1.0]
 sel=sorted(cands,key=lambda r:(order[r["S"]],order[r["D"]],int(r["J"])))[0]
-frozen={"S":sel["S"],"D":sel["D"],"J":sel["J"],"selected_on":"simulated DEV faults only","dev_mean_sens":sel["dev_mean_sens"],"best_dev_mean_sens":best}
+frozen={"S":sel["S"],"D":sel["D"],"J":sel["J"],"rule":"amendment 1 (FAR-admissible, max DEV sensitivity, simplicity tie-break)",
+        "dev_mean_sens":sel["dev_mean_sens"],"baseline_test_dayFAR":sel["baseline_test_dayFAR"],"dev_sens":sel["dev_sens"],
+        "reference_v1_like_S0_Dmax":[r for r in rows if r["S"]=="S0" and r["D"]=="Dmax" and not r["J"]][0]["dev_mean_sens"],
+        "best_dev_mean_sens_unconstrained":max(r["dev_mean_sens"] for r in rows)}
 with open(OUT/"algo_v2_dev_grid.json","w") as fh: json.dump(rows,fh,indent=1)
 with open(OUT/"algo_v2_FROZEN.json","w") as fh: json.dump(frozen,fh,indent=1)
 print("FROZEN:",frozen)

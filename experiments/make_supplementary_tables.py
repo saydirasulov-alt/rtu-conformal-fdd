@@ -50,4 +50,14 @@ tab("Post-hoc day-level separability (test labels used to place thresholds; diag
 a13=J(RR/"site1_split_audit_13day.json"); a19=J(RR/"site1_split_audit_19day.json")
 rows=[f"{n} training days & {b} & {d['branch'][b]['n_minutes']} & {d['branch'][b]['cov_cond_max']} & {d['branch'][b]['boot_cv_q95']} & {'pass' if d['branch'][b]['branch_pass'] else 'fail'}" for n,d in ((13,a13),(19,a19)) for b in ("refrigerant","power")]
 tab("Site 1 training-adequacy audit (training days only; limit on bootstrap CV of the upper tail: 0.15).","tab:S9","llcccc","Candidate & Branch & Minutes & Max cond. & Boot CV & Result",rows)
+
+e12b=J(R/"e12b_injection_equal_budget.json"); NM2={"v2_FROZEN":"Frozen","v1_tieaware_dual_rule":"v1 tie-aware","global_Mahalanobis":"Global Mahalanobis","PCA_T2":"PCA $T^2$","PCA_SPE":"PCA SPE","IsolationForest":"Isolation forest"}
+rows=[]
+for s_ in ("Site2","Site1"):
+    sm=e12b[s_]["summary"]
+    for k in NM2: rows.append(f"{s_[-1]} & {NM2[k]} & {sm['clean_FAR'][k]} & {sm['mean_new_alarm_rate_on_quiet_days_pct'][k]:.1f} & {sm['scenarios_alarmed_on_majority_of_days'][k]}")
+tab("Injected sensor faults (37 scenarios per site) with every detector under the two-statistic rule (Phase-2 amendment A7).","tab:S12","clccc","Site & Detector & Clean FAR & New-alarm rate on quiet days (\\%) & Scenarios alarmed on most days",rows)
+e10c=J(R/"e10c_ridge_spectrum.json")
+rows=[f"{k.replace('c=','')} & {v['sim_holdout']['baseline_test_dayFAR']} & {v['sim_holdout']['holdout_mean_sens_pct']:.1f} & {v['Site2']['test_dayFAR']} & {v['Site2']['fault_day_sens']} & {v['Site1']['test_dayFAR']} & {v['Site1']['fault_day_sens']} & {v['Site1']['ridges']['joint0']:.2g}" for k,v in e10c.items()]
+tab("Spectrum-relative ridge, $c$ times the median eigenvalue of each branch's scaled training covariance (Phase-2 amendment A8; sensitivity analysis only).","tab:S13","cccccccc","$c$ & Sim. FAR & Sim. sens. (\\%) & Site 2 FAR & Site 2 sens. & Site 1 FAR & Site 1 sens. & Site 1 joint ridge",rows)
 O.write_text("\n".join(L)); print("wrote",O)

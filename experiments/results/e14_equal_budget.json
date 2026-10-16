@@ -1,0 +1,136 @@
+{
+ "Site1": {
+  "frozen": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "52/62"
+  },
+  "comparators_dual_rule": {
+   "global_Mahalanobis": {
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "47/62",
+    "fault_days_v2_only": 6,
+    "fault_days_comp_only": 1,
+    "p_exact": 0.125,
+    "normal_days_mcnemar_p": 1.0,
+    "p_holm": 0.125
+   },
+   "PCA_T2": {
+    "test_dayFAR": "6/13",
+    "fault_day_sens": "9/62",
+    "fault_days_v2_only": 45,
+    "fault_days_comp_only": 2,
+    "p_exact": 1.6e-11,
+    "normal_days_mcnemar_p": 0.125,
+    "p_holm": 4.81e-11
+   },
+   "PCA_SPE": {
+    "test_dayFAR": "0/13",
+    "fault_day_sens": "1/62",
+    "fault_days_v2_only": 51,
+    "fault_days_comp_only": 0,
+    "p_exact": 8.88e-16,
+    "normal_days_mcnemar_p": 1.0,
+    "p_holm": 5.33e-15
+   },
+   "IsolationForest": {
+    "test_dayFAR": "3/13",
+    "fault_day_sens": "4/62",
+    "fault_days_v2_only": 49,
+    "fault_days_comp_only": 1,
+    "p_exact": 9.06e-14,
+    "normal_days_mcnemar_p": 0.5,
+    "p_holm": 3.62e-13
+   },
+   "v1_tieaware_dual_rule": {
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "6/62",
+    "fault_days_v2_only": 46,
+    "fault_days_comp_only": 0,
+    "p_exact": 2.84e-14,
+    "normal_days_mcnemar_p": 1.0,
+    "p_holm": 1.42e-13
+   },
+   "physics_condition_dependent_dual_rule": {
+    "test_dayFAR": "5/13",
+    "fault_day_sens": "31/62",
+    "fault_days_v2_only": 25,
+    "fault_days_comp_only": 4,
+    "p_exact": 0.000104,
+    "normal_days_mcnemar_p": 0.219,
+    "p_holm": 0.000207
+   }
+  }
+ },
+ "Site2": {
+  "frozen": {
+   "test_dayFAR": "4/44",
+   "fault_day_sens": "19/27"
+  },
+  "comparators_dual_rule": {
+   "global_Mahalanobis": {
+    "test_dayFAR": "4/44",
+    "fault_day_sens": "14/27",
+    "fault_days_v2_only": 5,
+    "fault_days_comp_only": 0,
+    "p_exact": 0.0625,
+    "normal_days_mcnemar_p": 1.0,
+    "p_holm": 0.25
+   },
+   "PCA_T2": {
+    "test_dayFAR": "6/44",
+    "fault_day_sens": "5/27",
+    "fault_days_v2_only": 14,
+    "fault_days_comp_only": 0,
+    "p_exact": 0.000122,
+    "normal_days_mcnemar_p": 0.625,
+    "p_holm": 0.000732
+   },
+   "PCA_SPE": {
+    "test_dayFAR": "0/44",
+    "fault_day_sens": "14/27",
+    "fault_days_v2_only": 5,
+    "fault_days_comp_only": 0,
+    "p_exact": 0.0625,
+    "normal_days_mcnemar_p": 0.125,
+    "p_holm": 0.25
+   },
+   "IsolationForest": {
+    "test_dayFAR": "5/44",
+    "fault_day_sens": "15/27",
+    "fault_days_v2_only": 4,
+    "fault_days_comp_only": 0,
+    "p_exact": 0.125,
+    "normal_days_mcnemar_p": 1.0,
+    "p_holm": 0.25
+   },
+   "v1_tieaware_dual_rule": {
+    "test_dayFAR": "6/44",
+    "fault_day_sens": "19/27",
+    "fault_days_v2_only": 0,
+    "fault_days_comp_only": 0,
+    "p_exact": 1.0,
+    "normal_days_mcnemar_p": 0.5,
+    "p_holm": 1.0
+   },
+   "physics_condition_dependent_dual_rule": {
+    "test_dayFAR": "0/44",
+    "fault_day_sens": "5/27",
+    "fault_days_v2_only": 14,
+    "fault_days_comp_only": 0,
+    "p_exact": 0.000122,
+    "normal_days_mcnemar_p": 0.125,
+    "p_holm": 0.000732
+   }
+  }
+ },
+ "sim_holdout": {
+  "frozen": {
+   "baseline_test_dayFAR": "2/25",
+   "holdout_mean_sens_pct": 70.0
+  },
+  "v1_tieaware_dual_rule": {
+   "baseline_test_dayFAR": "2/25",
+   "holdout_mean_sens_pct": 64.0
+  }
+ }
+}

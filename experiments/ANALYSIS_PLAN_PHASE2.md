@@ -120,3 +120,19 @@ A regression ("virtual sensor") imputation is added: each absent feature is pred
 regression (lambda 1e-3, standardised inputs) from all available sensor features plus outdoor- and
 return-air temperature, fitted on training days; the full P0 detector and thresholds are then applied
 exactly as for median imputation. Both comparators are reported.
+
+**P2-A5 (added 2026-10-16, after review of the manuscript, before computing it).** Equal false-alarm
+budget. The generic comparators and v1 use a single day-maximum threshold at alpha (effective bound
+1/(n+1) when the threshold is the calibration maximum), while the frozen detector uses two statistics
+at alpha/2 (bound 2/(n+1)); at Site 1 and on the simulated RTU the frozen detector therefore had the
+larger budget. Every comparator (global Mahalanobis, PCA T2, PCA SPE, isolation forest, v1 tie-aware)
+is re-evaluated with exactly the frozen detector's rule: daily maximum and daily mean of its own
+minute score, each thresholded at alpha/2 on the same calibration days, alarm if either exceeds.
+Reported for both field sites (FAR, sensitivity, McNemar vs frozen with Holm) and, for v1 tie-aware,
+on the simulated holdout. The frozen detector is unchanged.
+
+**P2-A6 (same date, before computing).** Condition-dependent physics reference. Superheat and
+subcooling of each running circuit are regressed on training data on outdoor- and return-air
+temperature and compressor power (linear, ridge 1e-3, standardised inputs); the charge indicator is
+built from the residuals (z(res_SH) - z(res_SC), robust training z, maximum over running circuits)
+and evaluated with the same two-statistic day-level rule. Same refrigerant hypothesis as E13.

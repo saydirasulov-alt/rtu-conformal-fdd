@@ -51,7 +51,7 @@ if __name__=="__main__":
      _,sel=identify(TR); ph=PhysRes(TR,CA,sel["refrigerant"],sel["pressure"]); al["physics_condition_dependent_dual_rule"]=(ph.day_alarms_df(TE),ph.day_alarms_df(U))
      rows={}; pf=[]
      for k,(a,b) in al.items():
-         f=P.mcnemar(vu,b); pf.append(f[2]); rows[k]={"test_dayFAR":P.frac(a),"fault_day_sens":P.frac(b),"fault_days_v2_only":f[0],"fault_days_comp_only":f[1],"p_exact":float(f"{f[2]:.3g}"),
+         f=P.mcnemar(vu,b); pf.append(f[2]); rows[k]={"test_dayFAR":P.frac(a),"fault_day_sens":P.frac(b),"fault_day_alarm_sequence":"".join("1" if x else "0" for x in b),"fault_days_v2_only":f[0],"fault_days_comp_only":f[1],"p_exact":float(f"{f[2]:.3g}"),
                 "normal_days_mcnemar_p":float(f"{P.mcnemar(vte,a)[2]:.3g}")}
      for k,h in zip(al,P.holm(pf)): rows[k]["p_holm"]=float(f"{h:.3g}")
      R[s]={"frozen":{"test_dayFAR":P.frac(vte),"fault_day_sens":P.frac(vu)},"comparators_dual_rule":rows}

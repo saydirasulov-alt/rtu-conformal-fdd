@@ -13,7 +13,7 @@ def cp(k,n):
     lo=0.0 if k==0 else beta.ppf(0.025,k,n-k+1); hi=1.0 if k==n else beta.ppf(0.975,k+1,n-k); return 100*lo,100*hi
 def kn(s): a,b=s.split("/"); return int(a),int(b)
 NAMES={"v2_FROZEN":"Frozen (this paper)","v1_tieaware":"v1 (tie-aware)","v1_tieaware_dual_rule":"v1 (tie-aware)","v1.0.1_original":"v1 (original)","global_Mahalanobis":"Global Mahalanobis",
-       "PCA_T2":"PCA $T^2$","PCA_SPE":"PCA SPE","IsolationForest":"Isolation forest","physics_CI_conformal":"Physics charge indicator"}
+       "PCA_T2":"PCA $T^2$","PCA_SPE":"PCA SPE","IsolationForest":"Isolation forest","physics_CI_conformal":"Physics charge indicator","physics_cond":"Physics (cond.-dependent)"}
 E7=J("e7_e8_paired_operational.json")
 # ---------- Figure 3: operating points, single-maximum rule vs two-statistic rule ----------
 E14=J("e14_equal_budget.json")
@@ -44,8 +44,9 @@ E9=J("e9_attribution.json"); order=["v2_FROZEN","v1_tieaware","IsolationForest",
 fig,axs=plt.subplots(2,1,figsize=(7.2,3.4),gridspec_kw={"height_ratios":[1,1]})
 for ax,s,title in zip(axs,("Site2","Site1"),("Site 2: 27 undercharge fault days (documented: low charge on circuit B)","Site 1: 62 staging fault days (documented: stage 2 will not engage)")):
     op=E7[s]["operational"]; recs=E9[s]["fault_day_records"]; n=len(recs)
+    E14s=E14[s]["comparators_dual_rule"]; MAPR={"v1_tieaware":"v1_tieaware_dual_rule","IsolationForest":"IsolationForest","global_Mahalanobis":"global_Mahalanobis","physics_CI_conformal":"physics_condition_dependent_dual_rule"}
     for r,k in enumerate(order):
-        seq=op[k]["fault_day_alarm_sequence"]; yy=len(order)-1-r
+        seq=op[k]["fault_day_alarm_sequence"] if k=="v2_FROZEN" else E14s[MAPR[k]]["fault_day_alarm_sequence"]; yy=len(order)-1-r
         for d,ch in enumerate(seq):
             if ch!="1": 
                 ax.add_patch(plt.Rectangle((d+0.08,yy+0.12),0.84,0.76,facecolor="none",edgecolor="#d9d8d3",lw=0.4)); continue
@@ -53,7 +54,7 @@ for ax,s,title in zip(axs,("Site2","Site1"),("Site 2: 27 undercharge fault days 
                 rec=recs[d]; st=rec["stat"][0] if len(rec["stat"])==1 else "max"; c=VIOLET if rec[f"circuit_{st}"]==2 else AQUA
             else: c=GREY
             ax.add_patch(plt.Rectangle((d+0.08,yy+0.12),0.84,0.76,facecolor=c,edgecolor="none"))
-    ax.set_xlim(0,n); ax.set_ylim(0,len(order)); ax.set_yticks([len(order)-1-i+0.5 for i in range(len(order))]); ax.set_yticklabels([NAMES[k] for k in order],fontsize=6.8)
+    ax.set_xlim(0,n); ax.set_ylim(0,len(order)); ax.set_yticks([len(order)-1-i+0.5 for i in range(len(order))]); ax.set_yticklabels([("Physics (condition-dep.)" if k=="physics_CI_conformal" else NAMES[k]) for k in order],fontsize=6.8)
     ax.set_xticks(np.arange(0,n,5)+0.5); ax.set_xticklabels(np.arange(1,n+1,5),fontsize=6.5); ax.tick_params(length=0); ax.spines[:].set_visible(False)
     ax.set_title(title,fontsize=8,loc="left",color=INK)
 axs[1].set_xlabel("Day of the labelled fault record")

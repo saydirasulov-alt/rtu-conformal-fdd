@@ -12,7 +12,7 @@ plt.rcParams.update({"font.family":"DejaVu Sans","font.size":8,"axes.edgecolor":
 def cp(k,n):
     lo=0.0 if k==0 else beta.ppf(0.025,k,n-k+1); hi=1.0 if k==n else beta.ppf(0.975,k+1,n-k); return 100*lo,100*hi
 def kn(s): a,b=s.split("/"); return int(a),int(b)
-NAMES={"v2_FROZEN":"Proposed (v2)","v1_tieaware":"v1 (tie-aware)","v1.0.1_original":"v1 (original)","global_Mahalanobis":"Global Mahalanobis",
+NAMES={"v2_FROZEN":"Frozen (this paper)","v1_tieaware":"v1 (tie-aware)","v1.0.1_original":"v1 (original)","global_Mahalanobis":"Global Mahalanobis",
        "PCA_T2":"PCA $T^2$","PCA_SPE":"PCA SPE","IsolationForest":"Isolation forest","physics_CI_conformal":"Physics charge indicator"}
 E7=J("e7_e8_paired_operational.json")
 # ---------- Figure 3: operating points ----------
@@ -55,7 +55,7 @@ for ax,s,title in zip(axs,("Site2","Site1"),("Site 2: 27 undercharge fault days 
     ax.set_xticks(np.arange(0,n,5)+0.5); ax.set_xticklabels(np.arange(1,n+1,5),fontsize=6.5); ax.tick_params(length=0); ax.spines[:].set_visible(False)
     ax.set_title(title,fontsize=8,loc="left",color=INK)
 axs[1].set_xlabel("Day of the labelled fault record")
-fig.legend(handles=[Patch(facecolor=AQUA,label="Proposed: alarm attributed to circuit 1"),Patch(facecolor=VIOLET,label="Proposed: alarm attributed to circuit 2"),
+fig.legend(handles=[Patch(facecolor=AQUA,label="Frozen: alarm attributed to circuit 1"),Patch(facecolor=VIOLET,label="Frozen: alarm attributed to circuit 2"),
                     Patch(facecolor=GREY,label="Comparator alarm"),Patch(facecolor="none",edgecolor="#bdbcb6",label="No alarm")],
            loc="lower center",ncol=4,fontsize=6.6,frameon=False,bbox_to_anchor=(0.5,-0.01))
 fig.tight_layout(rect=(0,0.06,1,1)); fig.savefig(F/"Figure_4_alarm_raster.pdf"); fig.savefig(F/"Figure_4_alarm_raster.png",dpi=600); plt.close(fig)

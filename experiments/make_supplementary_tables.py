@@ -13,7 +13,7 @@ tab("Development grid on the simulated RTU (12 development scenarios, 25 test da
 e3=J(R/"e3_ablation.json")["field"]; V={"A0_proposed":"v1 original (plain PIT, day max)","A0x_EXPLORATORY_tieawarePIT":"v1 tie-aware","A1_noPIT_rawmax":"No percentile transform (max of raw branch distances)","A2_noBranches_globalMahal":"No branches (single global distance)","A3_minuteCalibration":"Minute-level instead of day-level calibration"}
 rows=[f"{V[k]} & {e3['Site2'][k]['test_dayFAR']} & {e3['Site2'][k]['fault_day_sens']} & {e3['Site1'][k]['test_dayFAR']} & {e3['Site1'][k]['fault_day_sens']}" for k in V]
 ev=J(R/"algo_v2_EVALUATION.json"); rows.append(f"Frozen (joint branch, max + mean) & {ev['field_temporal']['Site2']['FROZEN']['test_dayFAR']} & {ev['field_temporal']['Site2']['FROZEN']['fault_day_sens']} & {ev['field_temporal']['Site1']['FROZEN']['test_dayFAR']} & {ev['field_temporal']['Site1']['FROZEN']['fault_day_sens']}")
-tab("Component ablation under the day-level conformal rule (normal test days flagged; fault days detected).","tab:S2","lcccc","Variant & S2 FAR & S2 sens. & S1 FAR & S1 sens.",rows)
+tab("Component ablation of the original first version (v1, plain transform) under the day-level conformal rule (normal test days flagged; fault days detected).","tab:S2","lcccc","Variant & Site 2 FAR & Site 2 sens. & Site 1 FAR & Site 1 sens.",rows)
 st=ev["site2_stability"]; e5=J(R/"e5_temporal_stability.json")
 rows=[f"{nm} & "+" & ".join(st[k]['ncal'][n]['FAR'] for n in ('19','25','30','44'))+" & "+" & ".join(st[k]['ncal'][n][' sens'] for n in ('19','25','30','44')) for k,nm in (("FROZEN","Frozen"),("REF_v1like","v1 tie-aware"))]
 tab("Site 2, calibration length (training: first 88 days; test: last 44 days; calibration: the $n_{\\mathrm{cal}}$ days before the test block).","tab:S3","lcccccccc","$n_{\\mathrm{cal}}$ & 19 & 25 & 30 & 44 & 19 & 25 & 30 & 44",["& \\multicolumn{4}{c}{normal test days flagged (of 44)} & \\multicolumn{4}{c}{fault days detected (of 27)}"]+rows)
@@ -30,13 +30,13 @@ tab("Refrigerant and pressure-reference identification on training data (medians
 alt=[]
 for s in ("Site2","Site1"):
     for k,v in e13[s]["all_plausible_hypotheses"].items(): alt.append(f"{s[-1]} & {k.replace('_',', ').replace('R','R-')} & {v['conformal'][0]} & {v['conformal'][1]} & {v['rule'][0]} & {v['rule'][1]}")
-tab("Physics charge indicator under every plausible hypothesis (Amendment P2-A1).","tab:S4b","clcccc","Site & Hypothesis & Conformal FAR & Conformal sens. & Rule FAR & Rule sens.",alt)
+tab("Physics charge indicator under every plausible hypothesis (Phase-2 amendment A1).","tab:S4b","clcccc","Site & Hypothesis & Conformal FAR & Conformal sens. & Rule FAR & Rule sens.",alt)
 e10=J(R/"e10_robustness.json")
 rows=[f"{k} & {v['sim_holdout']['baseline_test_dayFAR']} & {v['sim_holdout']['holdout_mean_sens_pct']:.1f} & {v['Site2']['test_dayFAR']} & {v['Site2']['fault_day_sens']} & {v['Site1']['test_dayFAR']} & {v['Site1']['fault_day_sens']}" for k,v in e10.items()]
-tab("One-at-a-time robustness of the frozen configuration (post hoc).","tab:S5","lcccccc","Setting & Sim. FAR & Sim. sens. (\\%) & S2 FAR & S2 sens. & S1 FAR & S1 sens.",[r.replace("_","\\_") for r in rows])
+tab("One-at-a-time robustness of the frozen configuration (pre-specified sensitivity analysis, run after freezing; no setting was selected from it).","tab:S5","lcccccc","Setting & Sim. FAR & Sim. sens. (\\%) & Site 2 FAR & Site 2 sens. & Site 1 FAR & Site 1 sens.",[r.replace("_","\\_") for r in rows])
 rb=J(R/"e10b_ridge_sweep.json"); ks=[k for k in rb["Site1"] if isinstance(rb["Site1"][k],dict) and "test_dayFAR" in rb["Site1"][k]]
 rows=[f"{k} & {rb['Site2'][k]['test_dayFAR']} & {rb['Site2'][k]['fault_day_sens']} & {rb['Site1'][k]['test_dayFAR']} & {rb['Site1'][k]['fault_day_sens']}" for k in ks]
-tab("Ridge sweep (Amendment P2-A2). Smallest joint-branch covariance eigenvalues: Site 1 "+", ".join(f"{x:.2g}" for x in rb['Site1']['joint_cov_eigenvalues_smallest5'][:3])+"; Site 2 "+", ".join(f"{x:.2g}" for x in rb['Site2']['joint_cov_eigenvalues_smallest5'][:3])+".","tab:S5b","lcccc","Ridge & S2 FAR & S2 sens. & S1 FAR & S1 sens.",rows)
+tab("Ridge sweep (Phase-2 amendment A2). Smallest joint-branch covariance eigenvalues: Site 1 "+", ".join(f"{x:.2g}" for x in rb['Site1']['joint_cov_eigenvalues_smallest5'][:3])+"; Site 2 "+", ".join(f"{x:.2g}" for x in rb['Site2']['joint_cov_eigenvalues_smallest5'][:3])+".","tab:S5b","lcccc","Ridge & Site 2 FAR & Site 2 sens. & Site 1 FAR & Site 1 sens.",rows)
 e4=J(R/"e4_missingness.json")
 rows=[f"{r['masked']} & {r['mode'].replace('_',' ')} & {r['level']} & {r['normal_minute_FAR_pct']:.2f} & "+" & ".join(r['faults'][f]['detection_yield_all_days'] for f in ('economizer','damper','SA-bias'))+f" & {r['unsupported_assertions']}" for r in e4]
 tab("ORNL: intermittent loss (fraction of minutes) and daily outages (hours) of the damper, supply-air temperature or power sensors on test and fault days. Fault days detected of 16; full sensing: 15, 13, 15.","tab:S6","llccccc c","Sensors lost & Mode & Level & Min. FAR (\\%) & Econ. & Damper & SA bias & Unsupp.",rows,"\\scriptsize")

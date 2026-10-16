@@ -1,0 +1,80 @@
+{
+ "c=0.0001": {
+  "Site1": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "54/62",
+   "ridges": {
+    "refrig0": 3.23e-05,
+    "refrig1": 1.23e-05,
+    "power0": 5.81e-05,
+    "joint0": 4.85e-06
+   }
+  },
+  "Site2": {
+   "test_dayFAR": "4/44",
+   "fault_day_sens": "19/27",
+   "ridges": {
+    "refrig0": 4.11e-05,
+    "refrig1": 2.99e-05,
+    "power0": 0.000306,
+    "joint0": 3.22e-05
+   }
+  },
+  "sim_holdout": {
+   "baseline_test_dayFAR": "2/25",
+   "holdout_mean_sens_pct": 70.0
+  }
+ },
+ "c=0.001": {
+  "Site1": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "53/62",
+   "ridges": {
+    "refrig0": 0.000323,
+    "refrig1": 0.000123,
+    "power0": 0.000581,
+    "joint0": 4.85e-05
+   }
+  },
+  "Site2": {
+   "test_dayFAR": "4/44",
+   "fault_day_sens": "19/27",
+   "ridges": {
+    "refrig0": 0.000411,
+    "refrig1": 0.000299,
+    "power0": 0.00306,
+    "joint0": 0.000322
+   }
+  },
+  "sim_holdout": {
+   "baseline_test_dayFAR": "2/25",
+   "holdout_mean_sens_pct": 70.0
+  }
+ },
+ "c=0.01": {
+  "Site1": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "53/62",
+   "ridges": {
+    "refrig0": 0.00323,
+    "refrig1": 0.00123,
+    "power0": 0.00581,
+    "joint0": 0.000485
+   }
+  },
+  "Site2": {
+   "test_dayFAR": "6/44",
+   "fault_day_sens": "20/27",
+   "ridges": {
+    "refrig0": 0.00411,
+    "refrig1": 0.00299,
+    "power0": 0.0306,
+    "joint0": 0.00322
+   }
+  },
+  "sim_holdout": {
+   "baseline_test_dayFAR": "2/25",
+   "holdout_mean_sens_pct": 70.0
+  }
+ }
+}

@@ -40,32 +40,33 @@ class PhysRes:
         return np.array(mx),np.array(mn)
     def day_alarms_df(self,df):
         mx,mn=self.day_stats(df); return (np.nan_to_num(mx,nan=-np.inf)>self.tau[0])|(np.nan_to_num(mn,nan=-np.inf)>self.tau[1])
-R={}
-for s in P.SITES:
-    TR,CA,TE,U=P.site(s); TRd,CAd,TEd,Ud=map(P.to_dict,(TR,CA,TE,U))
-    v2=P.Detector("S0","Ddual",True).fit(TRd,CAd); vte,vu=v2.day_alarms(TEd),v2.day_alarms(Ud)
-    det={k:Dual(f,CAd) for k,f in P.baseline_scores(TRd).items()}
-    det["v1_tieaware_dual_rule"]=P.Detector("S0","Ddual",False).fit(TRd,CAd)
-    al={k:(d.day_alarms(TEd),d.day_alarms(Ud)) for k,d in det.items()}
-    _,sel=identify(TR); ph=PhysRes(TR,CA,sel["refrigerant"],sel["pressure"]); al["physics_condition_dependent_dual_rule"]=(ph.day_alarms_df(TE),ph.day_alarms_df(U))
-    rows={}; pf=[]
-    for k,(a,b) in al.items():
-        f=P.mcnemar(vu,b); pf.append(f[2]); rows[k]={"test_dayFAR":P.frac(a),"fault_day_sens":P.frac(b),"fault_days_v2_only":f[0],"fault_days_comp_only":f[1],"p_exact":float(f"{f[2]:.3g}"),
-               "normal_days_mcnemar_p":float(f"{P.mcnemar(vte,a)[2]:.3g}")}
-    for k,h in zip(al,P.holm(pf)): rows[k]["p_holm"]=float(f"{h:.3g}")
-    R[s]={"frozen":{"test_dayFAR":P.frac(vte),"fault_day_sens":P.frac(vu)},"comparators_dual_rule":rows}
-    print("=====",s,"frozen",R[s]["frozen"])
-    for k,v in rows.items(): print(f"  {k:40s} FAR {v['test_dayFAR']:>5s} sens {v['fault_day_sens']:>5s} +{v['fault_days_v2_only']}/-{v['fault_days_comp_only']} p_holm={v['p_holm']}")
-# simulated holdout: v1 tie-aware with the dual rule (no joint branch) vs frozen
-SIM=os.environ.get("RTU_SIM_DIR")
-if SIM:
-    HOLD=["evapfouling10","evapfouling20","evapfouling30","evapfouling40","evapfouling50","suctionpipe01bar","suctionpipe03bar","suctionpipe06bar","suctionpipe09bar","undercharge10","undercharge15","undercharge20"]
-    B=A.load_sim(os.path.join(SIM,"RTU_sim_baseline.csv")); (TR,CA,TE),u=A.split_days(B,50,25); td=u[75:]
-    out={}
-    for name,cfg in (("frozen",("S0","Ddual",True)),("v1_tieaware_dual_rule",("S0","Ddual",False))):
-        d=P.Detector(*cfg).fit(TR,CA); sens=[]
-        for k in HOLD:
-            F=A.load_sim(os.path.join(SIM,f"RTU_sim_{k}.csv")); F=A.subset(F,np.isin(A.dayid(F["dt"]),td)); sens.append(d.day_alarms(F).mean())
-        out[name]={"baseline_test_dayFAR":P.frac(d.day_alarms(TE)),"holdout_mean_sens_pct":round(100*float(np.mean(sens)),1)}
-    R["sim_holdout"]=out; print("sim",out)
-with open(OUT/"e14_equal_budget.json","w") as fh: json.dump(R,fh,indent=1)
+if __name__=="__main__":
+ R={}
+ for s in P.SITES:
+     TR,CA,TE,U=P.site(s); TRd,CAd,TEd,Ud=map(P.to_dict,(TR,CA,TE,U))
+     v2=P.Detector("S0","Ddual",True).fit(TRd,CAd); vte,vu=v2.day_alarms(TEd),v2.day_alarms(Ud)
+     det={k:Dual(f,CAd) for k,f in P.baseline_scores(TRd).items()}
+     det["v1_tieaware_dual_rule"]=P.Detector("S0","Ddual",False).fit(TRd,CAd)
+     al={k:(d.day_alarms(TEd),d.day_alarms(Ud)) for k,d in det.items()}
+     _,sel=identify(TR); ph=PhysRes(TR,CA,sel["refrigerant"],sel["pressure"]); al["physics_condition_dependent_dual_rule"]=(ph.day_alarms_df(TE),ph.day_alarms_df(U))
+     rows={}; pf=[]
+     for k,(a,b) in al.items():
+         f=P.mcnemar(vu,b); pf.append(f[2]); rows[k]={"test_dayFAR":P.frac(a),"fault_day_sens":P.frac(b),"fault_days_v2_only":f[0],"fault_days_comp_only":f[1],"p_exact":float(f"{f[2]:.3g}"),
+                "normal_days_mcnemar_p":float(f"{P.mcnemar(vte,a)[2]:.3g}")}
+     for k,h in zip(al,P.holm(pf)): rows[k]["p_holm"]=float(f"{h:.3g}")
+     R[s]={"frozen":{"test_dayFAR":P.frac(vte),"fault_day_sens":P.frac(vu)},"comparators_dual_rule":rows}
+     print("=====",s,"frozen",R[s]["frozen"])
+     for k,v in rows.items(): print(f"  {k:40s} FAR {v['test_dayFAR']:>5s} sens {v['fault_day_sens']:>5s} +{v['fault_days_v2_only']}/-{v['fault_days_comp_only']} p_holm={v['p_holm']}")
+ # simulated holdout: v1 tie-aware with the dual rule (no joint branch) vs frozen
+ SIM=os.environ.get("RTU_SIM_DIR")
+ if SIM:
+     HOLD=["evapfouling10","evapfouling20","evapfouling30","evapfouling40","evapfouling50","suctionpipe01bar","suctionpipe03bar","suctionpipe06bar","suctionpipe09bar","undercharge10","undercharge15","undercharge20"]
+     B=A.load_sim(os.path.join(SIM,"RTU_sim_baseline.csv")); (TR,CA,TE),u=A.split_days(B,50,25); td=u[75:]
+     out={}
+     for name,cfg in (("frozen",("S0","Ddual",True)),("v1_tieaware_dual_rule",("S0","Ddual",False))):
+         d=P.Detector(*cfg).fit(TR,CA); sens=[]
+         for k in HOLD:
+             F=A.load_sim(os.path.join(SIM,f"RTU_sim_{k}.csv")); F=A.subset(F,np.isin(A.dayid(F["dt"]),td)); sens.append(d.day_alarms(F).mean())
+         out[name]={"baseline_test_dayFAR":P.frac(d.day_alarms(TE)),"holdout_mean_sens_pct":round(100*float(np.mean(sens)),1)}
+     R["sim_holdout"]=out; print("sim",out)
+ with open(OUT/"e14_equal_budget.json","w") as fh: json.dump(R,fh,indent=1)

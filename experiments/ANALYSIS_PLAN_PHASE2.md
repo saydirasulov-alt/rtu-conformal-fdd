@@ -136,3 +136,24 @@ subcooling of each running circuit are regressed on training data on outdoor- an
 temperature and compressor power (linear, ridge 1e-3, standardised inputs); the charge indicator is
 built from the residuals (z(res_SH) - z(res_SC), robust training z, maximum over running circuits)
 and evaluated with the same two-statistic day-level rule. Same refrigerant hypothesis as E13.
+
+**P2-A7 (2026-10-16, before computing).** E12 is repeated with every comparator given the frozen
+detector's two-statistic rule (daily max and daily mean of its own minute score, alpha/2 each, same
+calibration days), as in A5. Same 37 scenarios per site, same metrics.
+
+**P2-A8 (2026-10-16, before computing).** Spectrum-relative ridge, sensitivity analysis only (the
+frozen ridge is not replaced). For each branch the ridge is set to c times the median eigenvalue of
+that branch's scaled training covariance, c in {1e-4, 1e-3, 1e-2}; field FAR and sensitivity and the
+simulated holdout are reported for each c.
+
+**P2-A9 (2026-10-16, before the data have been obtained or inspected).** External check on the public
+Mendeley dataset "RTU-HVAC Real-Time Operating Data from Unit in Field" (doi 10.17632/9h6gpbhj5k.1).
+Step 1 (identity): compare its variables, units and timestamps with the LBNL Site 2 file; the check is
+reported whatever its outcome. Step 2, only if the unit is identified as Site 2 and none of its
+timestamps falls in the Site 2 training or calibration days: apply the frozen Site 2 detector
+unchanged (no refit, no new thresholds). Because labels change within days, evaluation is per
+contiguous labelled segment of at least 60 compressor-on minutes: segment maximum and mean of the
+minute statistic compared with the day thresholds (an approximation, since those thresholds are
+calibrated on whole days; reported as descriptive), and the circuit attribution of each segment
+compared with circuit-specific labels (UCC2: circuit 2, OCC1: circuit 1). Step 2 is skipped and the
+reason reported if the unit or variables cannot be matched.

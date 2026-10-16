@@ -95,3 +95,28 @@ to the plain PIT whenever tau < n_b/(n_b+1).
 ## Reporting rule
 All Phase 2 results are reported, including unfavourable ones. Any deviation from this plan is
 listed as an amendment with its reason before the corresponding result is used.
+
+## Amendments
+**P2-A1 (E13, added after the identification step and before the alternative hypotheses were
+evaluated).** The identification rule found more than one plausible hypothesis at both sites
+(R-22 and R-407C, gauge and absolute; R-410A implausible everywhere). The pre-specified tie rule
+selects R-22/absolute at both sites, and that remains the reported baseline. Because the choice is
+not unique, the two physics detectors are additionally evaluated under every plausible hypothesis
+and the range is reported, so that the comparison does not rest on one refrigerant assumption.
+
+**P2-A2 (E10, added after the E10 grid).** With ridge 1e-2, Site 1 fault-day sensitivity fell
+from 52/62 to 9/62, while the other settings changed little. To characterise rather than hide this,
+a finer descriptive ridge sweep {1e-5, 1e-4, 3e-4, 1e-3, 2e-3, 3e-3, 5e-3, 1e-2, 3e-2} is reported for
+both field sites, together with the smallest eigenvalues of the joint-branch training covariance.
+The frozen ridge (1e-3) was inherited unchanged from v1.0.1 and is not re-selected.
+
+**P2-A3 (E9, added after E9/E10b).** Because Site 1 detection relies on a near-invariant
+direction of the joint covariance, a weather-confound check is added for both sites: v2 alarm rate
+on fault days whose daily-mean outdoor temperature lies inside vs outside the range of training-day
+means, and the same for normal test days.
+
+**P2-A4 (E11, added after the median-imputation result).** Median imputation is a weak comparator.
+A regression ("virtual sensor") imputation is added: each absent feature is predicted by ridge
+regression (lambda 1e-3, standardised inputs) from all available sensor features plus outdoor- and
+return-air temperature, fitted on training days; the full P0 detector and thresholds are then applied
+exactly as for median imputation. Both comparators are reported.

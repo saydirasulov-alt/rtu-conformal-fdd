@@ -1,0 +1,100 @@
+{
+ "frozen": {
+  "sim_holdout": {
+   "baseline_test_dayFAR": "2/25",
+   "holdout_mean_sens_pct": 70.0
+  },
+  "Site1": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "52/62"
+  },
+  "Site2": {
+   "test_dayFAR": "4/44",
+   "fault_day_sens": "19/27"
+  }
+ },
+ "alpha=0.1": {
+  "sim_holdout": {
+   "baseline_test_dayFAR": "2/25",
+   "holdout_mean_sens_pct": 70.0
+  },
+  "Site1": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "52/62"
+  },
+  "Site2": {
+   "test_dayFAR": "6/44",
+   "fault_day_sens": "21/27"
+  }
+ },
+ "alpha=0.2": {
+  "sim_holdout": {
+   "baseline_test_dayFAR": "7/25",
+   "holdout_mean_sens_pct": 78.3
+  },
+  "Site1": {
+   "test_dayFAR": "3/13",
+   "fault_day_sens": "56/62"
+  },
+  "Site2": {
+   "test_dayFAR": "10/44",
+   "fault_day_sens": "21/27"
+  }
+ },
+ "gate=100.0W": {
+  "sim_holdout": {
+   "baseline_test_dayFAR": "2/25",
+   "holdout_mean_sens_pct": 70.0
+  },
+  "Site1": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "52/62"
+  },
+  "Site2": {
+   "test_dayFAR": "4/44",
+   "fault_day_sens": "20/27"
+  }
+ },
+ "gate=500.0W": {
+  "sim_holdout": {
+   "baseline_test_dayFAR": "2/25",
+   "holdout_mean_sens_pct": 70.7
+  },
+  "Site1": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "52/62"
+  },
+  "Site2": {
+   "test_dayFAR": "4/44",
+   "fault_day_sens": "19/27"
+  }
+ },
+ "ridge=0.0001": {
+  "sim_holdout": {
+   "baseline_test_dayFAR": "2/25",
+   "holdout_mean_sens_pct": 70.0
+  },
+  "Site1": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "53/62"
+  },
+  "Site2": {
+   "test_dayFAR": "4/44",
+   "fault_day_sens": "19/27"
+  }
+ },
+ "ridge=0.01": {
+  "sim_holdout": {
+   "baseline_test_dayFAR": "2/25",
+   "holdout_mean_sens_pct": 70.0
+  },
+  "Site1": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "9/62"
+  },
+  "Site2": {
+   "test_dayFAR": "5/44",
+   "fault_day_sens": "20/27"
+  }
+ }
+}

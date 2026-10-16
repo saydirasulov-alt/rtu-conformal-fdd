@@ -1,0 +1,46 @@
+{
+ "Site1": {
+  "train_dayOA_range": [
+   22.9,
+   32.7
+  ],
+  "fault": {
+   "inside": "34/36",
+   "outside": "18/26",
+   "dayOA_range": [
+    15.3,
+    35.6
+   ]
+  },
+  "normal_test": {
+   "inside": "0/3",
+   "outside": "1/10",
+   "dayOA_range": [
+    15.2,
+    25.1
+   ]
+  }
+ },
+ "Site2": {
+  "train_dayOA_range": [
+   9.5,
+   30.7
+  ],
+  "fault": {
+   "inside": "19/27",
+   "outside": "0/0",
+   "dayOA_range": [
+    9.9,
+    29.5
+   ]
+  },
+  "normal_test": {
+   "inside": "2/42",
+   "outside": "2/2",
+   "dayOA_range": [
+    8.8,
+    25.5
+   ]
+  }
+ }
+}

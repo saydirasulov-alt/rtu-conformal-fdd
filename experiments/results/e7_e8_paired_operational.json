@@ -1,0 +1,595 @@
+{
+ "bootstrap_B": 5000,
+ "machine": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+ "python": "3.13.16",
+ "Site1": {
+  "physics_hypothesis": {
+   "refrigerant": "R22",
+   "pressure": "absolute"
+  },
+  "paired_v2_vs": {
+   "v1_tieaware": {
+    "comparator_test_FAR": "0/13",
+    "comparator_sens": "1/62",
+    "fault_days": {
+     "v2_only": 51,
+     "comp_only": 0,
+     "p_exact": 8.88e-16,
+     "diff_pct": 82.3,
+     "boot95": [
+      72.6,
+      91.9
+     ],
+     "p_holm": 3.55e-15
+    },
+    "normal_days": {
+     "v2_only": 1,
+     "comp_only": 0,
+     "p_exact": 1.0,
+     "diff_pct": 7.7,
+     "boot95": [
+      0.0,
+      23.1
+     ],
+     "p_holm": 1.0
+    }
+   },
+   "global_Mahalanobis": {
+    "comparator_test_FAR": "0/13",
+    "comparator_sens": "13/62",
+    "fault_days": {
+     "v2_only": 39,
+     "comp_only": 0,
+     "p_exact": 3.64e-12,
+     "diff_pct": 62.9,
+     "boot95": [
+      50.0,
+      74.2
+     ],
+     "p_holm": 7.28e-12
+    },
+    "normal_days": {
+     "v2_only": 1,
+     "comp_only": 0,
+     "p_exact": 1.0,
+     "diff_pct": 7.7,
+     "boot95": [
+      0.0,
+      23.1
+     ],
+     "p_holm": 1.0
+    }
+   },
+   "PCA_T2": {
+    "comparator_test_FAR": "6/13",
+    "comparator_sens": "5/62",
+    "fault_days": {
+     "v2_only": 49,
+     "comp_only": 2,
+     "p_exact": 1.18e-12,
+     "diff_pct": 75.8,
+     "boot95": [
+      62.9,
+      87.1
+     ],
+     "p_holm": 3.54e-12
+    },
+    "normal_days": {
+     "v2_only": 1,
+     "comp_only": 6,
+     "p_exact": 0.125,
+     "diff_pct": -38.5,
+     "boot95": [
+      -69.2,
+      0.0
+     ],
+     "p_holm": 0.875
+    }
+   },
+   "PCA_SPE": {
+    "comparator_test_FAR": "0/13",
+    "comparator_sens": "0/62",
+    "fault_days": {
+     "v2_only": 52,
+     "comp_only": 0,
+     "p_exact": 4.44e-16,
+     "diff_pct": 83.9,
+     "boot95": [
+      74.2,
+      91.9
+     ],
+     "p_holm": 3.11e-15
+    },
+    "normal_days": {
+     "v2_only": 1,
+     "comp_only": 0,
+     "p_exact": 1.0,
+     "diff_pct": 7.7,
+     "boot95": [
+      0.0,
+      23.1
+     ],
+     "p_holm": 1.0
+    }
+   },
+   "IsolationForest": {
+    "comparator_test_FAR": "0/13",
+    "comparator_sens": "0/62",
+    "fault_days": {
+     "v2_only": 52,
+     "comp_only": 0,
+     "p_exact": 4.44e-16,
+     "diff_pct": 83.9,
+     "boot95": [
+      74.2,
+      91.9
+     ],
+     "p_holm": 3.11e-15
+    },
+    "normal_days": {
+     "v2_only": 1,
+     "comp_only": 0,
+     "p_exact": 1.0,
+     "diff_pct": 7.7,
+     "boot95": [
+      0.0,
+      23.1
+     ],
+     "p_holm": 1.0
+    }
+   },
+   "v1.0.1_original": {
+    "comparator_test_FAR": "0/13",
+    "comparator_sens": "0/62",
+    "fault_days": {
+     "v2_only": 52,
+     "comp_only": 0,
+     "p_exact": 4.44e-16,
+     "diff_pct": 83.9,
+     "boot95": [
+      74.2,
+      91.9
+     ],
+     "p_holm": 3.11e-15
+    },
+    "normal_days": {
+     "v2_only": 1,
+     "comp_only": 0,
+     "p_exact": 1.0,
+     "diff_pct": 7.7,
+     "boot95": [
+      0.0,
+      23.1
+     ],
+     "p_holm": 1.0
+    }
+   },
+   "physics_CI_conformal": {
+    "comparator_test_FAR": "4/13",
+    "comparator_sens": "19/62",
+    "fault_days": {
+     "v2_only": 36,
+     "comp_only": 3,
+     "p_exact": 3.61e-08,
+     "diff_pct": 53.2,
+     "boot95": [
+      38.7,
+      67.7
+     ],
+     "p_holm": 3.61e-08
+    },
+    "normal_days": {
+     "v2_only": 1,
+     "comp_only": 4,
+     "p_exact": 0.375,
+     "diff_pct": -23.1,
+     "boot95": [
+      -53.8,
+      7.7
+     ],
+     "p_holm": 1.0
+    }
+   }
+  },
+  "operational": {
+   "v2_FROZEN": {
+    "test_FAR": "1/13",
+    "sens": "52/62",
+    "TTFA_days": 1,
+    "alarm_days_per_30": 2.31,
+    "per_30_CI95": [
+     0.06,
+     10.8
+    ],
+    "longest_normal_alarm_run": 1,
+    "fault_day_alarm_sequence": "11110111011111111111111110111011111111111111111111011111100000"
+   },
+   "v1_tieaware": {
+    "test_FAR": "0/13",
+    "sens": "1/62",
+    "TTFA_days": 56,
+    "alarm_days_per_30": 0.0,
+    "per_30_CI95": [
+     0.0,
+     7.41
+    ],
+    "longest_normal_alarm_run": 0,
+    "fault_day_alarm_sequence": "00000000000000000000000000000000000000000000000000000001000000"
+   },
+   "global_Mahalanobis": {
+    "test_FAR": "0/13",
+    "sens": "13/62",
+    "TTFA_days": 1,
+    "alarm_days_per_30": 0.0,
+    "per_30_CI95": [
+     0.0,
+     7.41
+    ],
+    "longest_normal_alarm_run": 0,
+    "fault_day_alarm_sequence": "10100000001000100000101000001000100000100000101010000001000000"
+   },
+   "PCA_T2": {
+    "test_FAR": "6/13",
+    "sens": "5/62",
+    "TTFA_days": 3,
+    "alarm_days_per_30": 13.85,
+    "per_30_CI95": [
+     5.76,
+     22.47
+    ],
+    "longest_normal_alarm_run": 3,
+    "fault_day_alarm_sequence": "00100000100000000000000001010000000000000000000000000001000000"
+   },
+   "PCA_SPE": {
+    "test_FAR": "0/13",
+    "sens": "0/62",
+    "TTFA_days": null,
+    "alarm_days_per_30": 0.0,
+    "per_30_CI95": [
+     0.0,
+     7.41
+    ],
+    "longest_normal_alarm_run": 0,
+    "fault_day_alarm_sequence": "00000000000000000000000000000000000000000000000000000000000000"
+   },
+   "IsolationForest": {
+    "test_FAR": "0/13",
+    "sens": "0/62",
+    "TTFA_days": null,
+    "alarm_days_per_30": 0.0,
+    "per_30_CI95": [
+     0.0,
+     7.41
+    ],
+    "longest_normal_alarm_run": 0,
+    "fault_day_alarm_sequence": "00000000000000000000000000000000000000000000000000000000000000"
+   },
+   "v1.0.1_original": {
+    "test_FAR": "0/13",
+    "sens": "0/62",
+    "TTFA_days": null,
+    "alarm_days_per_30": 0.0,
+    "per_30_CI95": [
+     0.0,
+     7.41
+    ],
+    "longest_normal_alarm_run": 0,
+    "fault_day_alarm_sequence": "00000000000000000000000000000000000000000000000000000000000000"
+   },
+   "physics_CI_conformal": {
+    "test_FAR": "4/13",
+    "sens": "19/62",
+    "TTFA_days": 2,
+    "alarm_days_per_30": 9.23,
+    "per_30_CI95": [
+     2.73,
+     18.42
+    ],
+    "longest_normal_alarm_run": 1,
+    "fault_day_alarm_sequence": "01111101110000111000000001000000000000000001110001001101000000"
+   }
+  },
+  "compute_s": {
+   "fit_median": 0.047,
+   "score_one_day_median": 0.0023,
+   "n_train_minutes": 13838,
+   "n_cal_minutes": 16637,
+   "n_minutes_scored_day": 1239
+  }
+ },
+ "Site2": {
+  "physics_hypothesis": {
+   "refrigerant": "R22",
+   "pressure": "absolute"
+  },
+  "paired_v2_vs": {
+   "v1_tieaware": {
+    "comparator_test_FAR": "1/44",
+    "comparator_sens": "13/27",
+    "fault_days": {
+     "v2_only": 7,
+     "comp_only": 1,
+     "p_exact": 0.0703,
+     "diff_pct": 22.2,
+     "boot95": [
+      3.7,
+      40.7
+     ],
+     "p_holm": 0.141
+    },
+    "normal_days": {
+     "v2_only": 3,
+     "comp_only": 0,
+     "p_exact": 0.25,
+     "diff_pct": 6.8,
+     "boot95": [
+      0.0,
+      15.9
+     ],
+     "p_holm": 1.0
+    }
+   },
+   "global_Mahalanobis": {
+    "comparator_test_FAR": "2/44",
+    "comparator_sens": "1/27",
+    "fault_days": {
+     "v2_only": 18,
+     "comp_only": 0,
+     "p_exact": 7.63e-06,
+     "diff_pct": 66.7,
+     "boot95": [
+      48.1,
+      81.5
+     ],
+     "p_holm": 5.34e-05
+    },
+    "normal_days": {
+     "v2_only": 4,
+     "comp_only": 2,
+     "p_exact": 0.688,
+     "diff_pct": 4.5,
+     "boot95": [
+      -6.8,
+      15.9
+     ],
+     "p_holm": 1.0
+    }
+   },
+   "PCA_T2": {
+    "comparator_test_FAR": "2/44",
+    "comparator_sens": "1/27",
+    "fault_days": {
+     "v2_only": 18,
+     "comp_only": 0,
+     "p_exact": 7.63e-06,
+     "diff_pct": 66.7,
+     "boot95": [
+      48.1,
+      81.5
+     ],
+     "p_holm": 5.34e-05
+    },
+    "normal_days": {
+     "v2_only": 4,
+     "comp_only": 2,
+     "p_exact": 0.688,
+     "diff_pct": 4.5,
+     "boot95": [
+      -6.8,
+      15.9
+     ],
+     "p_holm": 1.0
+    }
+   },
+   "PCA_SPE": {
+    "comparator_test_FAR": "0/44",
+    "comparator_sens": "5/27",
+    "fault_days": {
+     "v2_only": 14,
+     "comp_only": 0,
+     "p_exact": 0.000122,
+     "diff_pct": 51.9,
+     "boot95": [
+      33.3,
+      70.4
+     ],
+     "p_holm": 0.00061
+    },
+    "normal_days": {
+     "v2_only": 4,
+     "comp_only": 0,
+     "p_exact": 0.125,
+     "diff_pct": 9.1,
+     "boot95": [
+      2.3,
+      18.2
+     ],
+     "p_holm": 0.875
+    }
+   },
+   "IsolationForest": {
+    "comparator_test_FAR": "1/44",
+    "comparator_sens": "10/27",
+    "fault_days": {
+     "v2_only": 10,
+     "comp_only": 1,
+     "p_exact": 0.0117,
+     "diff_pct": 33.3,
+     "boot95": [
+      14.7,
+      51.9
+     ],
+     "p_holm": 0.0352
+    },
+    "normal_days": {
+     "v2_only": 4,
+     "comp_only": 1,
+     "p_exact": 0.375,
+     "diff_pct": 6.8,
+     "boot95": [
+      -2.3,
+      15.9
+     ],
+     "p_holm": 1.0
+    }
+   },
+   "v1.0.1_original": {
+    "comparator_test_FAR": "1/44",
+    "comparator_sens": "13/27",
+    "fault_days": {
+     "v2_only": 7,
+     "comp_only": 1,
+     "p_exact": 0.0703,
+     "diff_pct": 22.2,
+     "boot95": [
+      3.7,
+      40.7
+     ],
+     "p_holm": 0.141
+    },
+    "normal_days": {
+     "v2_only": 3,
+     "comp_only": 0,
+     "p_exact": 0.25,
+     "diff_pct": 6.8,
+     "boot95": [
+      0.0,
+      15.9
+     ],
+     "p_holm": 1.0
+    }
+   },
+   "physics_CI_conformal": {
+    "comparator_test_FAR": "0/44",
+    "comparator_sens": "5/27",
+    "fault_days": {
+     "v2_only": 14,
+     "comp_only": 0,
+     "p_exact": 0.000122,
+     "diff_pct": 51.9,
+     "boot95": [
+      33.3,
+      70.4
+     ],
+     "p_holm": 0.00061
+    },
+    "normal_days": {
+     "v2_only": 4,
+     "comp_only": 0,
+     "p_exact": 0.125,
+     "diff_pct": 9.1,
+     "boot95": [
+      2.3,
+      18.2
+     ],
+     "p_holm": 0.875
+    }
+   }
+  },
+  "operational": {
+   "v2_FROZEN": {
+    "test_FAR": "4/44",
+    "sens": "19/27",
+    "TTFA_days": 1,
+    "alarm_days_per_30": 2.73,
+    "per_30_CI95": [
+     0.75,
+     6.51
+    ],
+    "longest_normal_alarm_run": 1,
+    "fault_day_alarm_sequence": "101001011101011111111111010"
+   },
+   "v1_tieaware": {
+    "test_FAR": "1/44",
+    "sens": "13/27",
+    "TTFA_days": 9,
+    "alarm_days_per_30": 0.68,
+    "per_30_CI95": [
+     0.03,
+     3.6
+    ],
+    "longest_normal_alarm_run": 1,
+    "fault_day_alarm_sequence": "000000001010011111111110010"
+   },
+   "global_Mahalanobis": {
+    "test_FAR": "2/44",
+    "sens": "1/27",
+    "TTFA_days": 26,
+    "alarm_days_per_30": 1.36,
+    "per_30_CI95": [
+     0.18,
+     4.65
+    ],
+    "longest_normal_alarm_run": 1,
+    "fault_day_alarm_sequence": "000000000000000000000000010"
+   },
+   "PCA_T2": {
+    "test_FAR": "2/44",
+    "sens": "1/27",
+    "TTFA_days": 26,
+    "alarm_days_per_30": 1.36,
+    "per_30_CI95": [
+     0.18,
+     4.65
+    ],
+    "longest_normal_alarm_run": 1,
+    "fault_day_alarm_sequence": "000000000000000000000000010"
+   },
+   "PCA_SPE": {
+    "test_FAR": "0/44",
+    "sens": "5/27",
+    "TTFA_days": 17,
+    "alarm_days_per_30": 0.0,
+    "per_30_CI95": [
+     0.0,
+     2.4
+    ],
+    "longest_normal_alarm_run": 0,
+    "fault_day_alarm_sequence": "000000000000000010011110000"
+   },
+   "IsolationForest": {
+    "test_FAR": "1/44",
+    "sens": "10/27",
+    "TTFA_days": 6,
+    "alarm_days_per_30": 0.68,
+    "per_30_CI95": [
+     0.03,
+     3.6
+    ],
+    "longest_normal_alarm_run": 1,
+    "fault_day_alarm_sequence": "000001110100010000011110010"
+   },
+   "v1.0.1_original": {
+    "test_FAR": "1/44",
+    "sens": "13/27",
+    "TTFA_days": 9,
+    "alarm_days_per_30": 0.68,
+    "per_30_CI95": [
+     0.03,
+     3.6
+    ],
+    "longest_normal_alarm_run": 1,
+    "fault_day_alarm_sequence": "000000001010011111111110010"
+   },
+   "physics_CI_conformal": {
+    "test_FAR": "0/44",
+    "sens": "5/27",
+    "TTFA_days": 15,
+    "alarm_days_per_30": 0.0,
+    "per_30_CI95": [
+     0.0,
+     2.4
+    ],
+    "longest_normal_alarm_run": 0,
+    "fault_day_alarm_sequence": "000000000000001001011100000"
+   }
+  },
+  "compute_s": {
+   "fit_median": 0.139,
+   "score_one_day_median": 0.0022,
+   "n_train_minutes": 49954,
+   "n_cal_minutes": 28529,
+   "n_minutes_scored_day": 732
+  }
+ }
+}

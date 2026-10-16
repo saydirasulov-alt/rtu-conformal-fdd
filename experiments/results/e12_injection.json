@@ -1,0 +1,3032 @@
+{
+ "Site1": {
+  "n_test_days": 13,
+  "n_scenarios": 37,
+  "summary_mean_alarm_rate_pct": {
+   "bias": {
+    "v2_FROZEN": 32.9,
+    "v1_tieaware": 0.0,
+    "global_Mahalanobis": 2.6,
+    "PCA_T2": 43.6,
+    "PCA_SPE": 0.0,
+    "IsolationForest": 2.6
+   },
+   "drift": {
+    "v2_FROZEN": 35.0,
+    "v1_tieaware": 0.0,
+    "global_Mahalanobis": 6.0,
+    "PCA_T2": 36.8,
+    "PCA_SPE": 0.0,
+    "IsolationForest": 4.3
+   },
+   "stuck": {
+    "v2_FROZEN": 26.9,
+    "v1_tieaware": 19.2,
+    "global_Mahalanobis": 19.2,
+    "PCA_T2": 23.1,
+    "PCA_SPE": 0.0,
+    "IsolationForest": 0.0
+   },
+   "scale": {
+    "v2_FROZEN": 23.1,
+    "v1_tieaware": 0.0,
+    "global_Mahalanobis": 0.0,
+    "PCA_T2": 42.3,
+    "PCA_SPE": 0.0,
+    "IsolationForest": 0.0
+   },
+   "all": {
+    "v2_FROZEN": 31.2,
+    "v1_tieaware": 2.1,
+    "global_Mahalanobis": 4.8,
+    "PCA_T2": 39.5,
+    "PCA_SPE": 0.0,
+    "IsolationForest": 2.3
+   },
+   "all_new_alarm_rate_on_clean_quiet_days_pct": {
+    "v2_FROZEN": 25.5,
+    "v1_tieaware": 2.1,
+    "global_Mahalanobis": 4.8,
+    "PCA_T2": 2.3,
+    "PCA_SPE": 0.0,
+    "IsolationForest": 2.3
+   },
+   "clean_FAR_pct": {
+    "v2_FROZEN": 7.7,
+    "v1_tieaware": 0.0,
+    "global_Mahalanobis": 0.0,
+    "PCA_T2": 46.2,
+    "PCA_SPE": 0.0,
+    "IsolationForest": 0.0
+   },
+   "scenarios_detected_on_majority_of_days": {
+    "v2_FROZEN": 9,
+    "v1_tieaware": 1,
+    "global_Mahalanobis": 1,
+    "PCA_T2": 4,
+    "PCA_SPE": 0,
+    "IsolationForest": 0
+   }
+  },
+  "scenarios": {
+   "suction_T1|bias|-2IQR": {
+    "magnitude": -3.215105000000001,
+    "v2_FROZEN": {
+     "alarm_days": "11/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 10,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "6/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "suction_T1|bias|-1IQR": {
+    "magnitude": -1.6075525000000006,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "6/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "suction_T1|bias|-0.5IQR": {
+    "magnitude": -0.8037762500000003,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "6/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "suction_T1|bias|+0.5IQR": {
+    "magnitude": 0.8037762500000003,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "6/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "suction_T1|bias|+1IQR": {
+    "magnitude": 1.6075525000000006,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "6/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "3/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 3,
+     "first_alarm_day": 3
+    }
+   },
+   "suction_T1|bias|+2IQR": {
+    "magnitude": 3.215105000000001,
+    "v2_FROZEN": {
+     "alarm_days": "2/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 8
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "5/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "3/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 3,
+     "first_alarm_day": 3
+    }
+   },
+   "suction_T1|drift|1IQR": {
+    "magnitude": 1.6075525000000006,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "6/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "suction_T1|drift|2IQR": {
+    "magnitude": 3.215105000000001,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "5/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 9
+    }
+   },
+   "suction_T1|drift|4IQR": {
+    "magnitude": 6.430210000000002,
+    "v2_FROZEN": {
+     "alarm_days": "6/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 5,
+     "first_alarm_day": 8
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "5/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "4/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 4,
+     "first_alarm_day": 4
+    }
+   },
+   "suction_T1|stuck": {
+    "magnitude": null,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "6/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "discharge_T1|bias|-2IQR": {
+    "magnitude": -13.323162500000024,
+    "v2_FROZEN": {
+     "alarm_days": "10/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 9,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "8/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 2,
+     "first_alarm_day": 1
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "discharge_T1|bias|-1IQR": {
+    "magnitude": -6.661581250000012,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "8/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 2,
+     "first_alarm_day": 1
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "discharge_T1|bias|-0.5IQR": {
+    "magnitude": -3.330790625000006,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "7/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 1
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "discharge_T1|bias|+0.5IQR": {
+    "magnitude": 3.330790625000006,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "5/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "discharge_T1|bias|+1IQR": {
+    "magnitude": 6.661581250000012,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "3/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 4
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "discharge_T1|bias|+2IQR": {
+    "magnitude": 13.323162500000024,
+    "v2_FROZEN": {
+     "alarm_days": "2/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 8
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "2/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 4
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "discharge_T1|drift|1IQR": {
+    "magnitude": 6.661581250000012,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "5/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "discharge_T1|drift|2IQR": {
+    "magnitude": 13.323162500000024,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "4/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "discharge_T1|drift|4IQR": {
+    "magnitude": 26.646325000000047,
+    "v2_FROZEN": {
+     "alarm_days": "6/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 5,
+     "first_alarm_day": 8
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "3/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "discharge_T1|stuck": {
+    "magnitude": null,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "liquid_T1|bias|-2IQR": {
+    "magnitude": -9.6720695,
+    "v2_FROZEN": {
+     "alarm_days": "13/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 12,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 4
+    },
+    "PCA_T2": {
+     "alarm_days": "7/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 1
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "liquid_T1|bias|-1IQR": {
+    "magnitude": -4.83603475,
+    "v2_FROZEN": {
+     "alarm_days": "3/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 2,
+     "first_alarm_day": 8
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "6/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "liquid_T1|bias|-0.5IQR": {
+    "magnitude": -2.418017375,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "6/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "liquid_T1|bias|+0.5IQR": {
+    "magnitude": 2.418017375,
+    "v2_FROZEN": {
+     "alarm_days": "3/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 2,
+     "first_alarm_day": 6
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "5/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "liquid_T1|bias|+1IQR": {
+    "magnitude": 4.83603475,
+    "v2_FROZEN": {
+     "alarm_days": "11/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 10,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 13
+    },
+    "PCA_T2": {
+     "alarm_days": "5/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "liquid_T1|bias|+2IQR": {
+    "magnitude": 9.6720695,
+    "v2_FROZEN": {
+     "alarm_days": "13/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 12,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "4/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 4,
+     "first_alarm_day": 1
+    },
+    "PCA_T2": {
+     "alarm_days": "5/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "liquid_T1|drift|1IQR": {
+    "magnitude": 4.83603475,
+    "v2_FROZEN": {
+     "alarm_days": "6/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 5,
+     "first_alarm_day": 6
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 13
+    },
+    "PCA_T2": {
+     "alarm_days": "5/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "liquid_T1|drift|2IQR": {
+    "magnitude": 9.6720695,
+    "v2_FROZEN": {
+     "alarm_days": "9/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 8,
+     "first_alarm_day": 5
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 13
+    },
+    "PCA_T2": {
+     "alarm_days": "5/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "liquid_T1|drift|4IQR": {
+    "magnitude": 19.344139,
+    "v2_FROZEN": {
+     "alarm_days": "10/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 9,
+     "first_alarm_day": 4
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "5/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 5,
+     "first_alarm_day": 9
+    },
+    "PCA_T2": {
+     "alarm_days": "5/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "liquid_T1|stuck": {
+    "magnitude": null,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "5/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "comp_power|scale|-0.2": {
+    "magnitude": -0.2,
+    "v2_FROZEN": {
+     "alarm_days": "2/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 9
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "6/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "comp_power|scale|-0.1": {
+    "magnitude": -0.1,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "6/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "comp_power|scale|-0.05": {
+    "magnitude": -0.05,
+    "v2_FROZEN": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "6/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "comp_power|scale|+0.05": {
+    "magnitude": 0.05,
+    "v2_FROZEN": {
+     "alarm_days": "2/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 7
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "5/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "comp_power|scale|+0.1": {
+    "magnitude": 0.1,
+    "v2_FROZEN": {
+     "alarm_days": "3/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 2,
+     "first_alarm_day": 6
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "5/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "comp_power|scale|+0.2": {
+    "magnitude": 0.2,
+    "v2_FROZEN": {
+     "alarm_days": "9/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 8,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "PCA_T2": {
+     "alarm_days": "5/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 3
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "comp_power|stuck": {
+    "magnitude": null,
+    "v2_FROZEN": {
+     "alarm_days": "11/13",
+     "clean_alarm_days": "1/13",
+     "new_alarm_days_on_clean_quiet_days": 10,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "10/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 10,
+     "first_alarm_day": 1
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "10/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 10,
+     "first_alarm_day": 1
+    },
+    "PCA_T2": {
+     "alarm_days": "1/13",
+     "clean_alarm_days": "6/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 4
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/13",
+     "clean_alarm_days": "0/13",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   }
+  }
+ },
+ "Site2": {
+  "n_test_days": 44,
+  "n_scenarios": 37,
+  "summary_mean_alarm_rate_pct": {
+   "bias": {
+    "v2_FROZEN": 68.9,
+    "v1_tieaware": 25.3,
+    "global_Mahalanobis": 5.7,
+    "PCA_T2": 4.5,
+    "PCA_SPE": 17.3,
+    "IsolationForest": 10.9
+   },
+   "drift": {
+    "v2_FROZEN": 59.1,
+    "v1_tieaware": 30.3,
+    "global_Mahalanobis": 9.6,
+    "PCA_T2": 4.5,
+    "PCA_SPE": 11.6,
+    "IsolationForest": 10.1
+   },
+   "stuck": {
+    "v2_FROZEN": 76.1,
+    "v1_tieaware": 2.8,
+    "global_Mahalanobis": 9.1,
+    "PCA_T2": 4.5,
+    "PCA_SPE": 25.0,
+    "IsolationForest": 10.2
+   },
+   "scale": {
+    "v2_FROZEN": 57.2,
+    "v1_tieaware": 2.3,
+    "global_Mahalanobis": 4.5,
+    "PCA_T2": 4.5,
+    "PCA_SPE": 0.4,
+    "IsolationForest": 3.0
+   },
+   "all": {
+    "v2_FROZEN": 65.4,
+    "v1_tieaware": 20.3,
+    "global_Mahalanobis": 6.8,
+    "PCA_T2": 4.5,
+    "PCA_SPE": 14.0,
+    "IsolationForest": 9.3
+   },
+   "all_new_alarm_rate_on_clean_quiet_days_pct": {
+    "v2_FROZEN": 62.3,
+    "v1_tieaware": 19.1,
+    "global_Mahalanobis": 2.4,
+    "PCA_T2": 0.0,
+    "PCA_SPE": 14.0,
+    "IsolationForest": 8.0
+   },
+   "clean_FAR_pct": {
+    "v2_FROZEN": 9.1,
+    "v1_tieaware": 2.3,
+    "global_Mahalanobis": 4.5,
+    "PCA_T2": 4.5,
+    "PCA_SPE": 0.0,
+    "IsolationForest": 2.3
+   },
+   "scenarios_detected_on_majority_of_days": {
+    "v2_FROZEN": 24,
+    "v1_tieaware": 6,
+    "global_Mahalanobis": 0,
+    "PCA_T2": 0,
+    "PCA_SPE": 4,
+    "IsolationForest": 0
+   }
+  },
+  "scenarios": {
+   "suction_T1|bias|-2IQR": {
+    "magnitude": -8.325117499999998,
+    "v2_FROZEN": {
+     "alarm_days": "44/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 40,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "3/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 2,
+     "first_alarm_day": 17
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "20/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 20,
+     "first_alarm_day": 4
+    },
+    "IsolationForest": {
+     "alarm_days": "3/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 3,
+     "first_alarm_day": 11
+    }
+   },
+   "suction_T1|bias|-1IQR": {
+    "magnitude": -4.162558749999999,
+    "v2_FROZEN": {
+     "alarm_days": "8/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 4,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 44
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "4/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 4,
+     "first_alarm_day": 4
+    },
+    "IsolationForest": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 39
+    }
+   },
+   "suction_T1|bias|-0.5IQR": {
+    "magnitude": -2.0812793749999994,
+    "v2_FROZEN": {
+     "alarm_days": "3/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 17
+    },
+    "v1_tieaware": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 44
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 28
+    },
+    "IsolationForest": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 39
+    }
+   },
+   "suction_T1|bias|+0.5IQR": {
+    "magnitude": 2.0812793749999994,
+    "v2_FROZEN": {
+     "alarm_days": "17/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 13,
+     "first_alarm_day": 4
+    },
+    "v1_tieaware": {
+     "alarm_days": "12/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 11,
+     "first_alarm_day": 4
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "4/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 3,
+     "first_alarm_day": 9
+    }
+   },
+   "suction_T1|bias|+1IQR": {
+    "magnitude": 4.162558749999999,
+    "v2_FROZEN": {
+     "alarm_days": "31/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 27,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "17/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 16,
+     "first_alarm_day": 4
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "5/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 4,
+     "first_alarm_day": 9
+    }
+   },
+   "suction_T1|bias|+2IQR": {
+    "magnitude": 8.325117499999998,
+    "v2_FROZEN": {
+     "alarm_days": "44/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 40,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "24/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 23,
+     "first_alarm_day": 1
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "5/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 4,
+     "first_alarm_day": 9
+    }
+   },
+   "suction_T1|drift|1IQR": {
+    "magnitude": 4.162558749999999,
+    "v2_FROZEN": {
+     "alarm_days": "14/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 10,
+     "first_alarm_day": 11
+    },
+    "v1_tieaware": {
+     "alarm_days": "8/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 7,
+     "first_alarm_day": 21
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "4/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 3,
+     "first_alarm_day": 9
+    }
+   },
+   "suction_T1|drift|2IQR": {
+    "magnitude": 8.325117499999998,
+    "v2_FROZEN": {
+     "alarm_days": "24/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 20,
+     "first_alarm_day": 11
+    },
+    "v1_tieaware": {
+     "alarm_days": "16/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 15,
+     "first_alarm_day": 8
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "4/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 3,
+     "first_alarm_day": 9
+    }
+   },
+   "suction_T1|drift|4IQR": {
+    "magnitude": 16.650234999999995,
+    "v2_FROZEN": {
+     "alarm_days": "38/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 34,
+     "first_alarm_day": 6
+    },
+    "v1_tieaware": {
+     "alarm_days": "26/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 25,
+     "first_alarm_day": 8
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "4/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 3,
+     "first_alarm_day": 9
+    }
+   },
+   "suction_T1|stuck": {
+    "magnitude": null,
+    "v2_FROZEN": {
+     "alarm_days": "3/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 17
+    },
+    "v1_tieaware": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 44
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "4/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 4,
+     "first_alarm_day": 4
+    },
+    "IsolationForest": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 39
+    }
+   },
+   "discharge_T1|bias|-2IQR": {
+    "magnitude": -12.545346000000023,
+    "v2_FROZEN": {
+     "alarm_days": "44/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 40,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "25/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 24,
+     "first_alarm_day": 1
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "26/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 26,
+     "first_alarm_day": 1
+    },
+    "IsolationForest": {
+     "alarm_days": "8/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 7,
+     "first_alarm_day": 5
+    }
+   },
+   "discharge_T1|bias|-1IQR": {
+    "magnitude": -6.272673000000012,
+    "v2_FROZEN": {
+     "alarm_days": "23/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 19,
+     "first_alarm_day": 4
+    },
+    "v1_tieaware": {
+     "alarm_days": "20/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 19,
+     "first_alarm_day": 4
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "20/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 20,
+     "first_alarm_day": 4
+    },
+    "IsolationForest": {
+     "alarm_days": "4/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 3,
+     "first_alarm_day": 17
+    }
+   },
+   "discharge_T1|bias|-0.5IQR": {
+    "magnitude": -3.136336500000006,
+    "v2_FROZEN": {
+     "alarm_days": "16/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 12,
+     "first_alarm_day": 4
+    },
+    "v1_tieaware": {
+     "alarm_days": "15/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 14,
+     "first_alarm_day": 4
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "5/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 5,
+     "first_alarm_day": 4
+    },
+    "IsolationForest": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 23
+    }
+   },
+   "discharge_T1|bias|+0.5IQR": {
+    "magnitude": 3.136336500000006,
+    "v2_FROZEN": {
+     "alarm_days": "3/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 17
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "discharge_T1|bias|+1IQR": {
+    "magnitude": 6.272673000000012,
+    "v2_FROZEN": {
+     "alarm_days": "5/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 2,
+     "first_alarm_day": 11
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 11
+    }
+   },
+   "discharge_T1|bias|+2IQR": {
+    "magnitude": 12.545346000000023,
+    "v2_FROZEN": {
+     "alarm_days": "44/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 40,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 2,
+     "first_alarm_day": 10
+    },
+    "IsolationForest": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 2,
+     "first_alarm_day": 11
+    }
+   },
+   "discharge_T1|drift|1IQR": {
+    "magnitude": 6.272673000000012,
+    "v2_FROZEN": {
+     "alarm_days": "3/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 17
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "discharge_T1|drift|2IQR": {
+    "magnitude": 12.545346000000023,
+    "v2_FROZEN": {
+     "alarm_days": "15/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 11,
+     "first_alarm_day": 17
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "discharge_T1|drift|4IQR": {
+    "magnitude": 25.090692000000047,
+    "v2_FROZEN": {
+     "alarm_days": "30/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 26,
+     "first_alarm_day": 11
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "7/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 7,
+     "first_alarm_day": 31
+    },
+    "IsolationForest": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 11
+    }
+   },
+   "discharge_T1|stuck": {
+    "magnitude": null,
+    "v2_FROZEN": {
+     "alarm_days": "44/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 40,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 2,
+     "first_alarm_day": 11
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "40/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 40,
+     "first_alarm_day": 1
+    },
+    "IsolationForest": {
+     "alarm_days": "17/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 17,
+     "first_alarm_day": 1
+    }
+   },
+   "liquid_T1|bias|-2IQR": {
+    "magnitude": -29.844837,
+    "v2_FROZEN": {
+     "alarm_days": "44/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 40,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "8/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 6,
+     "first_alarm_day": 1
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "14/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 14,
+     "first_alarm_day": 4
+    },
+    "IsolationForest": {
+     "alarm_days": "7/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 6,
+     "first_alarm_day": 4
+    }
+   },
+   "liquid_T1|bias|-1IQR": {
+    "magnitude": -14.9224185,
+    "v2_FROZEN": {
+     "alarm_days": "44/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 40,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "7/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 6,
+     "first_alarm_day": 4
+    }
+   },
+   "liquid_T1|bias|-0.5IQR": {
+    "magnitude": -7.46120925,
+    "v2_FROZEN": {
+     "alarm_days": "44/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 40,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "4/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 3,
+     "first_alarm_day": 17
+    }
+   },
+   "liquid_T1|bias|+0.5IQR": {
+    "magnitude": 7.46120925,
+    "v2_FROZEN": {
+     "alarm_days": "44/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 40,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "19/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 18,
+     "first_alarm_day": 4
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 2,
+     "first_alarm_day": 4
+    },
+    "IsolationForest": {
+     "alarm_days": "7/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 6,
+     "first_alarm_day": 4
+    }
+   },
+   "liquid_T1|bias|+1IQR": {
+    "magnitude": 14.9224185,
+    "v2_FROZEN": {
+     "alarm_days": "44/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 40,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "22/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 21,
+     "first_alarm_day": 1
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "12/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 12,
+     "first_alarm_day": 4
+    },
+    "IsolationForest": {
+     "alarm_days": "8/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 7,
+     "first_alarm_day": 4
+    }
+   },
+   "liquid_T1|bias|+2IQR": {
+    "magnitude": 29.844837,
+    "v2_FROZEN": {
+     "alarm_days": "44/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 40,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "41/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 40,
+     "first_alarm_day": 1
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "5/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 3,
+     "first_alarm_day": 6
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "31/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 31,
+     "first_alarm_day": 1
+    },
+    "IsolationForest": {
+     "alarm_days": "17/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 16,
+     "first_alarm_day": 4
+    }
+   },
+   "liquid_T1|drift|1IQR": {
+    "magnitude": 14.9224185,
+    "v2_FROZEN": {
+     "alarm_days": "31/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 27,
+     "first_alarm_day": 11
+    },
+    "v1_tieaware": {
+     "alarm_days": "15/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 14,
+     "first_alarm_day": 8
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 28
+    },
+    "IsolationForest": {
+     "alarm_days": "6/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 5,
+     "first_alarm_day": 8
+    }
+   },
+   "liquid_T1|drift|2IQR": {
+    "magnitude": 29.844837,
+    "v2_FROZEN": {
+     "alarm_days": "38/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 34,
+     "first_alarm_day": 7
+    },
+    "v1_tieaware": {
+     "alarm_days": "24/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 23,
+     "first_alarm_day": 8
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "3/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "11/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 11,
+     "first_alarm_day": 23
+    },
+    "IsolationForest": {
+     "alarm_days": "9/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 8,
+     "first_alarm_day": 4
+    }
+   },
+   "liquid_T1|drift|4IQR": {
+    "magnitude": 59.689674,
+    "v2_FROZEN": {
+     "alarm_days": "41/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 37,
+     "first_alarm_day": 4
+    },
+    "v1_tieaware": {
+     "alarm_days": "31/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 30,
+     "first_alarm_day": 4
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "21/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 19,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "27/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 27,
+     "first_alarm_day": 16
+    },
+    "IsolationForest": {
+     "alarm_days": "12/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 11,
+     "first_alarm_day": 8
+    }
+   },
+   "liquid_T1|stuck": {
+    "magnitude": null,
+    "v2_FROZEN": {
+     "alarm_days": "43/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 39,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 44
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   },
+   "comp_power|scale|-0.2": {
+    "magnitude": -0.2,
+    "v2_FROZEN": {
+     "alarm_days": "44/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 40,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 44
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 8
+    }
+   },
+   "comp_power|scale|-0.1": {
+    "magnitude": -0.1,
+    "v2_FROZEN": {
+     "alarm_days": "14/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 10,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 44
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 8
+    }
+   },
+   "comp_power|scale|-0.05": {
+    "magnitude": -0.05,
+    "v2_FROZEN": {
+     "alarm_days": "5/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 6
+    },
+    "v1_tieaware": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 44
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 23
+    }
+   },
+   "comp_power|scale|+0.05": {
+    "magnitude": 0.05,
+    "v2_FROZEN": {
+     "alarm_days": "15/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 11,
+     "first_alarm_day": 4
+    },
+    "v1_tieaware": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 44
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 23
+    }
+   },
+   "comp_power|scale|+0.1": {
+    "magnitude": 0.1,
+    "v2_FROZEN": {
+     "alarm_days": "29/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 25,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 44
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 23
+    }
+   },
+   "comp_power|scale|+0.2": {
+    "magnitude": 0.2,
+    "v2_FROZEN": {
+     "alarm_days": "44/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 40,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 44
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 1,
+     "first_alarm_day": 28
+    },
+    "IsolationForest": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 23
+    }
+   },
+   "comp_power|stuck": {
+    "magnitude": null,
+    "v2_FROZEN": {
+     "alarm_days": "44/44",
+     "clean_alarm_days": "4/44",
+     "new_alarm_days_on_clean_quiet_days": 40,
+     "first_alarm_day": 1
+    },
+    "v1_tieaware": {
+     "alarm_days": "1/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 44
+    },
+    "global_Mahalanobis": {
+     "alarm_days": "10/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 8,
+     "first_alarm_day": 1
+    },
+    "PCA_T2": {
+     "alarm_days": "2/44",
+     "clean_alarm_days": "2/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": 10
+    },
+    "PCA_SPE": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "0/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    },
+    "IsolationForest": {
+     "alarm_days": "0/44",
+     "clean_alarm_days": "1/44",
+     "new_alarm_days_on_clean_quiet_days": 0,
+     "first_alarm_day": null
+    }
+   }
+  }
+ }
+}

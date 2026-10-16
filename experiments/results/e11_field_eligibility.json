@@ -1,0 +1,210 @@
+{
+ "Site1": {
+  "P0_full": {
+   "eligibility": {
+    "eligible_branches": [
+     "joint",
+     "power",
+     "refrig"
+    ],
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "52/62",
+    "unsupported_attributions": 0
+   }
+  },
+  "P1_no_circuit2": {
+   "eligibility": {
+    "eligible_branches": [
+     "power",
+     "refrig"
+    ],
+    "test_dayFAR": "0/13",
+    "fault_day_sens": "3/62",
+    "unsupported_attributions": 0
+   },
+   "median_imputation": {
+    "test_dayFAR": "13/13",
+    "fault_day_sens": "62/62",
+    "unsupported_attributions": 75,
+    "alarm_days_total": 75
+   },
+   "regression_imputation": {
+    "test_dayFAR": "0/13",
+    "fault_day_sens": "4/62",
+    "unsupported_attributions": 2,
+    "alarm_days_total": 4
+   }
+  },
+  "P2_no_circuit1": {
+   "eligibility": {
+    "eligible_branches": [
+     "power",
+     "refrig"
+    ],
+    "test_dayFAR": "2/13",
+    "fault_day_sens": "12/62",
+    "unsupported_attributions": 0
+   },
+   "median_imputation": {
+    "test_dayFAR": "11/13",
+    "fault_day_sens": "52/62",
+    "unsupported_attributions": 62,
+    "alarm_days_total": 63
+   },
+   "regression_imputation": {
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "5/62",
+    "unsupported_attributions": 0,
+    "alarm_days_total": 6
+   }
+  },
+  "P3_no_power": {
+   "eligibility": {
+    "eligible_branches": [
+     "refrig"
+    ],
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "11/62",
+    "unsupported_attributions": 0
+   },
+   "median_imputation": {
+    "test_dayFAR": "13/13",
+    "fault_day_sens": "62/62",
+    "unsupported_attributions": 75,
+    "alarm_days_total": 75
+   },
+   "regression_imputation": {
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "43/62",
+    "unsupported_attributions": 34,
+    "alarm_days_total": 44
+   }
+  },
+  "P4_power_only": {
+   "eligibility": {
+    "eligible_branches": [
+     "power"
+    ],
+    "test_dayFAR": "4/13",
+    "fault_day_sens": "10/62",
+    "unsupported_attributions": 0
+   },
+   "median_imputation": {
+    "test_dayFAR": "13/13",
+    "fault_day_sens": "62/62",
+    "unsupported_attributions": 75,
+    "alarm_days_total": 75
+   },
+   "regression_imputation": {
+    "test_dayFAR": "0/13",
+    "fault_day_sens": "3/62",
+    "unsupported_attributions": 2,
+    "alarm_days_total": 3
+   }
+  }
+ },
+ "Site2": {
+  "P0_full": {
+   "eligibility": {
+    "eligible_branches": [
+     "joint",
+     "power",
+     "refrig"
+    ],
+    "test_dayFAR": "4/44",
+    "fault_day_sens": "19/27",
+    "unsupported_attributions": 0
+   }
+  },
+  "P1_no_circuit2": {
+   "eligibility": {
+    "eligible_branches": [
+     "power",
+     "refrig"
+    ],
+    "test_dayFAR": "3/44",
+    "fault_day_sens": "9/27",
+    "unsupported_attributions": 0
+   },
+   "median_imputation": {
+    "test_dayFAR": "14/44",
+    "fault_day_sens": "19/27",
+    "unsupported_attributions": 31,
+    "alarm_days_total": 33
+   },
+   "regression_imputation": {
+    "test_dayFAR": "2/44",
+    "fault_day_sens": "7/27",
+    "unsupported_attributions": 3,
+    "alarm_days_total": 9
+   }
+  },
+  "P2_no_circuit1": {
+   "eligibility": {
+    "eligible_branches": [
+     "power",
+     "refrig"
+    ],
+    "test_dayFAR": "4/44",
+    "fault_day_sens": "15/27",
+    "unsupported_attributions": 0
+   },
+   "median_imputation": {
+    "test_dayFAR": "13/44",
+    "fault_day_sens": "21/27",
+    "unsupported_attributions": 22,
+    "alarm_days_total": 34
+   },
+   "regression_imputation": {
+    "test_dayFAR": "2/44",
+    "fault_day_sens": "15/27",
+    "unsupported_attributions": 0,
+    "alarm_days_total": 17
+   }
+  },
+  "P3_no_power": {
+   "eligibility": {
+    "eligible_branches": [
+     "refrig"
+    ],
+    "test_dayFAR": "3/44",
+    "fault_day_sens": "17/27",
+    "unsupported_attributions": 0
+   },
+   "median_imputation": {
+    "test_dayFAR": "9/44",
+    "fault_day_sens": "19/27",
+    "unsupported_attributions": 16,
+    "alarm_days_total": 28
+   },
+   "regression_imputation": {
+    "test_dayFAR": "2/44",
+    "fault_day_sens": "14/27",
+    "unsupported_attributions": 3,
+    "alarm_days_total": 16
+   }
+  },
+  "P4_power_only": {
+   "eligibility": {
+    "eligible_branches": [
+     "power"
+    ],
+    "test_dayFAR": "5/44",
+    "fault_day_sens": "7/27",
+    "unsupported_attributions": 0
+   },
+   "median_imputation": {
+    "test_dayFAR": "8/44",
+    "fault_day_sens": "15/27",
+    "unsupported_attributions": 20,
+    "alarm_days_total": 23
+   },
+   "regression_imputation": {
+    "test_dayFAR": "0/44",
+    "fault_day_sens": "5/27",
+    "unsupported_attributions": 0,
+    "alarm_days_total": 5
+   }
+  }
+ }
+}

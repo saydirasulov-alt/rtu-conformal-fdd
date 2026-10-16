@@ -1,0 +1,92 @@
+{
+ "Site1": {
+  "1e-05": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "53/62"
+  },
+  "0.0001": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "53/62"
+  },
+  "0.0003": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "53/62"
+  },
+  "0.001": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "52/62"
+  },
+  "0.002": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "46/62"
+  },
+  "0.003": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "41/62"
+  },
+  "0.005": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "30/62"
+  },
+  "0.01": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "9/62"
+  },
+  "0.03": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "5/62"
+  },
+  "joint_cov_eigenvalues_smallest5": [
+   -3.65e-17,
+   8.11e-16,
+   0.000872,
+   0.00394,
+   0.034
+  ]
+ },
+ "Site2": {
+  "1e-05": {
+   "test_dayFAR": "4/44",
+   "fault_day_sens": "19/27"
+  },
+  "0.0001": {
+   "test_dayFAR": "4/44",
+   "fault_day_sens": "19/27"
+  },
+  "0.0003": {
+   "test_dayFAR": "4/44",
+   "fault_day_sens": "19/27"
+  },
+  "0.001": {
+   "test_dayFAR": "4/44",
+   "fault_day_sens": "19/27"
+  },
+  "0.002": {
+   "test_dayFAR": "5/44",
+   "fault_day_sens": "20/27"
+  },
+  "0.003": {
+   "test_dayFAR": "5/44",
+   "fault_day_sens": "20/27"
+  },
+  "0.005": {
+   "test_dayFAR": "5/44",
+   "fault_day_sens": "20/27"
+  },
+  "0.01": {
+   "test_dayFAR": "5/44",
+   "fault_day_sens": "20/27"
+  },
+  "0.03": {
+   "test_dayFAR": "4/44",
+   "fault_day_sens": "19/27"
+  },
+  "joint_cov_eigenvalues_smallest5": [
+   1.72e-16,
+   4.29e-16,
+   0.00372,
+   0.00792,
+   0.0353
+  ]
+ }
+}

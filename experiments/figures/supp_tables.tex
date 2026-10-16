@@ -1,0 +1,164 @@
+\begin{table}[h!]\centering\footnotesize\caption{Development grid on the simulated RTU (12 development scenarios, 25 test days each). FAR: fault-free test days flagged. Candidates flagging more than 3 of 25 days were inadmissible (Amendment 1).}\label{tab:S1}
+\begin{tabular}{llcccl}\toprule
+Scores & Daily rule & Joint & FAR & Dev. sens. (\%) & \\\midrule
+Temperatures + power & max & no & 2/25 & 10.0 & \\
+Temperatures + power & max & yes & 2/25 & 10.0 & \\
+Temperatures + power & mean & no & 0/25 & 26.0 & \\
+Temperatures + power & mean & yes & 0/25 & 26.7 & \\
+Temperatures + power & max + mean & no & 2/25 & 29.7 & \\
+Temperatures + power & max + mean & yes & 2/25 & 30.3 & selected\\
++ pressures & max & no & 2/25 & 20.3 & \\
++ pressures & max & yes & 2/25 & 20.3 & \\
++ pressures & mean & no & 0/25 & 27.0 & \\
++ pressures & mean & yes & 0/25 & 27.0 & \\
++ pressures & max + mean & no & 2/25 & 31.3 & \\
++ pressures & max + mean & yes & 2/25 & 31.3 & \\
+Condition-aware residuals & max & no & 0/25 & 0.3 & \\
+Condition-aware residuals & max & yes & 0/25 & 8.0 & \\
+Condition-aware residuals & mean & no & 13/25 & 91.0 & inadmissible\\
+Condition-aware residuals & mean & yes & 13/25 & 91.0 & inadmissible\\
+Condition-aware residuals & max + mean & no & 13/25 & 91.0 & inadmissible\\
+Condition-aware residuals & max + mean & yes & 13/25 & 91.0 & inadmissible\\
+Residuals + pressures & max & no & 0/25 & 1.3 & \\
+Residuals + pressures & max & yes & 0/25 & 7.7 & \\
+Residuals + pressures & mean & no & 12/25 & 91.7 & inadmissible\\
+Residuals + pressures & mean & yes & 12/25 & 91.7 & inadmissible\\
+Residuals + pressures & max + mean & no & 12/25 & 91.7 & inadmissible\\
+Residuals + pressures & max + mean & yes & 12/25 & 91.7 & inadmissible\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[h!]\centering\footnotesize\caption{Component ablation under the day-level conformal rule (normal test days flagged; fault days detected).}\label{tab:S2}
+\begin{tabular}{lcccc}\toprule
+Variant & S2 FAR & S2 sens. & S1 FAR & S1 sens.\\\midrule
+v1 original (plain PIT, day max) & 1/44 & 13/27 & 0/13 & 0/62\\
+v1 tie-aware & 1/44 & 13/27 & 0/13 & 1/62\\
+No percentile transform (max of raw branch distances) & 2/44 & 0/27 & 0/13 & 0/62\\
+No branches (single global distance) & 2/44 & 1/27 & 0/13 & 13/62\\
+Minute-level instead of day-level calibration & 44/44 & 27/27 & 11/13 & 54/62\\
+Frozen (joint branch, max + mean) & 4/44 & 19/27 & 1/13 & 52/62\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[h!]\centering\footnotesize\caption{Site 2, calibration length (training: first 88 days; test: last 44 days; calibration: the $n_{\mathrm{cal}}$ days before the test block).}\label{tab:S3}
+\begin{tabular}{lcccccccc}\toprule
+$n_{\mathrm{cal}}$ & 19 & 25 & 30 & 44 & 19 & 25 & 30 & 44\\\midrule
+& \multicolumn{4}{c}{normal test days flagged (of 44)} & \multicolumn{4}{c}{fault days detected (of 27)}\\
+Frozen & 7/44 & 7/44 & 4/44 & 4/44 & 20/27 & 20/27 & 19/27 & 19/27\\
+v1 tie-aware & 1/44 & 1/44 & 1/44 & 1/44 & 11/27 & 11/27 & 11/27 & 13/27\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[h!]\centering\footnotesize\caption{Site 2 rolling-origin windows (60 training, 30 calibration, 14 test days): normal test days flagged.}\label{tab:S3b}
+\begin{tabular}{lccc}\toprule
+Window & Frozen & v1 tie-aware & v1 original\\\midrule
+1 & 1/14 & 1/14 & unattainable\\
+2 & 1/14 & 0/14 & unattainable\\
+3 & 0/14 & 0/14 & 0/14\\
+4 & 0/14 & 0/14 & unattainable\\
+5 & 1/14 & 0/14 & unattainable\\
+6 & 0/14 & 0/14 & unattainable\\
+Pooled & 3/84 & 1/84 & 0/84\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[h!]\centering\footnotesize\caption{Refrigerant and pressure-reference identification on training data (medians, circuit 1 / circuit 2, K). Selected: R-22, absolute, at both sites.}\label{tab:S4}
+\begin{tabular}{clcccc c}\toprule
+Site & Refrigerant & Pressure & Superheat & Subcooling & Approach & Plausible\\\midrule
+2 & R-22 & gauge & 11.1 / 9.2 & 22.7 / 15.4 & 20.3 / 21.1 & no\\
+2 & R-22 & absolute & 16.8 / 14.5 & 20.0 / 13.0 & 17.8 / 18.7 & yes\\
+2 & R-410A & gauge & 25.7 / 23.9 & 4.8 / -3.2 & 1.9 / 2.4 & no\\
+2 & R-410A & absolute & 30.9 / 28.9 & 2.3 / -5.4 & -0.4 / 0.2 & no\\
+2 & R-407C & gauge & 9.2 / 7.4 & 17.4 / 9.9 & 14.8 / 15.5 & yes\\
+2 & R-407C & absolute & 14.6 / 12.5 & 14.8 / 7.5 & 12.4 / 13.2 & yes\\
+1 & R-22 & gauge & 11.6 / 12.4 & 17.0 / 17.9 & 15.8 / 19.5 & yes\\
+1 & R-22 & absolute & 17.5 / 18.2 & 14.4 / 15.4 & 13.2 / 17.2 & yes\\
+1 & R-410A & gauge & 26.0 / 27.0 & -1.4 / -0.9 & -2.6 / 0.8 & no\\
+1 & R-410A & absolute & 31.4 / 32.2 & -3.7 / -3.0 & -4.9 / -1.3 & no\\
+1 & R-407C & gauge & 9.6 / 10.5 & 11.5 / 12.3 & 10.3 / 14.0 & yes\\
+1 & R-407C & absolute & 15.2 / 16.0 & 9.1 / 10.0 & 7.8 / 11.7 & yes\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[h!]\centering\footnotesize\caption{Physics charge indicator under every plausible hypothesis (Amendment P2-A1).}\label{tab:S4b}
+\begin{tabular}{clcccc}\toprule
+Site & Hypothesis & Conformal FAR & Conformal sens. & Rule FAR & Rule sens.\\\midrule
+2 & R-22, absolute & 0/44 & 5/27 & 0/44 & 9/27\\
+2 & R-407C, gauge & 0/44 & 4/27 & 0/44 & 9/27\\
+2 & R-407C, absolute & 0/44 & 5/27 & 0/44 & 9/27\\
+1 & R-22, gauge & 4/13 & 25/62 & 11/13 & 34/62\\
+1 & R-22, absolute & 4/13 & 19/62 & 10/13 & 32/62\\
+1 & R-407C, gauge & 3/13 & 41/62 & 10/13 & 35/62\\
+1 & R-407C, absolute & 4/13 & 20/62 & 11/13 & 35/62\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[h!]\centering\footnotesize\caption{One-at-a-time robustness of the frozen configuration (post hoc).}\label{tab:S5}
+\begin{tabular}{lcccccc}\toprule
+Setting & Sim. FAR & Sim. sens. (\%) & S2 FAR & S2 sens. & S1 FAR & S1 sens.\\\midrule
+frozen & 2/25 & 70.0 & 4/44 & 19/27 & 1/13 & 52/62\\
+alpha=0.1 & 2/25 & 70.0 & 6/44 & 21/27 & 1/13 & 52/62\\
+alpha=0.2 & 7/25 & 78.3 & 10/44 & 21/27 & 3/13 & 56/62\\
+gate=100.0W & 2/25 & 70.0 & 4/44 & 20/27 & 1/13 & 52/62\\
+gate=500.0W & 2/25 & 70.7 & 4/44 & 19/27 & 1/13 & 52/62\\
+ridge=0.0001 & 2/25 & 70.0 & 4/44 & 19/27 & 1/13 & 53/62\\
+ridge=0.01 & 2/25 & 70.0 & 5/44 & 20/27 & 1/13 & 9/62\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[h!]\centering\footnotesize\caption{Ridge sweep (Amendment P2-A2). Smallest joint-branch covariance eigenvalues: Site 1 -3.7e-17, 8.1e-16, 0.00087; Site 2 1.7e-16, 4.3e-16, 0.0037.}\label{tab:S5b}
+\begin{tabular}{lcccc}\toprule
+Ridge & S2 FAR & S2 sens. & S1 FAR & S1 sens.\\\midrule
+1e-05 & 4/44 & 19/27 & 1/13 & 53/62\\
+0.0001 & 4/44 & 19/27 & 1/13 & 53/62\\
+0.0003 & 4/44 & 19/27 & 1/13 & 53/62\\
+0.001 & 4/44 & 19/27 & 1/13 & 52/62\\
+0.002 & 5/44 & 20/27 & 1/13 & 46/62\\
+0.003 & 5/44 & 20/27 & 1/13 & 41/62\\
+0.005 & 5/44 & 20/27 & 1/13 & 30/62\\
+0.01 & 5/44 & 20/27 & 1/13 & 9/62\\
+0.03 & 4/44 & 19/27 & 1/13 & 5/62\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[h!]\centering\scriptsize\caption{ORNL: intermittent loss (fraction of minutes) and daily outages (hours) of the damper, supply-air temperature or power sensors on test and fault days. Fault days detected of 16; full sensing: 15, 13, 15.}\label{tab:S6}
+\begin{tabular}{llccccc c}\toprule
+Sensors lost & Mode & Level & Min. FAR (\%) & Econ. & Damper & SA bias & Unsupp.\\\midrule
+DMPR & intermittent & 0.05 & 1.20 & 15/16 & 13/16 & 15/16 & 0\\
+DMPR & intermittent & 0.1 & 1.16 & 14/16 & 13/16 & 15/16 & 0\\
+DMPR & intermittent & 0.2 & 1.32 & 15/16 & 12/16 & 16/16 & 0\\
+DMPR & intermittent & 0.4 & 1.36 & 12/16 & 12/16 & 16/16 & 0\\
+DMPR & outage hours & 1 & 1.16 & 15/16 & 12/16 & 15/16 & 0\\
+DMPR & outage hours & 6 & 1.16 & 15/16 & 12/16 & 16/16 & 0\\
+DMPR & outage hours & 24 & 1.80 & 0/16 & 0/16 & 16/16 & 0\\
+SAT & intermittent & 0.05 & 1.16 & 15/16 & 13/16 & 15/16 & 0\\
+SAT & intermittent & 0.1 & 1.16 & 15/16 & 13/16 & 13/16 & 0\\
+SAT & intermittent & 0.2 & 1.16 & 15/16 & 13/16 & 15/16 & 0\\
+SAT & intermittent & 0.4 & 1.16 & 14/16 & 13/16 & 13/16 & 0\\
+SAT & outage hours & 1 & 1.16 & 15/16 & 13/16 & 14/16 & 0\\
+SAT & outage hours & 6 & 1.16 & 14/16 & 13/16 & 14/16 & 0\\
+SAT & outage hours & 24 & 1.16 & 14/16 & 13/16 & 0/16 & 0\\
+power family & intermittent & 0.05 & 1.12 & 14/16 & 13/16 & 15/16 & 0\\
+power family & intermittent & 0.1 & 1.16 & 15/16 & 13/16 & 14/16 & 0\\
+power family & intermittent & 0.2 & 1.16 & 15/16 & 12/16 & 12/16 & 0\\
+power family & intermittent & 0.4 & 1.12 & 15/16 & 12/16 & 14/16 & 0\\
+power family & outage hours & 1 & 1.16 & 15/16 & 13/16 & 15/16 & 0\\
+power family & outage hours & 6 & 1.16 & 14/16 & 13/16 & 12/16 & 0\\
+power family & outage hours & 24 & 1.00 & 9/16 & 10/16 & 6/16 & 0\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[h!]\centering\footnotesize\caption{Post-hoc day-level separability (test labels used to place thresholds; diagnostic only). Fault days detected when at most $k$ normal test days are allowed to alarm.}\label{tab:S8}
+\begin{tabular}{clcccc}\toprule
+Site & Detector & AUC & $k=0$ & $k=1$ & $k=2$\\\midrule
+2 & v1 tie-aware & 0.750 & 11 & 13 & 13\\
+2 & Frozen & 0.838 & 7 & 10 & 18\\
+2 & v1 original & 0.746 & 0 & 13 & 13\\
+2 & Global Mahalanobis & 0.692 & 0 & 0 & 4\\
+2 & Isolation forest & 0.785 & 9 & 10 & 10\\
+1 & v1 tie-aware & 0.318 & 7 & 7 & 9\\
+1 & Frozen & 0.892 & 43 & 56 & 56\\
+1 & v1 original & 0.310 & 0 & 0 & 9\\
+1 & Global Mahalanobis & 0.553 & 17 & 18 & 19\\
+1 & Isolation forest & 0.216 & 1 & 1 & 3\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[h!]\centering\footnotesize\caption{Site 1 training-adequacy audit (training days only; limit on bootstrap CV of the upper tail: 0.15).}\label{tab:S9}
+\begin{tabular}{llcccc}\toprule
+Candidate & Branch & Minutes & Max cond. & Boot CV & Result\\\midrule
+13 training days & refrigerant & 9305 & 3352.5 & 0.1236 & pass\\
+13 training days & power & 9305 & 169.0 & 0.1784 & fail\\
+19 training days & refrigerant & 13838 & 1992.6 & 0.1093 & pass\\
+19 training days & power & 13838 & 169.9 & 0.1246 & pass\\
+\bottomrule\end{tabular}\end{table}

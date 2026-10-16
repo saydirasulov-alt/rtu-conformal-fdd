@@ -42,7 +42,14 @@
    0.000872,
    0.00394,
    0.034
-  ]
+  ],
+  "third_eigvec_loadings_abs_gt_0.1": {
+   "c2_discharge": -0.41,
+   "c2_disc_minus_suct": -0.36,
+   "tot_W": 0.83
+  },
+  "train_projection_sd": 0.0295,
+  "fault_median_abs_projection": 0.083
  },
  "Site2": {
   "1e-05": {
@@ -87,6 +94,15 @@
    0.00372,
    0.00792,
    0.0353
-  ]
+  ],
+  "third_eigvec_loadings_abs_gt_0.1": {
+   "c1_liquid": 0.21,
+   "c2_discharge": -0.41,
+   "c2_disc_minus_suct": -0.35,
+   "comp_W": -0.14,
+   "tot_W": 0.8
+  },
+  "train_projection_sd": 0.061,
+  "fault_median_abs_projection": 0.0307
  }
 }

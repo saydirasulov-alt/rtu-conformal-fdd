@@ -43,11 +43,12 @@ Analysis plans: `experiments/ALGO_PLAN_V2.md` (selection, Amendment 1) and `expe
 (supporting analyses and amendments A1–A10, each committed before its results were computed; check the git
 history). `e15b_alternative_selection.py` and `e15c_minimum_minutes.py` are the only analyses not covered by a plan and are labelled as such.
 
-**Reproduction status.** E1–E6 and the v2 selection/evaluation were re-run on a second computer
-(Windows, Python 3.12) with identical results (`experiments/REPRODUCTION_REPORT_PC_2026-10-14.md`).
-Phase 2 (E7–E15) has been run on one machine (Linux, Python 3.13, NumPy 2.5.3, pandas 3.0.5, SciPy 1.18.1,
-scikit-learn 1.9.1, CoolProp 8.0.0). Checksums can differ across library versions in the last digits of
-floating-point values; the reported counts should not. `SUMMARY.json` and `e7_e8_paired_operational.json` contain run times and machine
+**Reproduction status.** The complete analysis (selection, evaluation, E1–E6 and E7–E15) was run on a Linux
+reference machine (Python 3.13, NumPy 2.5.3, pandas 3.0.5, SciPy 1.18.1, scikit-learn 1.9.1, CoolProp 8.0.0) and
+re-run on a second computer (Windows, Python 3.12) with identical counts, rates, p-values and selected
+configuration (`experiments/REPRODUCTION_REPORT_PC_2026-10-14.md`, `experiments/REPRODUCTION_REPORT_PC_PHASE2_2026-10-20.md`). Checksums are exact on the reference machine. On other platforms `e1_baselines.json` and `e10b_ridge_sweep.json` differ in
+floating-point digits (thresholds at about the 13th digit, numerically zero eigenvalues), and on Windows line
+endings differ, without any change in a reported result. `SUMMARY.json` and `e7_e8_paired_operational.json` contain run times and machine
 information and are excluded from the checksum list.
 
 ## 1. Data

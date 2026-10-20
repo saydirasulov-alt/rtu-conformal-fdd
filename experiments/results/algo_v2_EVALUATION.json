@@ -20,7 +20,8 @@
    "overcharge15": 4.0,
    "overcharge20": 12.0
   },
-  "reference_v1_like_S0_Dmax": 10.0
+  "reference_v1_like_S0_Dmax": 10.0,
+  "best_dev_mean_sens_unconstrained": 91.7
  },
  "sim_holdout": {
   "FROZEN": {

@@ -1,9 +1,54 @@
-# Conformal Fault Detection for Rooftop Units with Incomplete Sensing — Analysis Code
+# Conformal Fault Detection for Rooftop HVAC Units with Incomplete Sensing — Analysis Code
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23155499.svg)](https://doi.org/10.5281/zenodo.23155499)
+> **Release v1.1.0 (manuscript submitted to the *Journal of Building Engineering*).** This README describes
+> the code and results of the manuscript *"Conformal fault detection for rooftop HVAC units with incomplete
+> sensing"*. Versions v1.0.0/v1.0.1 belong to an earlier, single-statistic version of the method; their
+> scripts are kept in `code/` and their outputs in `results/` (see the historical section at the end).
 
-Reproduces the numerical results in the manuscript *"Conformal Fault Detection for Rooftop Units
-with Incomplete Sensing."* NumPy + pandas only. Fixed seed `SEED = 20260618`.
+## Quick start (v1.1.0 results)
+```bash
+pip install -r requirements-v1.1.txt
+export RTU_DATA_DIR="/path/to/<DATA_DIR>"            # LBNL data, layout below
+export RTU_SIM_DIR="/path/to/<DATA_DIR>/Simulated RTU"
+python experiments/run_phase_all.py      # E1-E6 (first version, ablations, ORNL, stability)
+python experiments/algo_v2_develop.py    # configuration selection on simulated development faults -> algo_v2_FROZEN.json
+python experiments/algo_v2_evaluate.py   # single frozen evaluation (simulated holdout, field units)
+python experiments/run_phase2_all.py     # all supporting analyses E7-E15 (Phase 2 plan, amendments A1-A10)
+python experiments/make_figures_phase2.py
+python experiments/make_supplementary_tables.py
+(cd experiments && sha256sum -c RESULTS_SHA256.txt)          # compare with the expected outputs
+```
+Windows PowerShell: replace `export X=...` with `$env:X = "..."`. Phase 2 additionally needs SciPy,
+scikit-learn, matplotlib and CoolProp (`requirements-v1.1.txt`).
+
+## Where each manuscript result comes from
+| Manuscript item | Script(s) | Result file(s) in `experiments/results/` |
+|---|---|---|
+| Configuration selection, Supplementary Table S1 | `algo_v2_develop.py` | `algo_v2_dev_grid.json`, `algo_v2_FROZEN.json` |
+| Table 2 (simulated faults), frozen field results, Tables S3–S4 | `algo_v2_evaluate.py` | `algo_v2_EVALUATION.json` |
+| Table 3, Max column; conventional thresholds; McNemar/Holm; TTFA; Figure 3 | `e1_baselines.py`, `e7_e8_paired_operational.py`, `e13_physics.py` | `e1_baselines.json`, `e7_e8_paired_operational.json`, `e13_physics.json` |
+| Table 3, Max+mean column; Figure 4 | `e14_equal_budget.py` (amendments A5, A6) | `e14_equal_budget.json` |
+| Attribution (Section 5.3) | `e9_attribution.py` | `e9_attribution.json` |
+| Weather check | `e9b_weather_confound.py` (A3) | `e9b_weather_confound.json` |
+| Robustness, ridge, Figure 5, Tables S7, S8, S13 | `e10_robustness.py`, `e10b_ridge_sweep.py` (A2), `e10c_ridge_spectrum.py` (A8) | `e10*.json` |
+| Table 5 (field sensor loss) | `e11_field_eligibility.py` (A4) | `e11_field_eligibility.json` |
+| Table 4, Figure S1, Table S12 (injected sensor faults) | `e12_injection.py`, `e12b_injection_equal_budget.py` (A7) | `e12*.json` |
+| Table 7, Section 5.8, Tables S14–S16 | `e15_audit_response.py` (A10), `e15b_alternative_selection.py` (not pre-specified) | `e15*.json` |
+| Table 6, Table S9 (ORNL) | `code/ornl_sensor_unavailability.py`, `experiments/e4_missingness.py` | `results/ornl_sensor_unavailability.json`, `e4_missingness.json` |
+| Table S2 (ablation), Table S11 (Site 1 split audit) | `e3_ablation.py`; `code/site1_split_audit_*.py` | `e3_ablation.json`; `results/site1_split_audit_*.json` |
+| Tables S5, S6 (refrigerant identification, physics) | `e13_physics.py` (A1) | `e13_physics.json` |
+| Table S10 (post-hoc separability) | `roc_dominance_posthoc.py` | `roc_dominance_POSTHOC.json` |
+
+Analysis plans: `experiments/ALGO_PLAN_V2.md` (selection, Amendment 1) and `experiments/ANALYSIS_PLAN_PHASE2.md`
+(supporting analyses and amendments A1–A10, each committed before its results were computed; check the git
+history). `e15b_alternative_selection.py` is the only analysis not covered by a plan and is labelled as such.
+
+**Reproduction status.** E1–E6 and the v2 selection/evaluation were re-run on a second computer
+(Windows, Python 3.12) with identical results (`experiments/REPRODUCTION_REPORT_PC_2026-10-14.md`).
+Phase 2 (E7–E15) has been run on one machine (Linux, Python 3.13, NumPy 2.5.3, pandas 3.0.5, SciPy 1.18.1,
+scikit-learn 1.9.1, CoolProp 8.0.0). Checksums can differ across library versions in the last digits of
+floating-point values; the reported counts should not. `SUMMARY.json` and `e7_e8_paired_operational.json` contain run times and machine
+information and are excluded from the checksum list.
 
 ## 1. Data
 Publicly available **LBNL Fault Detection and Diagnostics Datasets** (DOI: **10.25984/1881324**).
@@ -23,6 +68,13 @@ removed first (field: `RTU_COMP_WATT`; ORNL: `RTU_COMP_WATT_1 + RTU_COMP_WATT_2`
 missing values in the retained channels are dropped. All masking, training, calibration and evaluation
 operate on these records. In the ORNL pattern **"no power inputs"** the power channels are withheld from
 the diagnostic branches, but compressor power is still used by this gate to select compressor-on minutes.
+
+Simulated RTU files go in `<DATA_DIR>/Simulated RTU/` (`RTU_sim_baseline.csv`, `RTU_sim_<fault>.csv`).
+
+
+## Historical (v1.0.x) scripts and results
+The sections below document the first, single-statistic version (v1.0.0/v1.0.1). Its numbers are
+*not* the numbers of the current manuscript.
 
 ## 2. Environment
 Linux / macOS:

@@ -60,4 +60,22 @@ tab("Injected sensor faults (37 scenarios per site) with every detector under th
 e10c=J(R/"e10c_ridge_spectrum.json")
 rows=[f"{k.replace('c=','')} & {v['sim_holdout']['baseline_test_dayFAR']} & {v['sim_holdout']['holdout_mean_sens_pct']:.1f} & {v['Site2']['test_dayFAR']} & {v['Site2']['fault_day_sens']} & {v['Site1']['test_dayFAR']} & {v['Site1']['fault_day_sens']} & {v['Site1']['ridges']['joint0']:.2g}" for k,v in e10c.items()]
 tab("Spectrum-relative ridge, $c$ times the median eigenvalue of each branch's scaled training covariance (Phase-2 amendment A8; sensitivity analysis only).","tab:S13","cccccccc","$c$ & Sim. FAR & Sim. sens. (\\%) & Site 2 FAR & Site 2 sens. & Site 1 FAR & Site 1 sens. & Site 1 joint ridge",rows)
+
+e15=J(R/"e15_audit_response.json"); NM3={"frozen":"Frozen","global_Mahalanobis":"Global Mahalanobis","PCA_T2":"PCA $T^2$","PCA_SPE":"PCA SPE","IsolationForest":"Isolation forest","v1_tieaware_dual_rule":"v1 tie-aware"}
+rows=[]
+for s_ in ("Site2","Site1"):
+    for k,nm in NM3.items():
+        v=e15["A10_1"][s_][k]; d=v.get("block7_sens_diff_frozen_minus_comp_CI95")
+        rows.append(f"{s_[-1]} & {nm} & {v['fault_day_sens']} & {v['fault']['lag1']:.2f} & {v['fault']['n_eff']:.0f} & {v['cp_sens_CI95'][0]}--{v['cp_sens_CI95'][1]} & {v['block7_sens_CI95'][0]}--{v['block7_sens_CI95'][1]} & {v['block7_FAR_CI95'][0]}--{v['block7_FAR_CI95'][1]} & "+(f"{d[0]}--{d[1]}" if d else "--"))
+tab("Serial dependence and block-bootstrap intervals (amendment A10.1), all detectors under the two-statistic rule. Lag-1 autocorrelation and effective sample size of the daily alarm indicator on fault days; 95\\% intervals (\\%) for sensitivity (exact and circular block bootstrap, block 7 days), false-alarm frequency (block) and the paired sensitivity difference frozen minus comparator (block, percentage points).","tab:S14","clccccccc","Site & Detector & Sens. & Lag-1 & $n_{\\mathrm{eff}}$ & Exact & Block & FAR block & Difference",rows,size="\\scriptsize")
+g3=e15["A10_3"]["grid"]
+rows=[f"{NM[r['S']]} & {r['D'].replace('Dmax','max').replace('Dmean','mean').replace('Ddual','max + mean')} & {'yes' if r['J'] else 'no'} & {r['baseline_test_dayFAR']} & {r['admissibility_FAR_days51_75']} & {r['dev_mean_sens']:.1f}"+(" & selected" if (r['S'],r['D'],r['J'])==(e15['A10_3']['selected']['S'],e15['A10_3']['selected']['D'],e15['A10_3']['selected']['J']) else (" & inadmissible" if int(r['admissibility_FAR_days51_75'].split('/')[0])>3 else " & ")) for r in g3]
+tab("Re-selection without the simulated test days (amendment A10.3). Admissibility judged on days 51--75 with models fitted on days 1--30 and calibrated on days 31--50; the original rule used the test days (column ``Test FAR''). The frozen candidate is temperatures + power, max + mean, joint.","tab:S15","llcccl l","Scores & Daily rule & Joint & Test FAR & Adm. FAR & Dev. sens. (\\%) & ",rows)
+rows=[]
+for s_ in ("Site2","Site1"):
+    sc=e15["A10_2"][s_]["injected"]["scenarios"]; agg={}
+    for nm,v in sc.items():
+        sensor=nm.split("|")[0]; kind=nm.split("|")[1]; key=(sensor,kind); a=agg.setdefault(key,[0,0]); a[0]+=v["attributed_to_injected"]; a[1]+=v["new_alarm_days"]
+    for (sensor,kind),(h,n) in agg.items(): rows.append(f"{s_[-1]} & {sensor.replace('_','-')} & {kind} & {h}/{n}")
+tab("Circuit attribution of new alarm days under injected temperature-sensor faults on circuit 1 (T1) and circuit 2 (T2), frozen detector (amendment A10.2): days attributed to the injected circuit / new alarm days, pooled over magnitudes.","tab:S16","cllc","Site & Sensor & Fault & To injected circuit",rows)
 O.write_text("\n".join(L)); print("wrote",O)

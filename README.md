@@ -1,5 +1,8 @@
 # Conformal Fault Detection for Rooftop HVAC Units with Incomplete Sensing — Analysis Code
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23489886.svg)](https://doi.org/10.5281/zenodo.23489886)
+v1.1.1 (this manuscript): [10.5281/zenodo.23489886](https://doi.org/10.5281/zenodo.23489886) · all versions: [10.5281/zenodo.23155498](https://doi.org/10.5281/zenodo.23155498)
+
 > **Release v1.1.1 (manuscript submitted to the *Journal of Building Engineering*).** v1.1.1 = v1.1.0 plus an input-data SHA-256 manifest; no code or result changed. This README describes
 > the code and results of the manuscript *"Conformal fault detection for rooftop HVAC units with incomplete
 > sensing"*. Versions v1.0.0/v1.0.1 belong to an earlier, single-statistic version of the method; their
@@ -158,7 +161,7 @@ After a run, `git status` should show no changes under `results/` (byte-identica
 
 ## License and citation
 MIT License (see `LICENSE`). Citation metadata: `CITATION.cff`.
-Archived on Zenodo: v1.0.0 = [10.5281/zenodo.23155499](https://doi.org/10.5281/zenodo.23155499).
+Archived on Zenodo: v1.1.1 = [10.5281/zenodo.23489886](https://doi.org/10.5281/zenodo.23489886); v1.0.0 = [10.5281/zenodo.23155499](https://doi.org/10.5281/zenodo.23155499); all versions = [10.5281/zenodo.23155498](https://doi.org/10.5281/zenodo.23155498).
 Later releases receive their own version DOI on Zenodo (use "Cite all versions" there for the concept DOI).
 
 ## Changelog

@@ -1,0 +1,92 @@
+{
+ "Site1": {
+  "short_calibration_days": 0,
+  "short_test_days": 0,
+  "short_fault_days": 1,
+  "frozen": {
+   "test_dayFAR_scored": "1/13",
+   "fault_day_sens_scored": "52/61",
+   "short_days_alarmed": {
+    "test": 0,
+    "fault": 0
+   }
+  },
+  "global_Mahalanobis": {
+   "test_dayFAR_scored": "1/13",
+   "fault_day_sens_scored": "47/61",
+   "short_days_alarmed": {
+    "test": 0,
+    "fault": 0
+   }
+  },
+  "PCA_T2": {
+   "test_dayFAR_scored": "6/13",
+   "fault_day_sens_scored": "9/61",
+   "short_days_alarmed": {
+    "test": 0,
+    "fault": 0
+   }
+  },
+  "PCA_SPE": {
+   "test_dayFAR_scored": "0/13",
+   "fault_day_sens_scored": "1/61",
+   "short_days_alarmed": {
+    "test": 0,
+    "fault": 0
+   }
+  },
+  "IsolationForest": {
+   "test_dayFAR_scored": "3/13",
+   "fault_day_sens_scored": "4/61",
+   "short_days_alarmed": {
+    "test": 0,
+    "fault": 0
+   }
+  }
+ },
+ "Site2": {
+  "short_calibration_days": 0,
+  "short_test_days": 1,
+  "short_fault_days": 2,
+  "frozen": {
+   "test_dayFAR_scored": "4/43",
+   "fault_day_sens_scored": "17/25",
+   "short_days_alarmed": {
+    "test": 0,
+    "fault": 2
+   }
+  },
+  "global_Mahalanobis": {
+   "test_dayFAR_scored": "4/43",
+   "fault_day_sens_scored": "12/25",
+   "short_days_alarmed": {
+    "test": 0,
+    "fault": 2
+   }
+  },
+  "PCA_T2": {
+   "test_dayFAR_scored": "5/43",
+   "fault_day_sens_scored": "3/25",
+   "short_days_alarmed": {
+    "test": 1,
+    "fault": 2
+   }
+  },
+  "PCA_SPE": {
+   "test_dayFAR_scored": "0/43",
+   "fault_day_sens_scored": "12/25",
+   "short_days_alarmed": {
+    "test": 0,
+    "fault": 2
+   }
+  },
+  "IsolationForest": {
+   "test_dayFAR_scored": "5/43",
+   "fault_day_sens_scored": "13/25",
+   "short_days_alarmed": {
+    "test": 0,
+    "fault": 2
+   }
+  }
+ }
+}

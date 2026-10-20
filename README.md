@@ -33,7 +33,7 @@ scikit-learn, matplotlib and CoolProp (`requirements-v1.1.txt`).
 | Robustness, ridge, Figure 5, Tables S7, S8, S13 | `e10_robustness.py`, `e10b_ridge_sweep.py` (A2), `e10c_ridge_spectrum.py` (A8) | `e10*.json` |
 | Table 5 (field sensor loss) | `e11_field_eligibility.py` (A4) | `e11_field_eligibility.json` |
 | Table 4, Figure S1, Table S12 (injected sensor faults) | `e12_injection.py`, `e12b_injection_equal_budget.py` (A7) | `e12*.json` |
-| Table 7, Section 5.8, Tables S14–S16 | `e15_audit_response.py` (A10), `e15b_alternative_selection.py` (not pre-specified) | `e15*.json` |
+| Table 7, Section 5.8, Tables S14–S16 | `e15_audit_response.py` (A10), `e15b_alternative_selection.py`, `e15c_minimum_minutes.py` (both not pre-specified) | `e15*.json` |
 | Table 6, Table S9 (ORNL) | `code/ornl_sensor_unavailability.py`, `experiments/e4_missingness.py` | `results/ornl_sensor_unavailability.json`, `e4_missingness.json` |
 | Table S2 (ablation), Table S11 (Site 1 split audit) | `e3_ablation.py`; `code/site1_split_audit_*.py` | `e3_ablation.json`; `results/site1_split_audit_*.json` |
 | Tables S5, S6 (refrigerant identification, physics) | `e13_physics.py` (A1) | `e13_physics.json` |
@@ -41,7 +41,7 @@ scikit-learn, matplotlib and CoolProp (`requirements-v1.1.txt`).
 
 Analysis plans: `experiments/ALGO_PLAN_V2.md` (selection, Amendment 1) and `experiments/ANALYSIS_PLAN_PHASE2.md`
 (supporting analyses and amendments A1–A10, each committed before its results were computed; check the git
-history). `e15b_alternative_selection.py` is the only analysis not covered by a plan and is labelled as such.
+history). `e15b_alternative_selection.py` and `e15c_minimum_minutes.py` are the only analyses not covered by a plan and are labelled as such.
 
 **Reproduction status.** E1–E6 and the v2 selection/evaluation were re-run on a second computer
 (Windows, Python 3.12) with identical results (`experiments/REPRODUCTION_REPORT_PC_2026-10-14.md`).

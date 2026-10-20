@@ -24,3 +24,13 @@ change is. The new analyses were pre-specified as amendment P2-A10 in `ANALYSIS_
 | S1–S13 "not in PDF" | **Disagree.** They are in the separate Supplementary Material PDF. | — |
 | Second-computer reproduction "unverified" | **Partly.** The log exists (`REPRODUCTION_REPORT_PC_2026-10-14.md`) but covers E1–E6 and v2 only. | README states the scope. |
 | Contributions too many | **Agree.** | Reduced to two. |
+
+## Second audit round (2026-10-20, 10:42)
+
+| Point | Assessment | Change |
+|---|---|---|
+| 1. 60-minute minimum in Methods but not in main results | **Agree.** | Methods now state the frozen rule exactly as used (every day with at least one compressor-on minute is scored). The day-pattern rule, with its 60-minute minimum, is presented as an extension for within-day availability changes and is used only in A10.6. E15c (not pre-specified) recomputes the main results with the minimum. No calibration day is short, so the thresholds are unchanged. Frozen detector: Site 2 4/43 and 17/25; Site 1 1/13 and 52/61. Mahalanobis: 4/43, 12/25 and 1/13, 47/61. |
+| 2. Test-free re-selection misses all Site 2 fault days | **Agree it is serious.** | New Discussion subsection "What the selection step does and does not show". The selection procedure is stated to be not validated, and the frozen field results are tied to the configuration rather than to the procedure. The paper's main claims (the calibration rule, shown on non-selected generic detectors, and no significant detection advantage) do not depend on the selection. The abstract and conclusions now mention the test-informed constraint. |
+| 3. Beta(1,n) needs i.i.d. | **Agree.** | Stated explicitly: independent draws from one continuous distribution, and exchangeability alone does not fix the conditional distribution. |
+| 4. Pattern-specific exchangeability | **Agree.** | New paragraph after Proposition 3. For reduced patterns the bound assumes that sensor loss is unrelated to operation. For days scored on a subset of minutes, the proposition does not apply and the A10.6 results are empirical. |
+| 5. Bundle not self-contained; release/DOI | **Agree on the bundle.** | Full bundle (`main` + `exp/phase2`) and a source zip. Verified: a fresh clone from the bundle re-runs E15c and the supplementary tables, and every checksum in `RESULTS_SHA256.txt` matches. **The public v1.1.0 release and the Zenodo DOI need the authors' action (push and GitHub release); not done yet.** |

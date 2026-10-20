@@ -1,6 +1,6 @@
 # Conformal Fault Detection for Rooftop HVAC Units with Incomplete Sensing — Analysis Code
 
-> **Release v1.1.0 (manuscript submitted to the *Journal of Building Engineering*).** This README describes
+> **Release v1.1.1 (manuscript submitted to the *Journal of Building Engineering*).** v1.1.1 = v1.1.0 plus an input-data SHA-256 manifest; no code or result changed. This README describes
 > the code and results of the manuscript *"Conformal fault detection for rooftop HVAC units with incomplete
 > sensing"*. Versions v1.0.0/v1.0.1 belong to an earlier, single-statistic version of the method; their
 > scripts are kept in `code/` and their outputs in `results/` (see the historical section at the end).
@@ -50,6 +50,13 @@ configuration (`experiments/REPRODUCTION_REPORT_PC_2026-10-14.md`, `experiments/
 floating-point digits (thresholds at about the 13th digit, numerically zero eigenvalues), and on Windows line
 endings differ, without any change in a reported result. `SUMMARY.json` and `e7_e8_paired_operational.json` contain run times and machine
 information and are excluded from the checksum list.
+
+## Input-data provenance
+`experiments/DATA_SHA256.txt` lists the SHA-256 of all 81 LBNL input files the analyses read (4 field, 52 ORNL,
+25 simulated). Check a local copy before reproducing:
+```bash
+python experiments/data_manifest.py check   # prints "81 files in manifest; 81 match; ..."
+```
 
 ## 1. Data
 Publicly available **LBNL Fault Detection and Diagnostics Datasets** (DOI: **10.25984/1881324**).

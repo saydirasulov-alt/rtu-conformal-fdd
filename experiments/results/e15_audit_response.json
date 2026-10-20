@@ -1,0 +1,1901 @@
+{
+ "A10_1": {
+  "Site1": {
+   "frozen": {
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "52/62",
+    "fault": {
+     "lag1": 0.315,
+     "n_eff": 32.3,
+     "n_runs": 6,
+     "mean_run": 8.67
+    },
+    "normal": {
+     "lag1": -0.091,
+     "n_eff": 13.0,
+     "n_runs": 1,
+     "mean_run": 1.0
+    },
+    "block3_FAR_CI95": [
+     0.0,
+     23.1
+    ],
+    "block3_sens_CI95": [
+     71.0,
+     93.5
+    ],
+    "block7_FAR_CI95": [
+     0.0,
+     15.4
+    ],
+    "block7_sens_CI95": [
+     71.0,
+     95.2
+    ],
+    "cp_sens_CI95": [
+     72.3,
+     92.0
+    ],
+    "cp_FAR_CI95": [
+     0.2,
+     36.0
+    ]
+   },
+   "global_Mahalanobis": {
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "47/62",
+    "fault": {
+     "lag1": 0.503,
+     "n_eff": 20.5,
+     "n_runs": 6,
+     "mean_run": 7.83
+    },
+    "normal": {
+     "lag1": -0.091,
+     "n_eff": 13.0,
+     "n_runs": 1,
+     "mean_run": 1.0
+    },
+    "block3_FAR_CI95": [
+     0.0,
+     23.1
+    ],
+    "block3_sens_CI95": [
+     61.3,
+     88.7
+    ],
+    "block3_sens_diff_frozen_minus_comp_CI95": [
+     0.0,
+     17.7
+    ],
+    "block7_FAR_CI95": [
+     0.0,
+     15.4
+    ],
+    "block7_sens_CI95": [
+     58.1,
+     91.9
+    ],
+    "block7_sens_diff_frozen_minus_comp_CI95": [
+     0.0,
+     16.1
+    ],
+    "cp_sens_CI95": [
+     63.3,
+     85.8
+    ],
+    "cp_FAR_CI95": [
+     0.2,
+     36.0
+    ]
+   },
+   "PCA_T2": {
+    "test_dayFAR": "6/13",
+    "fault_day_sens": "9/62",
+    "fault": {
+     "lag1": 0.088,
+     "n_eff": 52.0,
+     "n_runs": 7,
+     "mean_run": 1.29
+    },
+    "normal": {
+     "lag1": 0.169,
+     "n_eff": 9.2,
+     "n_runs": 3,
+     "mean_run": 2.0
+    },
+    "block3_FAR_CI95": [
+     23.1,
+     69.2
+    ],
+    "block3_sens_CI95": [
+     4.8,
+     24.2
+    ],
+    "block3_sens_diff_frozen_minus_comp_CI95": [
+     53.2,
+     83.9
+    ],
+    "block7_FAR_CI95": [
+     30.8,
+     61.5
+    ],
+    "block7_sens_CI95": [
+     4.8,
+     25.8
+    ],
+    "block7_sens_diff_frozen_minus_comp_CI95": [
+     51.6,
+     87.1
+    ],
+    "cp_sens_CI95": [
+     6.9,
+     25.8
+    ],
+    "cp_FAR_CI95": [
+     19.2,
+     74.9
+    ]
+   },
+   "PCA_SPE": {
+    "test_dayFAR": "0/13",
+    "fault_day_sens": "1/62",
+    "fault": {
+     "lag1": -0.017,
+     "n_eff": 62.0,
+     "n_runs": 1,
+     "mean_run": 1.0
+    },
+    "normal": {
+     "lag1": 0.0,
+     "n_eff": 13.0,
+     "n_runs": 0,
+     "mean_run": 0.0
+    },
+    "block3_FAR_CI95": [
+     0.0,
+     0.0
+    ],
+    "block3_sens_CI95": [
+     0.0,
+     4.8
+    ],
+    "block3_sens_diff_frozen_minus_comp_CI95": [
+     71.0,
+     91.9
+    ],
+    "block7_FAR_CI95": [
+     0.0,
+     0.0
+    ],
+    "block7_sens_CI95": [
+     0.0,
+     4.8
+    ],
+    "block7_sens_diff_frozen_minus_comp_CI95": [
+     69.4,
+     91.9
+    ],
+    "cp_sens_CI95": [
+     0.0,
+     8.7
+    ],
+    "cp_FAR_CI95": [
+     0.0,
+     24.7
+    ]
+   },
+   "IsolationForest": {
+    "test_dayFAR": "3/13",
+    "fault_day_sens": "4/62",
+    "fault": {
+     "lag1": 0.197,
+     "n_eff": 41.6,
+     "n_runs": 3,
+     "mean_run": 1.33
+    },
+    "normal": {
+     "lag1": -0.258,
+     "n_eff": 13.0,
+     "n_runs": 3,
+     "mean_run": 1.0
+    },
+    "block3_FAR_CI95": [
+     7.7,
+     46.2
+    ],
+    "block3_sens_CI95": [
+     0.0,
+     14.5
+    ],
+    "block3_sens_diff_frozen_minus_comp_CI95": [
+     62.9,
+     90.3
+    ],
+    "block7_FAR_CI95": [
+     7.7,
+     38.5
+    ],
+    "block7_sens_CI95": [
+     0.0,
+     14.5
+    ],
+    "block7_sens_diff_frozen_minus_comp_CI95": [
+     61.3,
+     91.9
+    ],
+    "cp_sens_CI95": [
+     1.8,
+     15.7
+    ],
+    "cp_FAR_CI95": [
+     5.0,
+     53.8
+    ]
+   },
+   "v1_tieaware_dual_rule": {
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "6/62",
+    "fault": {
+     "lag1": 0.261,
+     "n_eff": 36.4,
+     "n_runs": 4,
+     "mean_run": 1.5
+    },
+    "normal": {
+     "lag1": -0.091,
+     "n_eff": 13.0,
+     "n_runs": 1,
+     "mean_run": 1.0
+    },
+    "block3_FAR_CI95": [
+     0.0,
+     23.1
+    ],
+    "block3_sens_CI95": [
+     1.6,
+     19.4
+    ],
+    "block3_sens_diff_frozen_minus_comp_CI95": [
+     58.1,
+     88.7
+    ],
+    "block7_FAR_CI95": [
+     0.0,
+     15.4
+    ],
+    "block7_sens_CI95": [
+     1.6,
+     19.4
+    ],
+    "block7_sens_diff_frozen_minus_comp_CI95": [
+     54.8,
+     91.9
+    ],
+    "cp_sens_CI95": [
+     3.6,
+     19.9
+    ],
+    "cp_FAR_CI95": [
+     0.2,
+     36.0
+    ]
+   }
+  },
+  "Site2": {
+   "frozen": {
+    "test_dayFAR": "4/44",
+    "fault_day_sens": "19/27",
+    "fault": {
+     "lag1": -0.217,
+     "n_eff": 27.0,
+     "n_runs": 7,
+     "mean_run": 2.71
+    },
+    "normal": {
+     "lag1": -0.088,
+     "n_eff": 44.0,
+     "n_runs": 4,
+     "mean_run": 1.0
+    },
+    "block3_FAR_CI95": [
+     2.3,
+     18.2
+    ],
+    "block3_sens_CI95": [
+     51.9,
+     85.2
+    ],
+    "block7_FAR_CI95": [
+     0.0,
+     20.5
+    ],
+    "block7_sens_CI95": [
+     51.9,
+     88.9
+    ],
+    "cp_sens_CI95": [
+     49.8,
+     86.2
+    ],
+    "cp_FAR_CI95": [
+     2.5,
+     21.7
+    ]
+   },
+   "global_Mahalanobis": {
+    "test_dayFAR": "4/44",
+    "fault_day_sens": "14/27",
+    "fault": {
+     "lag1": 0.154,
+     "n_eff": 19.8,
+     "n_runs": 6,
+     "mean_run": 2.33
+    },
+    "normal": {
+     "lag1": -0.088,
+     "n_eff": 44.0,
+     "n_runs": 4,
+     "mean_run": 1.0
+    },
+    "block3_FAR_CI95": [
+     2.3,
+     15.9
+    ],
+    "block3_sens_CI95": [
+     29.6,
+     74.1
+    ],
+    "block3_sens_diff_frozen_minus_comp_CI95": [
+     3.7,
+     33.3
+    ],
+    "block7_FAR_CI95": [
+     2.3,
+     18.2
+    ],
+    "block7_sens_CI95": [
+     25.9,
+     81.5
+    ],
+    "block7_sens_diff_frozen_minus_comp_CI95": [
+     7.4,
+     29.6
+    ],
+    "cp_sens_CI95": [
+     31.9,
+     71.3
+    ],
+    "cp_FAR_CI95": [
+     2.5,
+     21.7
+    ]
+   },
+   "PCA_T2": {
+    "test_dayFAR": "6/44",
+    "fault_day_sens": "5/27",
+    "fault": {
+     "lag1": 0.062,
+     "n_eff": 23.8,
+     "n_runs": 4,
+     "mean_run": 1.25
+    },
+    "normal": {
+     "lag1": -0.146,
+     "n_eff": 44.0,
+     "n_runs": 6,
+     "mean_run": 1.0
+    },
+    "block3_FAR_CI95": [
+     4.5,
+     22.7
+    ],
+    "block3_sens_CI95": [
+     7.4,
+     33.3
+    ],
+    "block3_sens_diff_frozen_minus_comp_CI95": [
+     29.6,
+     74.1
+    ],
+    "block7_FAR_CI95": [
+     4.5,
+     22.7
+    ],
+    "block7_sens_CI95": [
+     11.1,
+     25.9
+    ],
+    "block7_sens_diff_frozen_minus_comp_CI95": [
+     33.3,
+     66.7
+    ],
+    "cp_sens_CI95": [
+     6.3,
+     38.1
+    ],
+    "cp_FAR_CI95": [
+     5.2,
+     27.4
+    ]
+   },
+   "PCA_SPE": {
+    "test_dayFAR": "0/44",
+    "fault_day_sens": "14/27",
+    "fault": {
+     "lag1": 0.0,
+     "n_eff": 27.0,
+     "n_runs": 7,
+     "mean_run": 2.0
+    },
+    "normal": {
+     "lag1": 0.0,
+     "n_eff": 44.0,
+     "n_runs": 0,
+     "mean_run": 0.0
+    },
+    "block3_FAR_CI95": [
+     0.0,
+     0.0
+    ],
+    "block3_sens_CI95": [
+     33.3,
+     70.4
+    ],
+    "block3_sens_diff_frozen_minus_comp_CI95": [
+     7.4,
+     29.6
+    ],
+    "block7_FAR_CI95": [
+     0.0,
+     0.0
+    ],
+    "block7_sens_CI95": [
+     37.0,
+     70.4
+    ],
+    "block7_sens_diff_frozen_minus_comp_CI95": [
+     7.4,
+     25.9
+    ],
+    "cp_sens_CI95": [
+     31.9,
+     71.3
+    ],
+    "cp_FAR_CI95": [
+     0.0,
+     8.0
+    ]
+   },
+   "IsolationForest": {
+    "test_dayFAR": "5/44",
+    "fault_day_sens": "15/27",
+    "fault": {
+     "lag1": -0.324,
+     "n_eff": 27.0,
+     "n_runs": 9,
+     "mean_run": 1.67
+    },
+    "normal": {
+     "lag1": 0.134,
+     "n_eff": 33.6,
+     "n_runs": 4,
+     "mean_run": 1.25
+    },
+    "block3_FAR_CI95": [
+     2.3,
+     22.7
+    ],
+    "block3_sens_CI95": [
+     40.7,
+     70.4
+    ],
+    "block3_sens_diff_frozen_minus_comp_CI95": [
+     3.7,
+     29.6
+    ],
+    "block7_FAR_CI95": [
+     0.0,
+     25.0
+    ],
+    "block7_sens_CI95": [
+     44.4,
+     70.4
+    ],
+    "block7_sens_diff_frozen_minus_comp_CI95": [
+     7.4,
+     25.9
+    ],
+    "cp_sens_CI95": [
+     35.3,
+     74.5
+    ],
+    "cp_FAR_CI95": [
+     3.8,
+     24.6
+    ]
+   },
+   "v1_tieaware_dual_rule": {
+    "test_dayFAR": "6/44",
+    "fault_day_sens": "19/27",
+    "fault": {
+     "lag1": -0.217,
+     "n_eff": 27.0,
+     "n_runs": 7,
+     "mean_run": 2.71
+    },
+    "normal": {
+     "lag1": -0.146,
+     "n_eff": 44.0,
+     "n_runs": 6,
+     "mean_run": 1.0
+    },
+    "block3_FAR_CI95": [
+     4.5,
+     22.7
+    ],
+    "block3_sens_CI95": [
+     51.9,
+     85.2
+    ],
+    "block3_sens_diff_frozen_minus_comp_CI95": [
+     0.0,
+     0.0
+    ],
+    "block7_FAR_CI95": [
+     4.5,
+     22.7
+    ],
+    "block7_sens_CI95": [
+     51.9,
+     88.9
+    ],
+    "block7_sens_diff_frozen_minus_comp_CI95": [
+     0.0,
+     0.0
+    ],
+    "cp_sens_CI95": [
+     49.8,
+     86.2
+    ],
+    "cp_FAR_CI95": [
+     5.2,
+     27.4
+    ]
+   }
+  }
+ },
+ "A10_2": {
+  "Site1": {
+   "field_fault_days": {
+    "fault_alarm_days": 52,
+    "attributed_circuit2": 46,
+    "always_circuit2_agreement": "52/52",
+    "binom_vs_half_p_one_sided": 5.16e-09
+   },
+   "injected": {
+    "pooled": {
+     "circuit1": "69/91",
+     "circuit2": "203/203"
+    },
+    "pct_to_injected": {
+     "1": 75.8,
+     "2": 100.0
+    },
+    "balanced_accuracy_pct": 87.9,
+    "always_circuit2_balanced_accuracy_pct": 50.0,
+    "scenarios": {
+     "suction_T1|bias|-2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 10,
+      "attributed_to_injected": 9
+     },
+     "suction_T2|bias|-2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 12,
+      "attributed_to_injected": 12
+     },
+     "suction_T1|bias|-1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "suction_T2|bias|-1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 12,
+      "attributed_to_injected": 12
+     },
+     "suction_T1|bias|-0.5IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "suction_T2|bias|-0.5IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 2,
+      "attributed_to_injected": 2
+     },
+     "suction_T1|bias|+0.5IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "suction_T2|bias|+0.5IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "suction_T1|bias|+1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "suction_T2|bias|+1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "suction_T1|bias|+2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 1,
+      "attributed_to_injected": 0
+     },
+     "suction_T2|bias|+2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 12,
+      "attributed_to_injected": 12
+     },
+     "suction_T1|drift|1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "suction_T2|drift|1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "suction_T1|drift|2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "suction_T2|drift|2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 4,
+      "attributed_to_injected": 4
+     },
+     "suction_T1|drift|4IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 5,
+      "attributed_to_injected": 4
+     },
+     "suction_T2|drift|4IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 7,
+      "attributed_to_injected": 7
+     },
+     "suction_T1|stuck": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "suction_T2|stuck": {
+      "injected_circuit": 2,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "discharge_T1|bias|-2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 9,
+      "attributed_to_injected": 8
+     },
+     "discharge_T2|bias|-2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 12,
+      "attributed_to_injected": 12
+     },
+     "discharge_T1|bias|-1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "discharge_T2|bias|-1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 12,
+      "attributed_to_injected": 12
+     },
+     "discharge_T1|bias|-0.5IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "discharge_T2|bias|-0.5IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 12,
+      "attributed_to_injected": 12
+     },
+     "discharge_T1|bias|+0.5IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "discharge_T2|bias|+0.5IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 8,
+      "attributed_to_injected": 8
+     },
+     "discharge_T1|bias|+1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "discharge_T2|bias|+1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 12,
+      "attributed_to_injected": 12
+     },
+     "discharge_T1|bias|+2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 1,
+      "attributed_to_injected": 0
+     },
+     "discharge_T2|bias|+2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 12,
+      "attributed_to_injected": 12
+     },
+     "discharge_T1|drift|1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "discharge_T2|drift|1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 7,
+      "attributed_to_injected": 7
+     },
+     "discharge_T1|drift|2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "discharge_T2|drift|2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 9,
+      "attributed_to_injected": 9
+     },
+     "discharge_T1|drift|4IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 5,
+      "attributed_to_injected": 4
+     },
+     "discharge_T2|drift|4IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 10,
+      "attributed_to_injected": 10
+     },
+     "discharge_T1|stuck": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "discharge_T2|stuck": {
+      "injected_circuit": 2,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "liquid_T1|bias|-2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 12,
+      "attributed_to_injected": 11
+     },
+     "liquid_T2|bias|-2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 12,
+      "attributed_to_injected": 12
+     },
+     "liquid_T1|bias|-1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 2,
+      "attributed_to_injected": 1
+     },
+     "liquid_T2|bias|-1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 12,
+      "attributed_to_injected": 12
+     },
+     "liquid_T1|bias|-0.5IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "liquid_T2|bias|-0.5IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 8,
+      "attributed_to_injected": 8
+     },
+     "liquid_T1|bias|+0.5IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 2,
+      "attributed_to_injected": 0
+     },
+     "liquid_T2|bias|+0.5IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "liquid_T1|bias|+1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 10,
+      "attributed_to_injected": 9
+     },
+     "liquid_T2|bias|+1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 1,
+      "attributed_to_injected": 1
+     },
+     "liquid_T1|bias|+2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 12,
+      "attributed_to_injected": 9
+     },
+     "liquid_T2|bias|+2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 12,
+      "attributed_to_injected": 12
+     },
+     "liquid_T1|drift|1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 5,
+      "attributed_to_injected": 3
+     },
+     "liquid_T2|drift|1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "liquid_T1|drift|2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 8,
+      "attributed_to_injected": 6
+     },
+     "liquid_T2|drift|2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 4,
+      "attributed_to_injected": 4
+     },
+     "liquid_T1|drift|4IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 9,
+      "attributed_to_injected": 5
+     },
+     "liquid_T2|drift|4IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 9,
+      "attributed_to_injected": 9
+     },
+     "liquid_T1|stuck": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "liquid_T2|stuck": {
+      "injected_circuit": 2,
+      "new_alarm_days": 2,
+      "attributed_to_injected": 2
+     }
+    }
+   }
+  },
+  "Site2": {
+   "field_fault_days": {
+    "fault_alarm_days": 19,
+    "attributed_circuit2": 12,
+    "always_circuit2_agreement": "19/19",
+    "binom_vs_half_p_one_sided": 0.18
+   },
+   "injected": {
+    "pooled": {
+     "circuit1": "678/755",
+     "circuit2": "800/813"
+    },
+    "pct_to_injected": {
+     "1": 89.8,
+     "2": 98.4
+    },
+    "balanced_accuracy_pct": 94.1,
+    "always_circuit2_balanced_accuracy_pct": 50.0,
+    "scenarios": {
+     "suction_T1|bias|-2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 40
+     },
+     "suction_T2|bias|-2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 40
+     },
+     "suction_T1|bias|-1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 4,
+      "attributed_to_injected": 4
+     },
+     "suction_T2|bias|-1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 7,
+      "attributed_to_injected": 5
+     },
+     "suction_T1|bias|-0.5IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "suction_T2|bias|-0.5IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 1,
+      "attributed_to_injected": 0
+     },
+     "suction_T1|bias|+0.5IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 13,
+      "attributed_to_injected": 13
+     },
+     "suction_T2|bias|+0.5IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 4,
+      "attributed_to_injected": 4
+     },
+     "suction_T1|bias|+1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 27,
+      "attributed_to_injected": 27
+     },
+     "suction_T2|bias|+1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 11,
+      "attributed_to_injected": 10
+     },
+     "suction_T1|bias|+2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 40
+     },
+     "suction_T2|bias|+2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 40
+     },
+     "suction_T1|drift|1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 10,
+      "attributed_to_injected": 10
+     },
+     "suction_T2|drift|1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 3,
+      "attributed_to_injected": 2
+     },
+     "suction_T1|drift|2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 20,
+      "attributed_to_injected": 20
+     },
+     "suction_T2|drift|2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 19,
+      "attributed_to_injected": 19
+     },
+     "suction_T1|drift|4IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 34,
+      "attributed_to_injected": 34
+     },
+     "suction_T2|drift|4IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 31,
+      "attributed_to_injected": 31
+     },
+     "suction_T1|stuck": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "suction_T2|stuck": {
+      "injected_circuit": 2,
+      "new_alarm_days": 9,
+      "attributed_to_injected": 7
+     },
+     "discharge_T1|bias|-2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 39
+     },
+     "discharge_T2|bias|-2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 40
+     },
+     "discharge_T1|bias|-1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 19,
+      "attributed_to_injected": 17
+     },
+     "discharge_T2|bias|-1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 40
+     },
+     "discharge_T1|bias|-0.5IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 12,
+      "attributed_to_injected": 12
+     },
+     "discharge_T2|bias|-0.5IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 39
+     },
+     "discharge_T1|bias|+0.5IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "discharge_T2|bias|+0.5IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 40
+     },
+     "discharge_T1|bias|+1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 2,
+      "attributed_to_injected": 2
+     },
+     "discharge_T2|bias|+1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 40
+     },
+     "discharge_T1|bias|+2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 40
+     },
+     "discharge_T2|bias|+2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 40
+     },
+     "discharge_T1|drift|1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 0,
+      "attributed_to_injected": 0
+     },
+     "discharge_T2|drift|1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 33,
+      "attributed_to_injected": 32
+     },
+     "discharge_T1|drift|2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 11,
+      "attributed_to_injected": 11
+     },
+     "discharge_T2|drift|2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 35,
+      "attributed_to_injected": 34
+     },
+     "discharge_T1|drift|4IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 26,
+      "attributed_to_injected": 26
+     },
+     "discharge_T2|drift|4IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 38,
+      "attributed_to_injected": 37
+     },
+     "discharge_T1|stuck": {
+      "injected_circuit": 1,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 40
+     },
+     "discharge_T2|stuck": {
+      "injected_circuit": 2,
+      "new_alarm_days": 7,
+      "attributed_to_injected": 7
+     },
+     "liquid_T1|bias|-2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 40
+     },
+     "liquid_T2|bias|-2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 40
+     },
+     "liquid_T1|bias|-1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 37
+     },
+     "liquid_T2|bias|-1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 40
+     },
+     "liquid_T1|bias|-0.5IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 33
+     },
+     "liquid_T2|bias|-0.5IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 19,
+      "attributed_to_injected": 19
+     },
+     "liquid_T1|bias|+0.5IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 23
+     },
+     "liquid_T2|bias|+0.5IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 15,
+      "attributed_to_injected": 13
+     },
+     "liquid_T1|bias|+1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 38
+     },
+     "liquid_T2|bias|+1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 40
+     },
+     "liquid_T1|bias|+2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 40
+     },
+     "liquid_T2|bias|+2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 40,
+      "attributed_to_injected": 40
+     },
+     "liquid_T1|drift|1IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 27,
+      "attributed_to_injected": 18
+     },
+     "liquid_T2|drift|1IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 19,
+      "attributed_to_injected": 19
+     },
+     "liquid_T1|drift|2IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 34,
+      "attributed_to_injected": 31
+     },
+     "liquid_T2|drift|2IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 29,
+      "attributed_to_injected": 29
+     },
+     "liquid_T1|drift|4IQR": {
+      "injected_circuit": 1,
+      "new_alarm_days": 37,
+      "attributed_to_injected": 35
+     },
+     "liquid_T2|drift|4IQR": {
+      "injected_circuit": 2,
+      "new_alarm_days": 35,
+      "attributed_to_injected": 35
+     },
+     "liquid_T1|stuck": {
+      "injected_circuit": 1,
+      "new_alarm_days": 39,
+      "attributed_to_injected": 8
+     },
+     "liquid_T2|stuck": {
+      "injected_circuit": 2,
+      "new_alarm_days": 18,
+      "attributed_to_injected": 18
+     }
+    }
+   }
+  }
+ },
+ "A10_4": {
+  "Site1": {
+   "0.0001": {
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "53/62",
+    "smallest_eigs": {
+     "refrig0": [
+      0.0545,
+      0.346,
+      1.3
+     ],
+     "refrig1": [
+      0.0149,
+      0.222,
+      0.843
+     ],
+     "power0": [
+      0.142,
+      0.581,
+      24.3
+     ],
+     "joint0": [
+      0.000703,
+      0.0037,
+      0.0312
+     ]
+    }
+   },
+   "0.001": {
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "52/62",
+    "smallest_eigs": {
+     "refrig0": [
+      0.0545,
+      0.346,
+      1.3
+     ],
+     "refrig1": [
+      0.0149,
+      0.222,
+      0.843
+     ],
+     "power0": [
+      0.142,
+      0.581,
+      24.3
+     ],
+     "joint0": [
+      0.000703,
+      0.0037,
+      0.0312
+     ]
+    }
+   },
+   "0.01": {
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "8/62",
+    "smallest_eigs": {
+     "refrig0": [
+      0.0545,
+      0.346,
+      1.3
+     ],
+     "refrig1": [
+      0.0149,
+      0.222,
+      0.843
+     ],
+     "power0": [
+      0.142,
+      0.581,
+      24.3
+     ],
+     "joint0": [
+      0.000703,
+      0.0037,
+      0.0312
+     ]
+    }
+   }
+  },
+  "Site2": {
+   "0.0001": {
+    "test_dayFAR": "4/44",
+    "fault_day_sens": "19/27",
+    "smallest_eigs": {
+     "refrig0": [
+      0.252,
+      0.509,
+      2.32
+     ],
+     "refrig1": [
+      0.0267,
+      0.527,
+      1.28
+     ],
+     "power0": [
+      0.113,
+      3.06,
+      4.23
+     ],
+     "joint0": [
+      0.00304,
+      0.0073,
+      0.0318
+     ]
+    }
+   },
+   "0.001": {
+    "test_dayFAR": "4/44",
+    "fault_day_sens": "19/27",
+    "smallest_eigs": {
+     "refrig0": [
+      0.252,
+      0.509,
+      2.32
+     ],
+     "refrig1": [
+      0.0267,
+      0.527,
+      1.28
+     ],
+     "power0": [
+      0.113,
+      3.06,
+      4.23
+     ],
+     "joint0": [
+      0.00304,
+      0.0073,
+      0.0318
+     ]
+    }
+   },
+   "0.01": {
+    "test_dayFAR": "4/44",
+    "fault_day_sens": "20/27",
+    "smallest_eigs": {
+     "refrig0": [
+      0.252,
+      0.509,
+      2.32
+     ],
+     "refrig1": [
+      0.0267,
+      0.527,
+      1.28
+     ],
+     "power0": [
+      0.113,
+      3.06,
+      4.23
+     ],
+     "joint0": [
+      0.00304,
+      0.0073,
+      0.0318
+     ]
+    }
+   }
+  },
+  "sim_holdout": {
+   "0.0001": {
+    "baseline_test_dayFAR": "2/25",
+    "holdout_mean_sens_pct": 70.0
+   },
+   "0.001": {
+    "baseline_test_dayFAR": "2/25",
+    "holdout_mean_sens_pct": 70.0
+   },
+   "0.01": {
+    "baseline_test_dayFAR": "2/25",
+    "holdout_mean_sens_pct": 70.0
+   }
+  }
+ },
+ "A10_5": {
+  "Site1": {
+   "frozen_dual": {
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "52/62"
+   },
+   "frozen_max_only": {
+    "test_dayFAR": "0/13",
+    "fault_day_sens": "12/62"
+   },
+   "frozen_mean_only": {
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "51/62"
+   },
+   "frozen_persistence2": {
+    "test_dayFAR": "0/13",
+    "fault_day_sens": "46/62"
+   },
+   "mahalanobis_dual": {
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "47/62"
+   },
+   "mahalanobis_persistence2": {
+    "test_dayFAR": "0/13",
+    "fault_day_sens": "41/62"
+   },
+   "frozen_EWMA_dailymax": {
+    "test_dayFAR": "0/13",
+    "fault_day_sens": "43/62"
+   },
+   "mahalanobis_EWMA_dailymax": {
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "43/62"
+   }
+  },
+  "Site2": {
+   "frozen_dual": {
+    "test_dayFAR": "4/44",
+    "fault_day_sens": "19/27"
+   },
+   "frozen_max_only": {
+    "test_dayFAR": "1/44",
+    "fault_day_sens": "13/27"
+   },
+   "frozen_mean_only": {
+    "test_dayFAR": "6/44",
+    "fault_day_sens": "20/27"
+   },
+   "frozen_persistence2": {
+    "test_dayFAR": "0/44",
+    "fault_day_sens": "12/27"
+   },
+   "mahalanobis_dual": {
+    "test_dayFAR": "4/44",
+    "fault_day_sens": "14/27"
+   },
+   "mahalanobis_persistence2": {
+    "test_dayFAR": "0/44",
+    "fault_day_sens": "8/27"
+   },
+   "frozen_EWMA_dailymax": {
+    "test_dayFAR": "0/44",
+    "fault_day_sens": "10/27"
+   },
+   "mahalanobis_EWMA_dailymax": {
+    "test_dayFAR": "2/44",
+    "fault_day_sens": "15/27"
+   }
+  }
+ },
+ "A10_6": {
+  "Site1": {
+   "no_loss": {
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "52/62"
+   },
+   "circuit2_permanent_loss": {
+    "test_dayFAR": "0/13",
+    "fault_day_sens": "3/62"
+   },
+   "circuit2_random_0.1": {
+    "test": {
+     "alarm_days": "1/13",
+     "abstain_days": 0,
+     "days_scored_full_pattern": 13
+    },
+    "fault": {
+     "alarm_days": "52/62",
+     "abstain_days": 1,
+     "days_scored_full_pattern": 62
+    },
+    "alarms_on_missing_sensors": 0
+   },
+   "circuit2_random_0.4": {
+    "test": {
+     "alarm_days": "1/13",
+     "abstain_days": 0,
+     "days_scored_full_pattern": 13
+    },
+    "fault": {
+     "alarm_days": "52/62",
+     "abstain_days": 1,
+     "days_scored_full_pattern": 62
+    },
+    "alarms_on_missing_sensors": 0
+   },
+   "circuit2_outage_h_6": {
+    "test": {
+     "alarm_days": "1/13",
+     "abstain_days": 0,
+     "days_scored_full_pattern": 13
+    },
+    "fault": {
+     "alarm_days": "50/62",
+     "abstain_days": 1,
+     "days_scored_full_pattern": 58
+    },
+    "alarms_on_missing_sensors": 0
+   },
+   "power_permanent_loss": {
+    "test_dayFAR": "1/13",
+    "fault_day_sens": "11/62"
+   },
+   "power_random_0.1": {
+    "test": {
+     "alarm_days": "1/13",
+     "abstain_days": 0,
+     "days_scored_full_pattern": 13
+    },
+    "fault": {
+     "alarm_days": "52/62",
+     "abstain_days": 1,
+     "days_scored_full_pattern": 62
+    },
+    "alarms_on_missing_sensors": 0
+   },
+   "power_random_0.4": {
+    "test": {
+     "alarm_days": "1/13",
+     "abstain_days": 0,
+     "days_scored_full_pattern": 13
+    },
+    "fault": {
+     "alarm_days": "52/62",
+     "abstain_days": 1,
+     "days_scored_full_pattern": 62
+    },
+    "alarms_on_missing_sensors": 0
+   },
+   "power_outage_h_6": {
+    "test": {
+     "alarm_days": "1/13",
+     "abstain_days": 0,
+     "days_scored_full_pattern": 13
+    },
+    "fault": {
+     "alarm_days": "50/62",
+     "abstain_days": 1,
+     "days_scored_full_pattern": 58
+    },
+    "alarms_on_missing_sensors": 0
+   }
+  },
+  "Site2": {
+   "no_loss": {
+    "test_dayFAR": "4/44",
+    "fault_day_sens": "19/27"
+   },
+   "circuit2_permanent_loss": {
+    "test_dayFAR": "3/44",
+    "fault_day_sens": "9/27"
+   },
+   "circuit2_random_0.1": {
+    "test": {
+     "alarm_days": "4/44",
+     "abstain_days": 1,
+     "days_scored_full_pattern": 44
+    },
+    "fault": {
+     "alarm_days": "18/27",
+     "abstain_days": 2,
+     "days_scored_full_pattern": 27
+    },
+    "alarms_on_missing_sensors": 0
+   },
+   "circuit2_random_0.4": {
+    "test": {
+     "alarm_days": "4/44",
+     "abstain_days": 1,
+     "days_scored_full_pattern": 44
+    },
+    "fault": {
+     "alarm_days": "18/27",
+     "abstain_days": 2,
+     "days_scored_full_pattern": 27
+    },
+    "alarms_on_missing_sensors": 0
+   },
+   "circuit2_outage_h_6": {
+    "test": {
+     "alarm_days": "5/44",
+     "abstain_days": 1,
+     "days_scored_full_pattern": 30
+    },
+    "fault": {
+     "alarm_days": "13/27",
+     "abstain_days": 2,
+     "days_scored_full_pattern": 24
+    },
+    "alarms_on_missing_sensors": 0
+   },
+   "power_permanent_loss": {
+    "test_dayFAR": "3/44",
+    "fault_day_sens": "17/27"
+   },
+   "power_random_0.1": {
+    "test": {
+     "alarm_days": "4/44",
+     "abstain_days": 1,
+     "days_scored_full_pattern": 44
+    },
+    "fault": {
+     "alarm_days": "18/27",
+     "abstain_days": 2,
+     "days_scored_full_pattern": 27
+    },
+    "alarms_on_missing_sensors": 0
+   },
+   "power_random_0.4": {
+    "test": {
+     "alarm_days": "4/44",
+     "abstain_days": 1,
+     "days_scored_full_pattern": 44
+    },
+    "fault": {
+     "alarm_days": "18/27",
+     "abstain_days": 2,
+     "days_scored_full_pattern": 27
+    },
+    "alarms_on_missing_sensors": 0
+   },
+   "power_outage_h_6": {
+    "test": {
+     "alarm_days": "5/44",
+     "abstain_days": 1,
+     "days_scored_full_pattern": 30
+    },
+    "fault": {
+     "alarm_days": "15/27",
+     "abstain_days": 2,
+     "days_scored_full_pattern": 24
+    },
+    "alarms_on_missing_sensors": 0
+   }
+  }
+ },
+ "A10_7": {
+  "Site1": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "51/62",
+   "k": 19,
+   "n_cal": 19,
+   "effective_bound_pct": 5.0,
+   "c": [
+    0.9995,
+    0.5967
+   ]
+  },
+  "Site2": {
+   "test_dayFAR": "6/44",
+   "fault_day_sens": "20/27",
+   "k": 43,
+   "n_cal": 44,
+   "effective_bound_pct": 4.4,
+   "c": [
+    0.9994,
+    0.6265
+   ]
+  },
+  "sim_holdout": {
+   "baseline_test_dayFAR": "0/25",
+   "holdout_mean_sens_pct": 67.3
+  },
+  "sim_holdout_frozen_reference": {
+   "baseline_test_dayFAR": "2/25",
+   "holdout_mean_sens_pct": 70.0
+  }
+ },
+ "A10_8": {
+  "Site1": {
+   "test_dayFAR": "1/13",
+   "fault_day_sens": "52/62"
+  },
+  "Site2": {
+   "test_dayFAR": "4/44",
+   "fault_day_sens": "19/27"
+  },
+  "sim_holdout": {
+   "baseline_test_dayFAR": "2/25",
+   "holdout_mean_sens_pct": 70.0
+  }
+ },
+ "A10_3": {
+  "selected": {
+   "S": "S3",
+   "D": "Dmean",
+   "J": false,
+   "dev_mean_sens": 91.7
+  },
+  "frozen": {
+   "S": "S0",
+   "D": "Ddual",
+   "J": true
+  },
+  "same_as_frozen": false,
+  "n_admissible": 17,
+  "grid": [
+   {
+    "S": "S0",
+    "D": "Dmax",
+    "J": false,
+    "dev_mean_sens": 10.0,
+    "baseline_test_dayFAR": "2/25",
+    "admissibility_FAR_days51_75": "1/25"
+   },
+   {
+    "S": "S0",
+    "D": "Dmax",
+    "J": true,
+    "dev_mean_sens": 10.0,
+    "baseline_test_dayFAR": "2/25",
+    "admissibility_FAR_days51_75": "1/25"
+   },
+   {
+    "S": "S0",
+    "D": "Dmean",
+    "J": false,
+    "dev_mean_sens": 26.0,
+    "baseline_test_dayFAR": "0/25",
+    "admissibility_FAR_days51_75": "1/25"
+   },
+   {
+    "S": "S0",
+    "D": "Dmean",
+    "J": true,
+    "dev_mean_sens": 26.7,
+    "baseline_test_dayFAR": "0/25",
+    "admissibility_FAR_days51_75": "1/25"
+   },
+   {
+    "S": "S0",
+    "D": "Ddual",
+    "J": false,
+    "dev_mean_sens": 29.7,
+    "baseline_test_dayFAR": "2/25",
+    "admissibility_FAR_days51_75": "2/25"
+   },
+   {
+    "S": "S0",
+    "D": "Ddual",
+    "J": true,
+    "dev_mean_sens": 30.3,
+    "baseline_test_dayFAR": "2/25",
+    "admissibility_FAR_days51_75": "2/25"
+   },
+   {
+    "S": "S1",
+    "D": "Dmax",
+    "J": false,
+    "dev_mean_sens": 20.3,
+    "baseline_test_dayFAR": "2/25",
+    "admissibility_FAR_days51_75": "1/25"
+   },
+   {
+    "S": "S1",
+    "D": "Dmax",
+    "J": true,
+    "dev_mean_sens": 20.3,
+    "baseline_test_dayFAR": "2/25",
+    "admissibility_FAR_days51_75": "1/25"
+   },
+   {
+    "S": "S1",
+    "D": "Dmean",
+    "J": false,
+    "dev_mean_sens": 27.0,
+    "baseline_test_dayFAR": "0/25",
+    "admissibility_FAR_days51_75": "1/25"
+   },
+   {
+    "S": "S1",
+    "D": "Dmean",
+    "J": true,
+    "dev_mean_sens": 27.0,
+    "baseline_test_dayFAR": "0/25",
+    "admissibility_FAR_days51_75": "1/25"
+   },
+   {
+    "S": "S1",
+    "D": "Ddual",
+    "J": false,
+    "dev_mean_sens": 31.3,
+    "baseline_test_dayFAR": "2/25",
+    "admissibility_FAR_days51_75": "2/25"
+   },
+   {
+    "S": "S1",
+    "D": "Ddual",
+    "J": true,
+    "dev_mean_sens": 31.3,
+    "baseline_test_dayFAR": "2/25",
+    "admissibility_FAR_days51_75": "2/25"
+   },
+   {
+    "S": "S2",
+    "D": "Dmax",
+    "J": false,
+    "dev_mean_sens": 0.3,
+    "baseline_test_dayFAR": "0/25",
+    "admissibility_FAR_days51_75": "2/25"
+   },
+   {
+    "S": "S2",
+    "D": "Dmax",
+    "J": true,
+    "dev_mean_sens": 8.0,
+    "baseline_test_dayFAR": "0/25",
+    "admissibility_FAR_days51_75": "3/25"
+   },
+   {
+    "S": "S2",
+    "D": "Dmean",
+    "J": false,
+    "dev_mean_sens": 91.0,
+    "baseline_test_dayFAR": "13/25",
+    "admissibility_FAR_days51_75": "4/25"
+   },
+   {
+    "S": "S2",
+    "D": "Dmean",
+    "J": true,
+    "dev_mean_sens": 91.0,
+    "baseline_test_dayFAR": "13/25",
+    "admissibility_FAR_days51_75": "4/25"
+   },
+   {
+    "S": "S2",
+    "D": "Ddual",
+    "J": false,
+    "dev_mean_sens": 91.0,
+    "baseline_test_dayFAR": "13/25",
+    "admissibility_FAR_days51_75": "6/25"
+   },
+   {
+    "S": "S2",
+    "D": "Ddual",
+    "J": true,
+    "dev_mean_sens": 91.0,
+    "baseline_test_dayFAR": "13/25",
+    "admissibility_FAR_days51_75": "7/25"
+   },
+   {
+    "S": "S3",
+    "D": "Dmax",
+    "J": false,
+    "dev_mean_sens": 1.3,
+    "baseline_test_dayFAR": "0/25",
+    "admissibility_FAR_days51_75": "3/25"
+   },
+   {
+    "S": "S3",
+    "D": "Dmax",
+    "J": true,
+    "dev_mean_sens": 7.7,
+    "baseline_test_dayFAR": "0/25",
+    "admissibility_FAR_days51_75": "2/25"
+   },
+   {
+    "S": "S3",
+    "D": "Dmean",
+    "J": false,
+    "dev_mean_sens": 91.7,
+    "baseline_test_dayFAR": "12/25",
+    "admissibility_FAR_days51_75": "3/25"
+   },
+   {
+    "S": "S3",
+    "D": "Dmean",
+    "J": true,
+    "dev_mean_sens": 91.7,
+    "baseline_test_dayFAR": "12/25",
+    "admissibility_FAR_days51_75": "4/25"
+   },
+   {
+    "S": "S3",
+    "D": "Ddual",
+    "J": false,
+    "dev_mean_sens": 91.7,
+    "baseline_test_dayFAR": "12/25",
+    "admissibility_FAR_days51_75": "6/25"
+   },
+   {
+    "S": "S3",
+    "D": "Ddual",
+    "J": true,
+    "dev_mean_sens": 91.7,
+    "baseline_test_dayFAR": "12/25",
+    "admissibility_FAR_days51_75": "6/25"
+   }
+  ]
+ }
+}

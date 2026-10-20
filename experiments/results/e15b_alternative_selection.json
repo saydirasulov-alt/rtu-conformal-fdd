@@ -1,0 +1,14 @@
+{
+ "sim_holdout": {
+  "baseline_test_dayFAR": "12/25",
+  "holdout_mean_sens_pct": 98.3
+ },
+ "Site1": {
+  "test_dayFAR": "1/13",
+  "fault_day_sens": "54/62"
+ },
+ "Site2": {
+  "test_dayFAR": "0/44",
+  "fault_day_sens": "0/27"
+ }
+}

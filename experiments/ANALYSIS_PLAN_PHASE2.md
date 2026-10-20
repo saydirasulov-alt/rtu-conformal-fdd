@@ -157,3 +157,65 @@ minute statistic compared with the day thresholds (an approximation, since those
 calibrated on whole days; reported as descriptive), and the circuit attribution of each segment
 compared with circuit-specific labels (UCC2: circuit 2, OCC1: circuit 1). Step 2 is skipped and the
 reason reported if the unit or variables cannot be matched.
+
+**P2-A10 (2026-10-20, written after an external audit of the manuscript and before any of the
+analyses below has been computed).** All items are sensitivity or diagnostic analyses. None replaces
+the frozen configuration, and every outcome is reported whatever its direction.
+
+A10.1 Dependence-aware uncertainty. Field days are serially dependent and each site has one fault
+episode. For every detector of E14 (equal rule) and for the frozen detector: lag-1 autocorrelation of
+the daily alarm indicator on fault days and on normal test days, the number and mean length of alarm
+runs, and an effective sample size n_eff = n(1-r)/(1+r) (r clipped to [0, 0.95]). Moving-block
+bootstrap (circular, block lengths 3 and 7 days, 5000 resamples, seed 20261020) 95% percentile
+intervals for FAR, sensitivity and the paired sensitivity difference frozen minus each comparator.
+McNemar p-values are kept but labelled descriptive.
+
+A10.2 Attribution against trivial baselines and on faults of known circuit. (a) On the field fault
+days the frozen detector's circuit attribution is compared with "always circuit 2" and with a fair
+coin (exact one-sided binomial, descriptive). (b) The E12 injection scenarios (which act on circuit 1
+sensors) are mirrored on circuit 2 (same kinds and multiples of the circuit-2 training IQR). For each
+scenario, on days that alarm under injection but not on the clean data, the attributed circuit is
+recorded. Reported: fraction of such days attributed to the injected circuit, per site and injected
+circuit, and the balanced accuracy over the two injected circuits; the "always circuit 2" baseline has
+balanced accuracy 0.5 by construction. Power-meter scenarios are excluded (no circuit).
+
+A10.3 Re-selection without test days (simulated RTU). Amendment 1 used the 25 fault-free simulated
+test days for admissibility. The selection is repeated with admissibility judged without them: each
+grid candidate is fitted on simulated training days 1-30, calibrated on days 31-50, and its alarms
+counted on days 51-75 (the calibration block of the frozen split); admissible if at most 3 of 25. The
+rest of the rule (maximum mean development sensitivity, one-point simplicity tie-break) is unchanged,
+with development sensitivity as in the original grid. Reported: the selected candidate and whether it
+equals the frozen one.
+
+A10.4 Redundant feature removal. The discharge-minus-suction feature is a linear combination of two
+other features of the same circuit. The frozen detector is re-fitted without it (refrigerant branch 3
+temperatures per circuit; joint branch 6 temperatures + 3 powers) at ridge 1e-4, 1e-3 and 1e-2. Field
+FAR and sensitivity at both sites and the simulated holdout are reported, with the three smallest
+eigenvalues of each branch covariance.
+
+A10.5 Further day-level baselines. (a) Frozen detector with only the daily maximum (alpha) and only
+the daily mean (alpha) (grid variants S0-Dmax-J and S0-Dmean-J). (b) Persistence: an alarm is raised
+on day d only if days d-1 and d are both alarm days under the two-statistic rule, for the frozen
+detector and for the global Mahalanobis distance. (c) EWMA: an exponentially weighted moving average
+(lambda = 0.02 per compressor-on minute, reset at the start of each day) of the minute statistic of
+the frozen detector and of the global Mahalanobis distance; the daily maximum of the EWMA is
+thresholded day-level at alpha on the calibration days. Field FAR and sensitivity are reported.
+
+A10.6 Intermittent sensor loss at the field units. Day-pattern rule (stated here before use): the
+pattern of day d is the set of branches eligible in at least 50% of its compressor-on minutes; the day
+statistics are computed over the minutes in which every branch of that pattern is eligible; the day
+abstains if fewer than 60 such minutes remain. The detector for each pattern is fitted and calibrated
+in advance on the complete training and calibration days restricted to that pattern's sensors (as in
+E11). Loss is imposed on normal test and fault days only, for (i) circuit-2 refrigerant sensors and
+(ii) power sensors: random minutes missing at rates 10% and 40%, and one contiguous 6 h outage per day
+at a random start (seed 20261020). Reported: FAR, sensitivity, abstention days and the number of alarms
+attributed to a branch whose sensors were missing in the scored minutes (expected 0).
+
+A10.7 Single joint daily statistic. J_d = max(A_max/c_max, A_mean/c_mean), where c_max and c_mean are
+the medians over training days of the daily maximum and daily mean of the frozen minute statistic.
+One day-level threshold with k = min(ceil((n+1)(1-alpha)), n); effective bound 1/(n+1). Field FAR and
+sensitivity, and the simulated holdout, are reported.
+
+A10.8 Alternative tail extension. The percentile extension beyond the training maximum m is replaced
+by n/(n+1) + (1/(n+1))(1 - exp(-(g-m)/m)); everything else frozen. Field FAR and sensitivity and the
+simulated holdout are reported.

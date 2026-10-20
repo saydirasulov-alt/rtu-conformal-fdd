@@ -187,3 +187,90 @@ $c$ & Sim. FAR & Sim. sens. (\%) & Site 2 FAR & Site 2 sens. & Site 1 FAR & Site
 0.001 & 2/25 & 70.0 & 4/44 & 19/27 & 1/13 & 53/62 & 4.8e-05\\
 0.01 & 2/25 & 70.0 & 6/44 & 20/27 & 1/13 & 53/62 & 0.00049\\
 \bottomrule\end{tabular}\end{table}
+
+\begin{table}[h!]\centering\scriptsize\caption{Serial dependence and block-bootstrap intervals (amendment A10.1), all detectors under the two-statistic rule. Lag-1 autocorrelation and effective sample size of the daily alarm indicator on fault days; 95\% intervals (\%) for sensitivity (exact and circular block bootstrap, block 7 days), false-alarm frequency (block) and the paired sensitivity difference frozen minus comparator (block, percentage points).}\label{tab:S14}
+\begin{tabular}{clccccccc}\toprule
+Site & Detector & Sens. & Lag-1 & $n_{\mathrm{eff}}$ & Exact & Block & FAR block & Difference\\\midrule
+2 & Frozen & 19/27 & -0.22 & 27 & 49.8--86.2 & 51.9--88.9 & 0.0--20.5 & --\\
+2 & Global Mahalanobis & 14/27 & 0.15 & 20 & 31.9--71.3 & 25.9--81.5 & 2.3--18.2 & 7.4--29.6\\
+2 & PCA $T^2$ & 5/27 & 0.06 & 24 & 6.3--38.1 & 11.1--25.9 & 4.5--22.7 & 33.3--66.7\\
+2 & PCA SPE & 14/27 & 0.00 & 27 & 31.9--71.3 & 37.0--70.4 & 0.0--0.0 & 7.4--25.9\\
+2 & Isolation forest & 15/27 & -0.32 & 27 & 35.3--74.5 & 44.4--70.4 & 0.0--25.0 & 7.4--25.9\\
+2 & v1 tie-aware & 19/27 & -0.22 & 27 & 49.8--86.2 & 51.9--88.9 & 4.5--22.7 & 0.0--0.0\\
+1 & Frozen & 52/62 & 0.32 & 32 & 72.3--92.0 & 71.0--95.2 & 0.0--15.4 & --\\
+1 & Global Mahalanobis & 47/62 & 0.50 & 20 & 63.3--85.8 & 58.1--91.9 & 0.0--15.4 & 0.0--16.1\\
+1 & PCA $T^2$ & 9/62 & 0.09 & 52 & 6.9--25.8 & 4.8--25.8 & 30.8--61.5 & 51.6--87.1\\
+1 & PCA SPE & 1/62 & -0.02 & 62 & 0.0--8.7 & 0.0--4.8 & 0.0--0.0 & 69.4--91.9\\
+1 & Isolation forest & 4/62 & 0.20 & 42 & 1.8--15.7 & 0.0--14.5 & 7.7--38.5 & 61.3--91.9\\
+1 & v1 tie-aware & 6/62 & 0.26 & 36 & 3.6--19.9 & 1.6--19.4 & 0.0--15.4 & 54.8--91.9\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[h!]\centering\footnotesize\caption{Re-selection without the simulated test days (amendment A10.3). Admissibility judged on days 51--75 with models fitted on days 1--30 and calibrated on days 31--50; the original rule used the test days (column ``Test FAR''). The frozen candidate is temperatures + power, max + mean, joint.}\label{tab:S15}
+\begin{tabular}{llcccl l}\toprule
+Scores & Daily rule & Joint & Test FAR & Adm. FAR & Dev. sens. (\%) & \\\midrule
+Temperatures + power & max & no & 2/25 & 1/25 & 10.0 & \\
+Temperatures + power & max & yes & 2/25 & 1/25 & 10.0 & \\
+Temperatures + power & mean & no & 0/25 & 1/25 & 26.0 & \\
+Temperatures + power & mean & yes & 0/25 & 1/25 & 26.7 & \\
+Temperatures + power & max + mean & no & 2/25 & 2/25 & 29.7 & \\
+Temperatures + power & max + mean & yes & 2/25 & 2/25 & 30.3 & \\
++ pressures & max & no & 2/25 & 1/25 & 20.3 & \\
++ pressures & max & yes & 2/25 & 1/25 & 20.3 & \\
++ pressures & mean & no & 0/25 & 1/25 & 27.0 & \\
++ pressures & mean & yes & 0/25 & 1/25 & 27.0 & \\
++ pressures & max + mean & no & 2/25 & 2/25 & 31.3 & \\
++ pressures & max + mean & yes & 2/25 & 2/25 & 31.3 & \\
+Condition-aware residuals & max & no & 0/25 & 2/25 & 0.3 & \\
+Condition-aware residuals & max & yes & 0/25 & 3/25 & 8.0 & \\
+Condition-aware residuals & mean & no & 13/25 & 4/25 & 91.0 & inadmissible\\
+Condition-aware residuals & mean & yes & 13/25 & 4/25 & 91.0 & inadmissible\\
+Condition-aware residuals & max + mean & no & 13/25 & 6/25 & 91.0 & inadmissible\\
+Condition-aware residuals & max + mean & yes & 13/25 & 7/25 & 91.0 & inadmissible\\
+Residuals + pressures & max & no & 0/25 & 3/25 & 1.3 & \\
+Residuals + pressures & max & yes & 0/25 & 2/25 & 7.7 & \\
+Residuals + pressures & mean & no & 12/25 & 3/25 & 91.7 & selected\\
+Residuals + pressures & mean & yes & 12/25 & 4/25 & 91.7 & inadmissible\\
+Residuals + pressures & max + mean & no & 12/25 & 6/25 & 91.7 & inadmissible\\
+Residuals + pressures & max + mean & yes & 12/25 & 6/25 & 91.7 & inadmissible\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[h!]\centering\footnotesize\caption{Circuit attribution of new alarm days under injected temperature-sensor faults on circuit 1 (T1) and circuit 2 (T2), frozen detector (amendment A10.2): days attributed to the injected circuit / new alarm days, pooled over magnitudes.}\label{tab:S16}
+\begin{tabular}{cllc}\toprule
+Site & Sensor & Fault & To injected circuit\\\midrule
+2 & suction-T1 & bias & 124/124\\
+2 & suction-T2 & bias & 99/103\\
+2 & suction-T1 & drift & 64/64\\
+2 & suction-T2 & drift & 52/53\\
+2 & suction-T1 & stuck & 0/0\\
+2 & suction-T2 & stuck & 7/9\\
+2 & discharge-T1 & bias & 110/113\\
+2 & discharge-T2 & bias & 239/240\\
+2 & discharge-T1 & drift & 37/37\\
+2 & discharge-T2 & drift & 103/106\\
+2 & discharge-T1 & stuck & 40/40\\
+2 & discharge-T2 & stuck & 7/7\\
+2 & liquid-T1 & bias & 211/240\\
+2 & liquid-T2 & bias & 192/194\\
+2 & liquid-T1 & drift & 84/98\\
+2 & liquid-T2 & drift & 83/83\\
+2 & liquid-T1 & stuck & 8/39\\
+2 & liquid-T2 & stuck & 18/18\\
+1 & suction-T1 & bias & 9/11\\
+1 & suction-T2 & bias & 38/38\\
+1 & suction-T1 & drift & 4/5\\
+1 & suction-T2 & drift & 11/11\\
+1 & suction-T1 & stuck & 0/0\\
+1 & suction-T2 & stuck & 0/0\\
+1 & discharge-T1 & bias & 8/10\\
+1 & discharge-T2 & bias & 68/68\\
+1 & discharge-T1 & drift & 4/5\\
+1 & discharge-T2 & drift & 26/26\\
+1 & discharge-T1 & stuck & 0/0\\
+1 & discharge-T2 & stuck & 0/0\\
+1 & liquid-T1 & bias & 30/38\\
+1 & liquid-T2 & bias & 45/45\\
+1 & liquid-T1 & drift & 14/22\\
+1 & liquid-T2 & drift & 13/13\\
+1 & liquid-T1 & stuck & 0/0\\
+1 & liquid-T2 & stuck & 2/2\\
+\bottomrule\end{tabular}\end{table}

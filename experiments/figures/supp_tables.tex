@@ -55,7 +55,8 @@ Window & Frozen & v1 tie-aware & v1 original\\\midrule
 4 & 0/14 & 0/14 & unattainable\\
 5 & 1/14 & 0/14 & unattainable\\
 6 & 0/14 & 0/14 & unattainable\\
-Pooled & 3/84 & 1/84 & 0/84\\
+Pooled & 3/84 & 1/84 & 0/84$^{a}$\\
+\multicolumn{4}{l}{\scriptsize $^{a}$Unattainable windows cannot alarm and are counted as 0; only one of the six v1-original windows was attainable.}\\
 \bottomrule\end{tabular}\end{table}
 
 \begin{table}[h!]\centering\footnotesize\caption{Refrigerant and pressure-reference identification on training data (medians, circuit 1 / circuit 2, K). Selected: R-22, absolute, at both sites.}\label{tab:S4}
@@ -87,7 +88,7 @@ Site & Hypothesis & Conformal FAR & Conformal sens. & Rule FAR & Rule sens.\\\mi
 1 & R-407C, absolute & 4/13 & 20/62 & 11/13 & 35/62\\
 \bottomrule\end{tabular}\end{table}
 
-\begin{table}[h!]\centering\footnotesize\caption{One-at-a-time robustness of the frozen configuration (pre-specified sensitivity analysis, run after freezing; no setting was selected from it).}\label{tab:S5}
+\begin{table}[h!]\centering\footnotesize\caption{One-at-a-time robustness of the frozen configuration (specified in the Phase-2 plan before its outcomes were computed, run after freezing; no setting was selected from it).}\label{tab:S5}
 \begin{tabular}{lcccccc}\toprule
 Setting & Sim. FAR & Sim. sens. (\%) & Site 2 FAR & Site 2 sens. & Site 1 FAR & Site 1 sens.\\\midrule
 frozen & 2/25 & 70.0 & 4/44 & 19/27 & 1/13 & 52/62\\

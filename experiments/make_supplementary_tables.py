@@ -19,7 +19,8 @@ rows=[f"{nm} & "+" & ".join(st[k]['ncal'][n]['FAR'] for n in ('19','25','30','44
 tab("Site 2, calibration length (training: first 88 days; test: last 44 days; calibration: the $n_{\\mathrm{cal}}$ days before the test block).","tab:S3","lcccccccc","$n_{\\mathrm{cal}}$ & 19 & 25 & 30 & 44 & 19 & 25 & 30 & 44",["& \\multicolumn{4}{c}{normal test days flagged (of 44)} & \\multicolumn{4}{c}{fault days detected (of 27)}"]+rows)
 win=e5["proposed_v1.0.1"]["rolling_origin_Site2_60_30_14"]["windows"]
 rows=[f"{i+1} & {st['FROZEN']['per_window'][i]} & {st['REF_v1like']['per_window'][i]} & {'unattainable' if w['degenerate_tau'] else w['test_dayFAR']}" for i,w in enumerate(win)]
-rows.append(f"Pooled & {st['FROZEN']['rolling_pooled_FAR']} & {st['REF_v1like']['rolling_pooled_FAR']} & {e5['proposed_v1.0.1']['rolling_origin_Site2_60_30_14']['pooled_dayFAR']}")
+rows.append(f"Pooled & {st['FROZEN']['rolling_pooled_FAR']} & {st['REF_v1like']['rolling_pooled_FAR']} & {e5['proposed_v1.0.1']['rolling_origin_Site2_60_30_14']['pooled_dayFAR']}$^{{a}}$")
+rows.append("\\multicolumn{4}{l}{\\scriptsize $^{a}$Unattainable windows cannot alarm and are counted as 0; only one of the six v1-original windows was attainable.}")
 tab("Site 2 rolling-origin windows (60 training, 30 calibration, 14 test days): normal test days flagged.","tab:S3b","lccc","Window & Frozen & v1 tie-aware & v1 original",rows)
 e13=J(R/"e13_physics.json"); rows=[]
 for s in ("Site2","Site1"):
@@ -33,7 +34,7 @@ for s in ("Site2","Site1"):
 tab("Physics charge indicator under every plausible hypothesis (Phase-2 amendment A1).","tab:S4b","clcccc","Site & Hypothesis & Conformal FAR & Conformal sens. & Rule FAR & Rule sens.",alt)
 e10=J(R/"e10_robustness.json")
 rows=[f"{k} & {v['sim_holdout']['baseline_test_dayFAR']} & {v['sim_holdout']['holdout_mean_sens_pct']:.1f} & {v['Site2']['test_dayFAR']} & {v['Site2']['fault_day_sens']} & {v['Site1']['test_dayFAR']} & {v['Site1']['fault_day_sens']}" for k,v in e10.items()]
-tab("One-at-a-time robustness of the frozen configuration (pre-specified sensitivity analysis, run after freezing; no setting was selected from it).","tab:S5","lcccccc","Setting & Sim. FAR & Sim. sens. (\\%) & Site 2 FAR & Site 2 sens. & Site 1 FAR & Site 1 sens.",[r.replace("_","\\_") for r in rows])
+tab("One-at-a-time robustness of the frozen configuration (specified in the Phase-2 plan before its outcomes were computed, run after freezing; no setting was selected from it).","tab:S5","lcccccc","Setting & Sim. FAR & Sim. sens. (\\%) & Site 2 FAR & Site 2 sens. & Site 1 FAR & Site 1 sens.",[r.replace("_","\\_") for r in rows])
 rb=J(R/"e10b_ridge_sweep.json"); ks=[k for k in rb["Site1"] if isinstance(rb["Site1"][k],dict) and "test_dayFAR" in rb["Site1"][k]]
 rows=[f"{k} & {rb['Site2'][k]['test_dayFAR']} & {rb['Site2'][k]['fault_day_sens']} & {rb['Site1'][k]['test_dayFAR']} & {rb['Site1'][k]['fault_day_sens']}" for k in ks]
 tab("Ridge sweep (Phase-2 amendment A2). Smallest joint-branch covariance eigenvalues: Site 1 "+", ".join(f"{x:.2g}" for x in rb['Site1']['joint_cov_eigenvalues_smallest5'][:3])+"; Site 2 "+", ".join(f"{x:.2g}" for x in rb['Site2']['joint_cov_eigenvalues_smallest5'][:3])+".","tab:S5b","lcccc","Ridge & Site 2 FAR & Site 2 sens. & Site 1 FAR & Site 1 sens.",rows)
